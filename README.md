@@ -1,13 +1,3 @@
-# 📌 NETFLIX Clone Coding
----
-## clone
-- https://www.netflix.com/kr/
----
-## Feat
-- html semantic tag
-- faq accordion menu
----
-
 # 📌 자신이 원하는 사이트 레이아웃 클론
 
 - 과제 기한:
