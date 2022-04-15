@@ -22,10 +22,7 @@ function toggleAccordion(el) {
          allTexts.forEach(function (el) {
             el.classList.remove('show');
          })
-         
-         
       })
-      
          targetText.add('show');
          target.classList.add('active');
    }  
