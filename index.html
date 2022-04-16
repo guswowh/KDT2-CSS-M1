@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="영화 보기, 온라인 영화, 인터넷 영화, 시리즈 시청, 시리즈 온라인, 온라인 시리즈, 인터넷 시리즈, 시리즈 보기, 영화 스트리밍, 시리즈 스트리밍, 인스턴트 스트리밍, 온라인 시청, 인터넷 시청, 영화, 영화 보기 대한민국, 온라인 시리즈 보기, 다운로드 불필요, 영화 풀 버전, 전체 영화" name="keywords">
+  <meta content="스마트 TV, 태블릿, 스마트폰, PC, 게임 콘솔 등 다양한 디바이스에서 영화와 시리즈를 마음껏 즐기세요." name="description">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>넷플릭스&nbsp;대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="default.css" />
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <header id="header">
+    <a href="/" class="logo" title="NETFLIX">NETFLIX</a>
+    <div class="lang-container">
+      <label for="lang-switcher">언어선택</label>
+      <select name="" id="lang-switcher">
+        <option value="한국어">한국어</option>
+        <option value="english">english</option>
+      </select>
+    </div>
+    <a class="btn--login" href="javscript:void();">로그인</a>
+  </header>
+  <!-- intro -->
+  <section class="main-intro">
+    <div class="inner">
+      <header class="main-intro__header">
+        <h1 class="main-intro__title">영화와 시리즈를 <br />무제한으로.</h1>
+        <p class="main-intro__des">다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.</p>
+      </header>
+      <div class="main-mailform">
+        <p class="main-mailform__des">시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</p>
+        <div class="main-mailform__area">
+          <input id="iptMail" class="ipt--mail" type="text" placeholder="이메일 주소">
+          <label for="iptMail" class="ipt--mail__label">이메일 주소</label>
+          <button class="btn--start"><span>시작하기</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- usage -->
+  <section class="main-usage">
+    <article class="main-usage__item">
+      <div class="inner">
+        <div class="main-usage__item__text">
+          <h2>TV로 즐기세요.</h2>
+          <p>스마트 TV, PlayStation, Xbox, Chromecast, <br /> Apple TV, 블루레이 플레이어 등 다양한 <br />디바이스에서 시청하세요.</p>
+        </div>
+        <div class="main-usage__item__img">
+          <div class="main-usage__item__img__video">
+            <img src="./images/tv.png" alt="tv">
+            <video class="our-story-card-video" autoplay="" playsinline="" muted="" loop="">
+              <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="main-usage__item">
+      <div class="inner">
+        <div class="main-usage__item__text">
+          <h2>즐겨 보는 콘텐츠를 <br/> 저장해 오프라인으로 <br />시청하세요.</h2>
+          <p>간편하게 저장하고 빈틈없이 즐겨보세요.</p>
+        </div>
+        <div class="main-usage__item__img">
+          <img src="./images/mobile_contents.jpg" alt="">
+          <div class="main-usage__item__download">
+            <img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png">
+            <div class="main-usage__item__download__text">
+              <p>기묘한 이야기</p>
+              <p>저장 중...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="main-usage__item">
+      <div class="inner">
+        <div class="main-usage__item__text">
+          <h2>다양한 디바이스에서 <br/> 시청하세요.</h2>
+          <p>각종 영화와 시리즈를 스마트폰, 태블릿,<br /> 노트북, TV에서 무제한으로 스트리밍하세요. <br />추가 요금이 전혀 없습니다.</p>
+        </div>
+        <div class="main-usage__item__img">
+          <div class="main-usage__item__img__video">
+            <img src="./images/device.png" alt="device">
+            <video class="our-story-card-video" autoplay="" playsinline="" muted="" loop="">
+              <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="main-usage__item">
+      <div class="inner">
+        <div class="main-usage__item__text">
+          <h2>어린이 전용 프로필을 <br />만들어 보세요.</h2>
+          <p>자기만의 공간에서 좋아하는 캐릭터와 즐기는 <br />신나는 모험. 자녀에게 이 특별한 경험을 <br />선물하세요. 넷플릭스 회원이라면 무료입니다.</p>
+        </div>
+        <div class="main-usage__item__img">
+          <img src="./images/kids.png" alt="">
+        </div>
+      </div>
+    </article>
+  </section>
+  <!-- faq -->
+  <section class="main-faq">
+    <h2 class="main-faq__tit">자주 묻는 질문</h2>
+    <ul class="main-faq__list">
+      <li>
+        <button class="main-faq__ques">넷플릭스란 무엇인가요?</button>
+        <div class="main-faq__answ">
+          넷플릭스는 각종 수상 경력에 빛나는 시리즈, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+          <br />
+          <br />
+          저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 시리즈와 영화가 제공됩니다.
+        </div>
+      </li>
+      <li>
+        <button class="main-faq__ques">넷플릭스란 무엇인가요?</button>
+        <div class="main-faq__answ">
+          넷플릭스는 각종 수상 경력에 빛나는 시리즈, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+          <br />
+          <br />
+          저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 시리즈와 영화가 제공됩니다.
+        </div>
+      </li>
+      <li>
+        <button class="main-faq__ques">넷플릭스 요금은 얼마인가요?</button>
+        <div class="main-faq__answ">
+          넷플릭스는 각종 수상 경력에 빛나는 시리즈, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+          <br />
+          <br />
+          저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 시리즈와 영화가 제공됩니다.
+        </div>
+      </li>
+      <li>
+        <button class="main-faq__ques">어디에서 시청할 수 있나요?</button>
+        <div class="main-faq__answ">
+          넷플릭스는 각종 수상 경력에 빛나는 시리즈, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+          <br />
+          <br />
+          저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 시리즈와 영화가 제공됩니다.
+        </div>
+      </li>
+      <li>
+        <button class="main-faq__ques">멤버십을 해지하려면 어떻게 하나요?</button>
+        <div class="main-faq__answ">
+          넷플릭스는 각종 수상 경력에 빛나는 시리즈, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+          <br />
+          <br />
+          저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 시리즈와 영화가 제공됩니다.
+        </div>
+      </li>
+      <li>
+        <button class="main-faq__ques">아이들이 넷플릭스를 봐도 좋을까요?</button>
+        <div class="main-faq__answ">
+          넷플릭스는 각종 수상 경력에 빛나는 시리즈, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+          <br />
+          <br />
+          저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 시리즈와 영화가 제공됩니다.
+        </div>
+      </li>
+    </ul>
+    <div class="main-mailform">
+      <p class="main-mailform__des">시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</p>
+      <div class="main-mailform__area">
+        <input id="iptMail2" class="ipt--mail" type="text" placeholder="이메일 주소">
+        <label for="iptMail2" class="ipt--mail__label">이메일 주소</label>
+        <button class="btn--start"><span>시작하기</span></button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <h2 class="footer__title">질문이 있으신가요? 문의 전화:  080-001-9587</h2>
+    <nav class="footer__nav">
+      <ul class="footer__nav__list">
+        <li>
+          <a href="javascript:void(0)">자주 묻는 질문</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">고객 센터</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">계정</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">미디어 센터</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">투자 정보(IR)</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">입사 정보</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">넷플릭스 지원 디바이스</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">이용 약관</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">개인정보</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">쿠키 설정</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">회사 정보</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">문의하기</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">속도 테스트</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">법적 고지</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">오직 넷플릭스에서</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="lang-container">
+      <label for="lang-switcher-footer">언어선택</label>
+      <select name="" id="lang-switcher-footer">
+        <option value="한국어">한국어</option>
+        <option value="english">english</option>
+      </select>
+    </div>
+    <div class="footer__info">
+      <p class="footer__info__country">넷플릭스 대한민국</p>
+      <div class="footer__info__copy">
+        <p>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 080-001-9587</p>
+        <p>대표: 레지널드 숀 톰프슨</p>
+        <p>이메일 주소: korea@netflix.com</p>
+        <p>주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</p>
+        <p>사업자등록번호: 165-87-00119</p>
+        <p>클라우드 호스팅: Amazon Web Services Inc.</p>
+        <p>공정거래위원회 웹사이트</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
