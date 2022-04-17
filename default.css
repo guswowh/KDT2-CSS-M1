@@ -501,11 +501,11 @@ select::-ms-expand {
   content: 'arrow_drop_down';
   font-family: 'Material Icons';
   position: absolute;
-  right: .7rem;
+  right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 1.8rem;
+  font-size: 3.2rem;
 }
 
 #header .lang-container select#lang-switcher {
@@ -579,7 +579,7 @@ select::-ms-expand {
 }
 
 .main-intro__header p {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   margin: 1.6rem 0 3rem;
 }
 
@@ -685,6 +685,7 @@ select::-ms-expand {
 
 .main-usage__item__text h2 {
   font-size: 5rem;
+  font-weight: 700;
   margin: 0 0 2rem 0;
 }
 

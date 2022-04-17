@@ -106,10 +106,10 @@ select::-ms-expand {
       content:'arrow_drop_down';
       @include font-ico;
       position: absolute;
-      right:.7rem;
+      right:0;
       top:50%;
       transform: translateY(-50%);
-      font-size: 1.8rem;
+      font-size: 3.2rem;
     }
     select#lang-switcher{
       background: transparent;
@@ -168,7 +168,7 @@ select::-ms-expand {
       font-weight: 700;
     }
     p{
-      font-size: 2.4rem;
+      font-size: 2.6rem;
       margin:1.6rem 0 3rem;
     }
   }
@@ -247,6 +247,7 @@ select::-ms-expand {
       color:#fff;
       h2{
         font-size: 5rem;
+        font-weight: 700;
         margin: 0 0 2rem 0;
       }
       p{
