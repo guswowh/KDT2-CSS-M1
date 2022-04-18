@@ -518,6 +518,7 @@ select::-ms-expand {
   width: 100%;
   height: 100%;
   text-align: center;
+  z-index: 1;
 }
 
 #header .lang-container select#lang-switcher option {
