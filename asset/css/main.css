@@ -1,0 +1,225 @@
+header {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: 170px;
+  background-color: #fff;
+}
+
+header .top-nav {
+  position: relative;
+  height: 50px;
+  background-color: #243c84;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* global-menu */
+header .top-nav .global-menu {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .top-nav .global-menu li {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/common/util_line.gif') right center no-repeat;
+}
+
+header .top-nav .global-menu li:last-child {
+  background: none;
+}
+
+header .top-nav .global-menu li a,
+header .top-nav .top-util ul li a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+header .top-nav .global-menu li.on {
+  background-color: #fff;
+}
+
+header .top-nav .global-menu li.on a {
+  color: #243c84;
+}
+
+/* top-util */
+header .top-nav .top-util {
+  margin: 10px 30px 10px 0;
+  display: flex;
+}
+
+header .top-nav .top-util .top-util_members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 0 25px;
+}
+
+header .top-nav .top-util .top-util_members li {
+  padding-left: 18px;
+  margin-left: 17px;
+  background: url('../images/common/util_line.gif') left center no-repeat;
+}
+
+header .top-nav .top-util .top-util_members li:first-child {
+  padding-left: none;
+  margin-left: none;
+  background: none;
+}
+
+header .top-nav .top-util .top-util_sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+header .top-nav .top-util .top-util_sns li {
+  margin-right: 5px;
+}
+
+header .top-nav .top-util .top-util_sns li a {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+header .top-nav .top-util .top-util_sns li:nth-child(1) a {
+  background: url('../images/common/top_sns01.png') no-repeat;
+}
+
+header .top-nav .top-util .top-util_sns li:nth-child(2) a {
+  background: url('../images/common/top_sns02.png') no-repeat;
+}
+
+header .top-nav .top-util .top-util_sns li:nth-child(3) a {
+  background: url('../images/common/top_sns03.png') no-repeat;
+}
+
+header .top-nav .top-util .top-util_sns li:nth-child(4) a {
+  background: url('../images/common/top_sns04.png') no-repeat;
+}
+
+header .top-nav .top-util .top-util_search {
+  position: relative;
+  width: 160px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+header .top-nav .top-util .top-util_search input {
+  position: absolute;
+  left: 0;
+  width: 122px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+
+header .top-nav .top-util .top-util_search a {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 38px;
+  height: 100%;
+  background: url('../images/common/icon_search.gif') center no-repeat;
+}
+
+header .logo {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header .header-nav {
+  height: 30px;
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header .header-nav:hover {
+  width: 100%;
+  height: 300px;
+  transition: 0.4s ease-in-out;
+}
+
+header .header-nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-nav > ul li .header-nav_name {
+  padding: 0 40px;
+  margin-bottom: 4px;
+  color: #202023;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+header .header-nav > ul li .header-nav_name span {
+  position: relative;
+}
+
+header .header-nav > ul li .header-nav_name span::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: #202023;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+
+header .header-nav > ul li:hover .header-nav_name span::after {
+  transform: scale(1, 1);
+}
+
+header .header-nav > ul li .header-nav_contents {
+  position: absolute;
+  top: 20px;
+  padding-top: 23px;
+  visibility: hidden;
+  margin-left: 40px;
+}
+
+header .header-nav:hover > ul li .header-nav_contents {
+  visibility: visible;
+}
+
+header .header-nav > ul li .header-nav_contents li {
+  margin: 10px 0;
+}
+
+header .header-nav > ul li .header-nav_contents > li > a {
+  font-size: 13px;
+  font-weight: 700;
+  color: #848484;
+  white-space: nowrap;
+  transition: 0.1s ease-in-out;
+}
+
+header .header-nav > ul li .header-nav_contents > li > a:hover {
+  color: #202023;
+}
