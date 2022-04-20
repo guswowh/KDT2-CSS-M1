@@ -171,6 +171,7 @@ header.inner {
 .summary-section .inner {
   background-color: rgb(239, 239, 239);
   height: 586px;
+  margin-bottom: 40px;
 }
 
 .summary-section .inner .Neu.total-value-locked .value-content section > h2 {
@@ -223,7 +224,13 @@ header.inner {
 }
 
 .summary-section .inner .Neu.total-value-locked .value-content hr {
-  margin: 80px 0 40px;
+  padding: 0px;
+  margin: 80px 0px 40px;
+  border: 0px;
+  height: 5px;
+  border-radius: 3px;
+  background: rgb(244, 244, 245);
+  box-shadow: rgb(218 218 222) 1px 1px 2px inset, rgb(255 255 255) -1px -1px 2px inset;
 }
 
 .inner h2 {
@@ -341,3 +348,151 @@ header.inner {
   color: rgb(153, 153, 153);
 }
 
+/* TOTAL-DEPOSIT-BORROW */
+
+.deposit-borrow-content .inner {
+  height: 628px;
+  margin: 0 auto;
+  padding: 60px;
+  display: block;
+  border-radius: 20px;
+  min-width: 0px;
+  color: rgb(31, 31, 31);
+  background: rgb(244, 244, 245);
+  box-shadow: rgb(218 218 222) 1px 1px 2px, rgb(255 255 255) -1px -1px 2px;
+}
+
+.deposit-borrow-content .inner header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 70px;
+  background: rgb(244, 244, 245);
+  width: 100%;
+}
+
+.deposit-borrow-content .inner header h2 i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 3px;
+  transform: translateY(1px);
+}
+
+.deposit-borrow-content .inner header h2 span {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 22px;
+  margin-left: 10px;
+  background-color: rgb(75, 219, 75);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+
+.deposit-borrow-content .inner header .deposit-amount span:first-child {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.deposit-borrow-content .inner header .deposit-amount span:last-child {
+  font-weight: 600;
+}
+
+.deposit-borrow-content .inner header .borrow-amount i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 3px;
+  transform: translateY(1px);
+}
+
+.deposit-borrow-content .inner header .borrow-amount span:first-child {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.deposit-borrow-content .inner header .borrow-amount span:last-child {
+  font-weight: 600;
+}
+
+.deposit-borrow-content .inner figure canvas {
+  width: 100%;
+  height: 220px;
+  background-image: url(./images/total_deposit_borrow.png);
+}
+
+.deposit-borrow-content .inner .stable-market .table {
+  margin-top: 40px;
+  height: 163px;
+}
+
+.deposit-borrow-content .inner .stable-market .row1 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+
+.deposit-borrow-content .inner .stable-market .row1 > div:first-child {
+  margin: 0;
+  font-weight: 900;
+  flex-grow: 1;
+  color: rgb(31, 31, 31);
+}
+
+.deposit-borrow-content .inner .stable-market .row1 .exclamation {
+  vertical-align: text-bottom;
+  color: rgb(153, 153, 153);
+  opacity: 0.2;
+  width: 13px;
+  height: 13px;
+  transform: translateY(-2px);
+}
+
+.deposit-borrow-content .inner .stable-market .row1 > div {
+  margin-left: 60px;
+  color: rgb(153, 153, 153);
+  font-weight: 600;
+}
+
+.deposit-borrow-content .inner .stable-market .table .bar {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 0px;
+  height: 5px;
+  border-radius: 3px;
+  background: rgb(244, 244, 245);
+  box-shadow: rgb(218 218 222) 1px 1px 2px inset, rgb(255 255 255) -1px -1px 2px inset;
+}
+
+.deposit-borrow-content .inner .stable-market .row2 {
+  display: flex;
+  align-items: center;
+
+}
+
+.deposit-borrow-content .inner .stable-market .row2 .terra-ust {
+  flex-grow: 1;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.deposit-borrow-content .inner .stable-market .row2 .terra-ust img {
+  margin-right: 15px;
+}
+
+.deposit-borrow-content .inner .stable-market .row2 .terra-ust .coin {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.deposit-borrow-content .inner .stable-market .row2 .terra-ust .usd {
+  font-size: 13px;
+  color: rgb(153, 153, 153);
+}
+
+.deposit-borrow-content .inner .stable-market .row2 > div {
+  margin-left: 95px;
+}
