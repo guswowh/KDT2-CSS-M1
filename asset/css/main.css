@@ -147,17 +147,22 @@ header .logo {
 }
 
 header .header-nav {
+  width: 100%;
   height: 30px;
   position: absolute;
   top: 125px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
+  transition: 0.4s ease;
 }
 
 header .header-nav:hover {
   width: 100%;
   height: 300px;
-  transition: 0.4s ease-in-out;
+  background-color: #fff;
+  border-bottom: 2px solid #000;
+  transition: 0.4s ease;
 }
 
 header .header-nav > ul {
@@ -200,12 +205,12 @@ header .header-nav > ul li .header-nav_contents {
   position: absolute;
   top: 20px;
   padding-top: 23px;
-  visibility: hidden;
+  display: none;
   margin-left: 40px;
 }
 
 header .header-nav:hover > ul li .header-nav_contents {
-  visibility: visible;
+  display: block;
 }
 
 header .header-nav > ul li .header-nav_contents li {
@@ -222,4 +227,136 @@ header .header-nav > ul li .header-nav_contents > li > a {
 
 header .header-nav > ul li .header-nav_contents > li > a:hover {
   color: #202023;
+}
+
+/* Main */
+.visual {
+  width: 100%;
+  height: 620px;
+}
+
+.visual .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 25px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  opacity: 1;
+}
+
+.visual .swiper-pagination-bullet-active {
+  background: #243c84;
+}
+
+.visual .swiper-pagination-bullet:hover {
+  background: #243c84;
+}
+
+.beanist {
+  width: 100%;
+  background: url('../images/main/main_beanist_bg.gif') #fce1a6 center no-repeat;
+  background-size: cover;
+  padding: 112px 0 80px 0;
+}
+
+.beanist h2 {
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.beanist h2 strong {
+  font-weight: 900;
+  color: #90470c;
+}
+
+.beanist h2:after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 1px;
+  margin: 51px auto 0;
+  background-color: #3c3c3c;
+}
+
+.beanist h3 {
+  font-size: 26px;
+  font-weight: 300;
+  margin: 53px 0 60px;
+  text-align: center;
+  color: #3c3c3c;
+}
+
+.beanist h3 strong:nth-child(1) {
+  font-weight: 700;
+}
+
+.beanist h3 strong:nth-child(2) {
+  font-weight: 500;
+}
+
+.beanist .americano,
+.beanist .latte,
+.beanist .mix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beanist .americano li,
+.beanist .latte li,
+.beanist .mix li {
+  margin: 0 2%;
+  text-align: center;
+}
+
+.beanist .americano li a img,
+.beanist .latte li a img {
+  max-width: 259px;
+}
+
+.beanist .mix li a img {
+  max-width: 217px;
+}
+
+.beanist .americano li a .img-contents,
+.beanist .latte li a .img-contents,
+.beanist .mix li a .img-contents {
+  margin-top: 20px;
+}
+
+.beanist .americano li a .img-contents h4,
+.beanist .latte li a .img-contents h4,
+.beanist .mix li a .img-contents h4 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #693a13;
+}
+
+.beanist .americano li a .img-contents p,
+.beanist .latte li a .img-contents p,
+.beanist .mix li a .img-contents p {
+  font-size: 15px;
+  color: #cc8e5d;
+}
+
+.beanist .swiper-pagination-bullet-active {
+  background: #90470c;
+}
+
+.beanist .swiper-pagination-bullet:hover {
+  background: #90470c;
 }
