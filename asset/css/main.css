@@ -423,3 +423,41 @@ header .header-nav > ul li .header-nav_contents > li > a:hover {
   right: -180px;
   max-width: 1063px;
 }
+
+/* go-menu */
+.go-menu {
+  height: 500px;
+  width: 100%;
+  background: url('../images/main/block02_bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.go-menu h2 {
+  font-size: 42px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.go-menu h2 strong {
+  font-weight: 900;
+}
+
+.go-menu h2:after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  margin: 51px auto 0;
+}
+
+.go-menu h3 {
+  font-size: 26px;
+  color: #fff;
+  margin: 53px 0 45px;
+}
