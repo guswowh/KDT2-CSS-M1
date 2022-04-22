@@ -4,6 +4,21 @@ header {
   min-width: 320px;
   height: 170px;
   background-color: #fff;
+  z-index: 10;
+}
+
+header.sticky {
+  position: sticky;
+  top: 0;
+  height: 120px;
+}
+
+header.sticky .top-nav {
+  display: none;
+}
+
+header.sticky .header-nav {
+  margin-top: -50px;
 }
 
 header .top-nav {
