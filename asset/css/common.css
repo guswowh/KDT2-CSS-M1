@@ -40,3 +40,8 @@ a.btn:hover {
   color: #233e83;
   background-color: #fff;
 }
+
+.btn-box {
+  margin: 36px 0;
+  display: flex;
+}
