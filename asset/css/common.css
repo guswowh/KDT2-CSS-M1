@@ -21,3 +21,22 @@ a {
   font-size: 0;
   text-indent: -9999px;
 }
+
+a.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  color: #fff;
+  margin: 0 3px 0 4px;
+  width: 188px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+a.btn:hover {
+  color: #233e83;
+  background-color: #fff;
+}

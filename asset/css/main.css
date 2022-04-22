@@ -245,6 +245,7 @@ header .header-nav > ul li .header-nav_contents > li > a:hover {
 }
 
 /* Main */
+/* visual */
 .visual {
   width: 100%;
   height: 620px;
@@ -279,7 +280,7 @@ header .header-nav > ul li .header-nav_contents > li > a:hover {
 .visual .swiper-pagination-bullet:hover {
   background: #243c84;
 }
-
+/* beanist */
 .beanist {
   width: 100%;
   background: url('../images/main/main_beanist_bg.gif') #fce1a6 center no-repeat;
@@ -374,4 +375,51 @@ header .header-nav > ul li .header-nav_contents > li > a:hover {
 
 .beanist .swiper-pagination-bullet:hover {
   background: #90470c;
+}
+
+/* dream-factory */
+.dream-factory {
+  width: 100%;
+  background: url('../images/main/dream_factory_bg.gif') repeat-y;
+  background-size: 100% auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.dream-factory .dream-factory-contents {
+  margin-bottom: 50px;
+  max-width: 1180px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 90px 20px 50px;
+}
+
+.dream-factory .dream-factory-contents h2 {
+  font-size: 120px;
+  font-weight: 900;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  margin-left: -6px;
+}
+
+.dream-factory .dream-factory-contents h4 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.dream-factory .dream-factory-contents p {
+  margin-top: 30px;
+  line-height: 150%;
+}
+
+.dream-factory .dream-factory-contents .btn-box {
+  margin: 36px 0;
+  display: flex;
+}
+
+.dream-factory-img {
+  position: absolute;
+  bottom: 0;
+  right: -180px;
+  max-width: 1063px;
 }
