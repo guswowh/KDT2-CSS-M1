@@ -20,6 +20,10 @@ new Swiper(".swiper.beanist", {
   loop: true,
   speed: 400,
   centeredSlides: true,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
