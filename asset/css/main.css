@@ -709,3 +709,101 @@ header .header-nav > ul li .header-nav_contents > li > a:hover {
   height: 100%;
   object-fit: cover;
 }
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #262626;
+  position: relative;
+}
+
+footer nav {
+  border-bottom: 1px solid #464646;
+  padding: 16px 0;
+  position: relative;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer nav ul li {
+  margin: 3px 19px;
+}
+
+footer nav ul li a {
+  color: #818181;
+  font-size: 13px;
+}
+
+footer nav ul li:first-child a {
+  font-weight: 500;
+  color: #fff;
+}
+
+footer nav select {
+  position: absolute;
+  top: 13.5px;
+  right: 100px;
+  width: 168px;
+  height: 28px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+footer nav select option a {
+  color: #848484;
+  font-size: 13px;
+}
+
+footer .bottom-logo {
+  margin: 41px 0 24px;
+  display: flex;
+  justify-content: center;
+}
+
+footer .company-info {
+  width: 100%;
+  max-width: 650px;
+  margin-bottom: 14px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .company-info p {
+  color: #6c6c6c;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+footer .company-info p:first-child {
+  margin-bottom: 8px;
+}
+
+footer .company-info p span {
+  margin-right: 10px;
+  padding-right: 10px;
+  background: url('../images/common/footer_line.gif') right no-repeat;
+}
+
+footer .company-info p span:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  background: none;
+}
+
+footer .company-info p:nth-child(3) {
+  margin-top: 14px;
+}
+
+footer .company-info img {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+}
