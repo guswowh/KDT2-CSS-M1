@@ -158,6 +158,21 @@ header .top-util .top-util_search a {
   background: url('../images/common/icon_search.gif') center no-repeat;
 }
 
+header .menu-btn {
+  display: none;
+  position: absolute;
+  top: 49px;
+  right: 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+header.sticky .menu-btn {
+  top: 19px;
+}
+
 header .logo {
   display: inline-block;
   position: relative;
@@ -815,4 +830,39 @@ footer .company-info img {
   position: absolute;
   top: 80px;
   right: 100px;
+}
+
+@media (max-width: 1280px) {
+  header {
+    height: 90px;
+  }
+
+  header.sticky {
+    height: 60px;
+  }
+
+  header .global-menu {
+    height: 30px;
+    justify-content: center;
+  }
+
+  header .global-menu li {
+    width: 100%;
+  }
+
+  header .top-util,
+  header .header-nav {
+    display: none;
+  }
+
+  header .menu-btn {
+    display: block;
+  }
+
+  header .logo {
+    top: 19px;
+    left: 10%;
+  }
+
+  
 }
