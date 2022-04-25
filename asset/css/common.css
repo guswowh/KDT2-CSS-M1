@@ -45,3 +45,10 @@ a.btn:hover {
   margin: 36px 0;
   display: flex;
 }
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
