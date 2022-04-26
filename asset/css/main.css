@@ -997,6 +997,11 @@ footer .company-info p:nth-child(3) {
     flex-direction: column;
   }
 
+  header .header-nav > ul > li.active {
+    background: url('../images/common/m_nav_arrow_on.gif') no-repeat;
+    background-position: right 20px;
+  }
+
   header .header-nav > ul > li:last-child {
     display: block;
     background: #192d65;
