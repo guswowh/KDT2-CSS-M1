@@ -6,7 +6,6 @@ import { goTo } from './gototop.js';
 
 
 
-
 renderItem()
 
 selectTab('delivery__Gmarket')
@@ -20,7 +19,7 @@ goTo()
 const init = () => {
   window.addEventListener('DOMContentLoaded', () => {
       NavSwiper();
-      new bestSwiper();
+      bestSwiper();
       delSwiper();
       serSwiper();
       chaSwiper();
