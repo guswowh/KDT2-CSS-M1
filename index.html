@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  
+  <script defer src="./js/main.js"></script>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+
+
+    <!-- HEADER -->
+        <header class="header">
+            <div class="top-banner">
+                <div class="inner">
+                    <img src="/img/top-banner.png" alt="">
+                    <div class="material-icons">close</div>
+                </div>
+            </div>
+
+                <div class="first-header">
+                    <a href="/" class="logo"></a>
+
+                    <div class="search">
+                        <div class="search__main">
+                            <div class="material-icons">search</div>
+                            <input class="input" type="search" placeholder="찾고 싶은 강의 주제를 입력하세요">
+                        </div>
+
+                        <div class="search__contents">
+                            <div class="resent">
+                                    <h2>최근 검색어</h2>
+                                    <div>최근 검색 내역이 없습니다</div>
+                                </div>
+                        
+                            <div class="recommend">
+                                <h2>추천 검색어</h2>
+                                <div class="recommend__contents">
+                                    <div>내일배움카드</div>
+                                    <div>김영하</div>
+                                    <div>디자인툴</div>
+                                    <div>드로잉</div>
+                                    <div>마케팅</div>
+                                    <div>영상</div>
+                                    <div>주식</div>
+                                    <div>데이터분석</div>
+                                    <div>엑셀</div>
+                                    <div>java</div>
+                                    <div>프론트엔드</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="profile">
+                        <div class="profile__main">
+                            <div class="material-icons account">account_circle</div>
+                            <h2>최효근님</h2>
+                            <div class="material-icons arrow">arrow_drop_down</div>
+                        </div>
+
+                        <div class="profile__contents">
+                                    <a href="javascript:void(0)">내 강의 보기</a>
+                                    <a href="javascript:void(0)">수강신청 내역</a>
+                                    <a href="javascript:void(0)">거래 내역</a>
+                                    <div></div>
+                                   <a href="javascript:void(0)">로그아웃</a>
+                        </div>
+                    </div>
+
+                    <div class="education">
+
+                        <div class="education__main">
+                            <h2>기업교육</h2>
+                            <div class="material-icons arrow">keyboard_arrow_down</div>
+                        </div>
+
+                        <div class="education__contents">
+                            <a href="javascript:void(0)">Future Report For HRD</a>
+                            <a href="javascript:void(0)">기업 교육 서비스 소개</a>
+                            <a href="javascript:void(0)">온라인 교육 구독 서비스</a>
+                            <a href="javascript:void(0)">맞춤형 기업교육 설계</a>
+                            <a href="javascript:void(0)">온라인 세미나</a>
+                            <a href="javascript:void(0)">도입 사례</a>
+                            <a href="javascript:void(0)">HR insight</a>
+                        </div>
+                  </div>
+                </div>
+
+                <div class="second-header">
+                    <div class="category">
+                        <div class="category-main">
+                            <div class="material-icons">menu</div>
+                            <p>카테고리</p>
+                        </div>
+                        
+                        <div class="category-menu">
+                    
+                                
+                                <div class="item">
+                                    <div class="item-name"><div class="material-icons first">terminal</div>프로그래밍 <div class="material-icons secoond">chevron_right</div></div>
+                                    <div class="item-contents">
+                                        <div><p>코딩 입문</p></div>
+                                        <div><p>백엔드 개발</p></div>
+                                        <div><p>프론트엔드 개발</p></div>
+                                        <div><p>개발자 커리어</p></div>
+                                        <div><p>DevOps</p></div>
+                                        <div><p>모바일앱</p></div>
+                                        <div><p>게임</p></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="item-name"><div class="material-icons first">science</div>데이터 사이언스<div class="material-icons secoond">chevron_right</div></div>
+                                    <div class="item-contents">
+                                        <div><p>머신러닝</p></div>
+                                        <div><p>딥러닝/인공지능</p></div>
+                                        <div><p>데이터분석</p></div>
+                                        <div><p>데이터 엔지니어링</p></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="item-name"><div class="material-icons first">view_quilt</div>디자인<div class="material-icons secoond">chevron_right</div></div>
+                                    <div class="item-contents">
+                                        <div><p>디자인 툴</p></div>
+                                        <div><p>UX/UI</p></div>
+                                        <div><p>시각디자인</p></div>
+                                        <div><p>일러스트</p></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="item-name"><div class="material-icons first">ondemand_video</div>영상/3D<div class="material-icons secoond">chevron_right</div></div>
+                                    <div class="item-contents">
+                                        <div><p>영상편집</p></div>
+                                        <div><p>모션 그래픽</p></div>
+                                        <div><p>게임 그래픽</p></div>
+                                        <div><p>VFX</p></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="item-name"><div class="material-icons first">monetization_on</div>금융<div class="material-icons secoond">chevron_right</div></div>
+                                    <div class="item-contents">
+                                        <div><p>부동산 개발</p></div>
+                                        <div><p>백엔드 개발</p></div>
+                                        <div><p>회계/재무/세무</p></div>
+                                        <div><p>금융/투자 실무</p></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="item-name"><div class="material-icons first">volume_up</div>마케팅<div class="material-icons secoond">chevron_right</div></div>
+                                    <div class="item-contents">
+                                        <div><p>디지털마케팅</p></div>
+                                        <div><p>SNS마케팅</p></div>
+                                        <div><p>데이터마케팅</p></div>
+                                        <div><p>글쓰기/카피라이팅</p></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="item-name"><div class="material-icons first">schedule</div>업무 생산성<div class="material-icons secoond">chevron_right</div></div>
+                                    <div class="item-contents">
+                                        <div><p>PPT/보고서</p></div>
+                                        <div><p>액셀/VBA</p></div>
+                                        <div><p>커뮤니케이션</p></div>
+                                        <div><p>업무자동화</p></div>
+                                        <div><p>리더십</p></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="item-name"><div class="material-icons first">query_stats</div>투자/재테크<div class="material-icons secoond">chevron_right</div></div>
+                                    <div class="item-contents">
+                                        <div><p>주식 투자</p></div>
+                                        <div><p>부동산 투자</p></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="item-name"><div class="material-icons first">work_outline</div>부업/창업<div class="material-icons secoond">chevron_right</div></div>
+                                
+                                </div>
+                                
+                                <div class="line"></div>
+                                
+                                <div class="item">
+                                    <div class="item-name">강의 전체보기 <div class="material-icons first">chevron_right</div></div> 
+                                </div>
+                        </div>
+    
+                            
+
+                    </div>
+
+                    <div class="bold-menu">
+                        <a href="javascript:void(0)">한정판 버즈 패키지</a>
+                        <a href="javascript:void(0)">데이터 분석 BEST</a>
+                        <a href="javascript:void(0)">앱개발 BEST</a>
+                        <a href="javascript:void(0)">4월특가 편집녀</a>
+                        <a href="javascript:void(0)">The Red</a>
+                        <a href="javascript:void(0)">국비지원</a>
+                    </div>
+                    <div class="thin-menu">
+                        <div></div>
+                        <a href="javascript:void(0)">기획전/이벤트</a>
+                        <a href="javascript:void(0)">블로그</a>
+                    </div>
+                </div>
+
+                <div class="top-banner2">
+                    <div class="inner">
+                        <img src="/img/top-banner2.png" alt="">
+                        <div class="material-icons">close</div>
+                    </div>
+                </div>
+         </header>
+
+<!-- main -->
+
+         <div class="main">
+            <div class="logo"><img src="/img/main-logo.png" alt=""></div>
+            <div class="name">핀테크 서비스 프론트엔드 개발자 취업 완성 <br> 취업률 86%의 교육과정</div>
+            <div class="box"> 다음 기수 출시알림 신청하기</div>
+            <div class="info">*데이원컴퍼니에서 운영한 풀타임 유료 교육 과정 기준의 취업률입니다.</div>
+        </div>
+    
+
+<!-- next chance -->
+
+        <div class="next-chance">
+            <div class="name"><h2>아쉽지만, 모집이 마감되었습니다.</h2>
+                해당 교육에 관심 있으시다면, 다음 기수가 열릴 때 알려드릴게요!</div>
+            <div class="box">다음 기수 출시알림 신청하기</div>   
+        </div>
+    
+
+<!-- basic-info -->
+
+        <div class="basic-info">
+            <div class="inner">
+              <div class="info">
+                <div class="title"><div>기본정보 </div><div class="material-icons">keyboard_arrow_down</div></div>
+                <div class="contents hide1">
+                    <div>
+                    - 수업 기간<br>
+                    1) Pre-Course : 2022년 2월 9일 ~ 3월 16일 <br>
+                    2) 본 과정 : 2022년 3월 28일(월) 개강, 7개월(1120시간)<br>
+                    - 수업 시간 : 13시~22시 (공휴일 제외, Full-time)<br>
+                    - 수업 방식 : 온+오프라인 연계 (온라인 30 : 오프라인 70)<br>
+                    - 난이도 : 입문-실전 (비전공자/전공자 모두 가능)
+                    </div>  
+                </div>
+              </div>
+              <div class="kdigit">
+                <div class="title"><div>K-Digital Training 훈련 과정 (내일배움카드 보유 필수)</div> <div class="material-icons">keyboard_arrow_down</div></div>
+                <div class="contents hide2">
+                    <div>
+                    본 교육 과정은 K-Digital Training 훈련 과정입니다.<br>
+                    <br>
+                    [K-Digital Training]<br>
+                    - K-Digital Training은 패스트캠퍼스와 고용노동부가 함께하는 훈련<br> 
+                    과정이며, 내일배움카드가 있다면 무료로 수강할 수 있습니다.<br>
+                    <br>
+                    [HRD-Net 안내사항]<br>
+                    - 훈련기관명 : 패스트캠퍼스강남학원<br>
+                    - 훈련과정명 : 핀테크 서비스 프론트엔드 개발자 양성 과정<br>
+                    - 수강료 : 전액 무료 (9,592,128원 상당)
+                    </div>
+                </div>
+              </div>
+            </div>
+       </div>
+
+
+<!-- career start -->
+
+       <div class="career">
+           <div class="inner">
+               <div class="title">
+                Megabyte School에서<br>
+                배우고 원하는 커리어를 지금 시작하세요.
+               </div>
+               <div class="contents">
+                메가바이트 스쿨은 국내 직장인 실무교육 1위 교육기관 패스트캠퍼스가 만든 취업 연계 교육 프로그램으로, 데이터 분석가 / 개발자 / 디지털 마케터 등의 디지털 직무로 커리어를 꿈꾸는 모든 분들이 기업이 필요로 하는 경쟁력을 갖춘 주니어 인재로 업그레이드 할 수 있도록 돕습니다. <br><br>
+                메가바이트 스쿨의 수강생이 되면, 실제 취업시 필요한 프로젝트 경험, 개인 포트폴리오, 이력서 및 면접 준비 등의 전 과정을 취업이 될 때까지 전폭적으로 지원받을 수 있습니다. <br><br>
+                지금 이 순간 현업에서 활약하고 있는 업계 전문가들과 함께, 실무에 바로 투입 가능한 수준의 인재로 성장해보세요!
+               </div>
+           </div>
+       </div>
+
+
+<!-- service-image -->
+
+       <div class="service-image">
+           <div class="inner">
+               <div class="title"><h2>서비스의 첫 인상을 책임지는 프론트엔드 개발자</h2><br>
+                당신도 될 수 있습니다.<br>
+                망설이지 말고 지금 바로 도전해보세요!</div>
+               <div class="img"><img src="/img/service-image.png" alt=""></div>
+           </div>
+       </div>
+
+<!-- why fintech -->
+
+       <div class="why-fintech">
+           <div class="inner">
+            <h2>왜 핀테크 서비스로 배우나요?</h2>
+            <br>
+            네이버, 카카오, 토스... ‘빅3’ 기업의 공통점은 무엇일까요?<br>
+            바로 핀테크 서비스에 집중한다는 것입니다.<br>
+            핀테크 개발을 배우면 회원가입, 장바구니부터 간편 결제는 물론!<br>
+            대용량 데이터를 다루는 시스템을 설계하고 개발하는 핵심 인재로 성장할 수 있습니다.
+           </div>
+       </div>
+
+
+<!-- can i -->
+
+       <div class="canI">
+           <div class="inner">
+               <h2>‘🤔진짜 나도 이런 일을 할 수 있을까?’</h2>
+               그럼요! 할 수 있습니다. 메가바이트 스쿨에서 시작하세요!
+           </div>
+       </div>
+
+<!-- job-approve -->
+
+       <div class="job-approve">
+           <div class="inner">
+               <div class="top-title">
+                <h2>취업률 86%, 수료생 1,500여 명이 증명합니다.</h2>
+                숫자로 증명하는 진짜 취업할 수 있는 교육을 만나보세요.
+               </div>
+               <div class="img-group">
+                    <img src="/img/job-approve1.png" alt="">
+                    <img src="/img/job-approve2.png" alt="">
+                    <img src="/img/job-approve3.png" alt=""><br>
+                    <img src="/img/job-approve4.png" alt="">
+                    <img src="/img/job-approve5.png" alt="">
+                    <img src="/img/job-approve6.png" alt="">
+               </div>
+               <div class="bottom-title">
+                * 본 취업률은 2016~2019년 스쿨 수료생의 취업률을 바탕으로 한 수치입니다.
+               </div>
+           </div>
+       </div>
+
+
+<!-- next-time -->
+
+       <div class="next-time">
+           <div class="inner">
+               <div class="title"><h2>아쉽지만, 모집이 마감되었습니다.</h2>해당 교육에 관심이 있으시다면, 다음 기수가 열릴 때 알려드릴게요!</div>
+               <div class="box">다음 기수 출시 알림 신청하기 <div class="material-icons">play_arrow</div></div>
+           </div>
+       </div>
+
+
+<!-- QNA -->
+
+       <div class="QNA">
+           <div class="inner">
+               <div class="question"><div class="material-icons">add_circle_outline</div>정말 전액 무료인가요? 자비부담액이 없나요?</div>
+               <div class="answer hide1">패스트캠퍼스 Megabyte School의 교육은 전액 무료입니다! 패스트캠퍼스가 K-Digital Training*의 공식 훈련기관으로 선정됨에 따라 전액 무료로 진행됩니다.<br>
+                <br>
+                *K-Digital Training : 정부가 한국형 뉴딜(사람투자)로 디지털 일자리 취업을 위한 교육기회를 제공하는 디지털 핵심 실무인재 양성사업으로 훈련 과정의 교육 비용은 정부가 부담하고, 디지털 선도기업이 직접 훈련과정을 지원하는 사업입니다.
+                </div>
+
+                <div class="question"><div class="material-icons">add_circle_outline</div>신청 대상이 어떻게 되나요?</div>
+                <div class="answer hide1">패스트캠퍼스 Megabyte School의 교육은 전액 무료입니다! 패스트캠퍼스가 K-Digital Training*의 공식 훈련기관으로 선정됨에 따라 전액 무료로 진행됩니다.<br>
+                 <br>
+                 내일배움카드를 보유하고 있거나 발급 가능한 분 중 교육과정 전체 일정에 적극 참여할 수 있는 높은 학습 의지를 가진 분이라면 누구든지 신청 가능합니다.<br>
+                고용노동부 1350 혹은 직업훈련포털(www.hrd.go.kr)을 통해 카드 발급 자격을 확인한 후 발급 신청을 해주셔야 합니다. 카드 발급 완료일까지 일주일 이상 소요되며, 최소 교육 시작일로부터 7일 전에는 내일배움카드 발급이 완료되어 있어야 합니다.<br>
+                <br>
+                [내일배움카드 발급 안내]<br>
+                * K-Digital Training 프로그램은 구직자를 대상으로 진행되는 교육 훈련이며, 발급신청은 실업자로 발급받으면 됩니다.<br>
+                * 내일배움카드 자격 요건 확인 및 자세한 신청 방법은 여기에서 가능합니다.
+                </div>
+
+                <div class="question"><div class="material-icons">add_circle_outline</div>신청이 불가능한 경우가 있나요? (재직자/대학생/예비퇴사자 등은 아래 내용을 참고해주세요.)</div>
+                <div class="answer hide1">[고등학교 졸업자/비전공자]<br>
+                    Q. 고등학교 졸업자 혹은 비전공자도 신청할 수 있나요?<br>
+                    A. 네. 물론이죠! 패스트캠퍼스 Megabyte School은 학력/전공과 무관하게, 내일배움카드를 발급받을 수 있고, 높은 학습 의지를 가지신 분이라면 누구나 신청할 수 있습니다.<br>
+                    <br>
+                    [대학교 재학생]<br>
+                    Q. 현재 대학교 재학 중입니다. 학교와 병행이 가능한가요? 취업계처럼 학점 인정이 가능한가요?<br>
+                    A. 교육 전체 일정에 지장없이 실시간으로 참여 가능한 경우 신청이 가능합니다. 대학 수업의 출석 처리가 되지 않으며, 취업계 등의 학점 인정 또한 불가능하니 주의해주세요.<br>
+                    <br>
+                    [재직자/근로자/예비퇴사자]<br>
+                    Q. 재직자/근로자/예비퇴사자도 신청이 가능한가요?<br>
+                    재직자 내일배움카드를 발급 받고 교육 기간 동안 주 5일, 일 8시간의 교육 과정에 온전히 참여하실 수 있다면 신청할 수 있습니다. 다만 패스트캠퍼스 Megabyte School은 실무인재를 양성하여 관련 직종으로 취업을 시키는 것이 목표인 교육 과정으로, 자기계발 등의 역량 강화를 위해 수강하려는 재직자 등은 선발에서 제외됩니다.<br>
+                    <br>
+                    [내일배움카드 교육 수강 경험]<br>
+                    Q. 내일배움카드로 교육을 수강한 경험이 있습니다. 수강 신청이 가능한가요?<br>
+                    K-Digital Training 혹은 고용노동부 4차산업혁명인력양성 과정에 참여한 이력이 없다면(참여 후 중도탈락 포함) 수강 신청이 가능합니다. 또한, 내일배움카드 보유액 상관없이 무료 교육 수강이 가능합니다.<br>
+                    <br>
+                    이외의 문의는 거주지 관할 고용센터에 문의하여 패스트캠퍼스 Megabyte School 지원 가능여부를 확인하시길 바랍니다.
+                </div>
+
+                <div class="question"><div class="material-icons">add_circle_outline</div>과정 중복 지원 가능한가요?</div>
+               <div class="answer hide1">아쉽게도 불가능해요. 타 K-Digital Training 교육 과정과도 중복 지원이 되지 않는 점 참고 바랍니다.
+                </div>
+
+                <div class="bottom">
+                    기타 문의 사항은 우측 하단의 챗봇 또는 아래 메일로 문의 부탁드립니다. <br>
+                    메일 : help.edu@fastcampus.co.kr
+                </div>
+           </div>
+
+           
+       </div>
+
+<!-- sub-footer -->
+
+<div class="sub-footer">
+    <div class="inner">
+         <div>회사소개</div>
+         <div class="line"></div>
+         <div>이용약관</div>
+         <div class="line"></div>
+         <div>개인정보처리방침</div>
+         <div class="line"></div>
+         <div>채용안내</div>
+         <div class="line"></div>
+         <div>강사지원</div>
+    </div>
+</div>
+
+<!-- footer -->
+
+<footer>
+    <div class="inner">
+        <div class="logo">
+            <h2>FAST CAMPUS</h2> <span>(주) 데이원 컴퍼니</span>  <img class="first-logo" src="/img/footer_emblem_1.png" alt=""> <img src="/img/footer_emblem_2.png" alt="">
+        </div>
+        <div class="introduce">
+            대표이사: 이강민 <span class="dot"></span> 개인정보책임관리자: 이강민 <span class="dot"></span>사업자번호 : 810-86-00658 <br>
+            사무실 : 서울특별시 강남구 테헤란로 231, 센터필드 WEST 6층, 7층 <span class="dot"></span> 교육장 : 서울특별시 강남구 강남대로 364 미왕빌딩 10, 11층
+        </div>
+        <div class="faq">
+            <div>FAQ</div>
+            <div class="line"></div>
+            <div>취소/환불 정책</div>
+            <div class="line"></div>
+            <div>자료실</div>
+            <div class="line"></div>
+            <div>장학프로그램</div>
+            <div class="line"></div>
+            <div>공지사항</div>
+        </div>
+        <div class="client">
+            고객지원 <span class="white">02-501-9396</span> <span class="dot"></span>결제/환불/계산서 문의 :<span class='white'>help@fastcampus.co.kr</span><span class="dot"></span>
+            기타문의 <span class="white">help.online@fastcampus.co.kr</span> <span class="dot"></span>주중 10시~19시 (점심시간 12~13시 / 주말 및 공휴일 제외)<br>
+            통신판매업 신고번호 : 제 2017-서울강남-01977호 <span class="dot"></span>학원설립 운영등록번호: 제12484호(강남) <span class="dot"></span>원격평생교육원 : <span class="white">제 572호</span>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
