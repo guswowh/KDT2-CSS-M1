@@ -3,7 +3,7 @@
 [▶원본 사이트](https://www.gmarket.co.kr/)
 
 
-[▶netlify배포]
+[▶netlify배포](https://main--cosmic-marzipan-89971b.netlify.app/)
 
 ## 구현 목표
 - 웹접근성 측면을 최대한 고려해서 마크업하기
