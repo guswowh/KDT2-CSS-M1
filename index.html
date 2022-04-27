@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>키아프 서울 (KIAF SEOUL)</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="kiaf SEOUL" />
+  <meta property="og:title" content="키아프 서울 (KIAF SEOUL)" />
+  <meta property="og:description" content="키아프 서울 (KIAF SEOUL)은 동시대 현대 미술의 가치를 발견하고 미술시장의 흐름을 확인할 수 있는 글로벌 아트페어입니다. " />
+  <meta property="og:image" content="./images/kiaf_seo.jpeg" />
+  <meta property="og:url" content="https://Kiaf.org" />
+
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="http://fonts.cdnfonts.com/css/tt-commons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./main.css" />
+
+  <!-- ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollToPlugin.min.js" integrity="sha512-7DWrlu5tqVVJlJ8Bo5sYcs45ZDyI0givp3xMQcf2dC76IkU5eap8/yCjoEtBWU+tUYCsbOBQ5RyAGnuq7ZZI0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a href="javascript:void(0)"><img src="./images/logo.png" alt="KIAF SEOUL" /></a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="sub-menu">
+          <li><a href="javascript:void(0)">KOR</a></li>
+          <li><a href="javascript:void(0)">LOGIN</a></li>
+          <li><a href="javascript:void(0)">REGISTER</a></li>
+          <li>
+            <a href="https://www.instagram.com/accounts/login/?next=/kiafseoul/" target="_blabk"><img
+                src="./images/black_instagram.png" alt="instagram" /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/KiafSeoul" target="_blank"><img src="./images/black_facebook.png"
+                alt="black_facebook" /></a>
+          </li>
+        </ul>
+        <ul class="main-menu">
+          <li><a href="javascript:void(0)">About</a></li>
+          <li><a href="javascript:void(0)">Exhibitors</a></li>
+          <li><a href="javascript:void(0)">Insights</a></li>
+          <li><a href="javascript:void(0)">Partners</a></li>
+          <li><a href="javascript:void(0)">Contact</a></li>
+        </ul>
+      </div>
+      <div class="popup-menu">
+        <div class="bg"></div>
+        <div class="top-manu">
+          <ul class="popup-sub-menu">
+            <li><a href="javascript:void(0)">LOGIN</a></li>
+          <li><a href="javascript:void(0)">REGISTER</a></li>
+          <li>
+            <a href="https://www.instagram.com/accounts/login/?next=/kiafseoul/" target="_blabk"><img
+                src="./images/black_instagram.png" alt="instagram" /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/KiafSeoul" target="_blank"><img src="./images/black_facebook.png"
+                alt="black_facebook" /></a>
+          </li>
+          </ul>
+          <ul class="popup-main-menu">
+            <li><a href="javascript:void(0)">About</a></li>
+            <li><a href="javascript:void(0)">Exhibitors</a></li>
+            <li><a href="javascript:void(0)">Insights</a></li>
+            <li><a href="javascript:void(0)">Partners</a></li>
+            <li><a href="javascript:void(0)">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar__button">
+        <input id="toggle-button" type="checkbox" />
+        <label class="line" for="toggle-button">
+          <div class="top"></div>
+          <div class="middle"></div>
+          <div class="bottom"></div>
+        </label>
+      </div>
+    
+    </nav>
+  </header>
+  <!-- SLIDE -->
+  <section class="slide-container">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/Homeslide_PC_5.jpg" alt="Homeslide" class="silde__image" />
+          <img src="./images/Homeslide_Mobile_5.jpg" alt="Homeslide" class="silde__image--mobile" />
+          <div class="text-box">
+            <h2>Kiaf SEOUL & Kiaf PLUS</h2>
+            <p>
+              Kiaf SEOUL <br />
+              September. 3-6 2022<br />
+              COEX, Seoul
+              <br />
+              <br />
+              kiaf PLUS <br />
+              September. 2-5 2022 <br />
+              SETEC, Seoul
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/Homeslide_PC_4.jpg" alt="Homeslide" class="silde__image" />
+          <img src="./images/Homeslide_Mobile_4.jpg" alt="Homeslide" class="silde__image--mobile">
+          <div class="text-box">
+            <h2>Explore insights programs</h2>
+            <p>Explore various insights programs organized by Kiaf.</p>
+            <div class="btn">
+              <a href="javascript:void(0)">
+                <h5>
+                  <span></span>
+                  Learn More
+                </h5>
+                <img src="./images/arrow_right.png" alt="Learn More" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="overview">
+    <div class="common-contents">
+      <h1>Overview</h1>
+      <div class="overview-area">
+        <div class="overview-item">
+          <p class="derc">
+            KIAF SEOUL first opened in 2002 to develop the foundation of
+            Korean art and introduce contemporary Korean art to the
+            international audience. KIAF SEOUL established itself as an
+            international art fair where visitors can experience the
+            globalized contemporary art and closely examine the trend of the
+            art market.
+          </p>
+        </div>
+        <div class="overview-item">
+          <img src="./images/overview.jpg" alt="overview" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES -->
+  <section class="stories">
+    <div class="common-contents">
+      <h1>Stories</h1>
+      <div class="stories-area">
+        <div class="stories-item">
+          <img src="./images/Kang-Joolee.jpeg"
+            alt="KangJoolee" />
+          <div class="contents-box">
+            <h6>RECONSTRUCTION OF RELATIONSHIP</h6>
+            <div class="authorship">[GALLERIES] ATELIER AKI</div>
+          </div>
+        </div>
+        <div class="stories-item">
+          <img src="/images/Stuttgart-Kunstmuseum.jpg"
+            alt="Stuttgart" />
+          <div class="contents-box">
+            <h6>Markus Amm</h6>
+            <div class="authorship">[GALLERIES] GALLERY BATON</div>
+          </div>
+        </div>
+        <div class="stories-item">
+          <img src="./images/Ugo-Rondinone.jpg"
+            alt="Kukje-Gallery" />
+          <div class="contents-box">
+            <h6>nuns and monks by the sea</h6>
+            <div class="authorship">[GALLERIES] KUKJE GALLERY</div>
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        <a href="javascript:void(0)">
+          <h5>
+            <span></span>
+            Learn More
+          </h5>
+          <img src="./images/arrow_right.png" alt="Learn More" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE -->
+  <section class="article">
+    <div class="common-contents">
+      <h1>Article</h1>
+      <div class="article-area">
+        <div class="article-item">
+          <a href="javascript:void(0)">
+            <img src="./images/MyoungJinKim.jpg" alt="김명진" />
+          </a>
+          <div class="contents-box">
+            <a href="javascript:void(0)">
+              <h6>
+                Edgewalker by Myoung-Jin Kim: Depictive Narration or Theatrical
+                Description
+              </h6>
+            </a>
+            <div class="authorship">[ARTICLES] Galerie GAIA</div>
+          </div>
+        </div>
+        <div class="article-item">
+          <a href="javascript:void(0)">
+            <img src="./images/KONIG-SEOUL.jpg" alt="KÖNIG SEOUL rooftop" />
+          </a>
+          <div class="contents-box">
+            <a href="javascript:void(0)">
+              <h6>Why the Art World Is Pivoting Towards South Korea</h6>
+            </a>
+            <div class="authorship">[CULTURAL ISSUE] OCULA</div>
+          </div>
+        </div>
+        <div class="article-item">
+          <a href="javascript:void(0)">
+            <img src="./images/Am-Anfang.jpg" alt="Am Anfang" />
+          </a>
+          <div class="contents-box">
+            <a href="javascript:void(0)">
+              <h6>Ro Eunnim, Artist of Life, Sings about Nature</h6>
+            </a>
+            <div class="authorship">[ARTICLE] Gana Art</div>
+          </div>
+        </div>
+        <div class="article-item">
+          <a href="javascript:void(0)">
+            <img src="./images/Your Sound is My Sound.jpg" alt="Your Sound is My Sound" />
+          </a>
+          <div class="contents-box">
+            <a href="javascript:void(0)">
+              <h6>
+                Unstoppable footsteps: Spring Revolution and the condition of
+                Myanmar art scene in 2021
+              </h6>
+            </a>
+            <div class="authorship">[CULTURAL ISSUE] MONTHLY ART</div>
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        <a href="javascript:void(0)">
+          <h5>
+            <span></span>
+            Learn More
+          </h5>
+          <img src="./images/arrow_right.png" alt="Learn More" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHIVE -->
+  <section class="archive">
+    <div class="common-contents">
+      <h1>Archive</h1>
+      <div class="archive-area">
+        <div class="archive-item">
+          <p class="derc">
+            Galleries from all around the world have been participating in
+            KIAF SEOUL since 2002. KIAF SEOUL also has been annually
+            presenting special exhibitions and talk programs regarding
+            different global art scenes and issues.
+          </p>
+        </div>
+        <div class="btn-group">
+          <div class="btn">
+            <a href="javascript:void(0)">
+              <h5>
+                <span></span>
+                History
+              </h5>
+              <img src="./images/arrow_right.png" alt="Learn More" />
+            </a>
+          </div>
+          <div class="btn">
+            <a href="javascript:void(0)">
+              <h5>
+                <span></span>
+                Past Exhibitors
+              </h5>
+              <img src="./images/arrow_right.png" alt="Learn More" />
+            </a>
+          </div>
+          <div class="btn">
+            <a href="javascript:void(0)">
+              <h5>
+                <span></span>
+                Special Exhibition
+              </h5>
+              <img src="./images/arrow_right.png" alt="Learn More" />
+            </a>
+          </div>
+          <div class="btn">
+            <a href="javascript:void(0)">
+              <h5>
+                <span></span>
+                Talk Program
+              </h5>
+              <img src="./images/arrow_right.png" alt="Learn More" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- VIDEOS -->
+  <section class="videos">
+    <div class="common-contents">
+      <h1>Videos</h1>
+      <div class="video-area">
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=Y0WMWDpxhhw" target="_blank">
+            <div class="play-button">
+              <img class="play-button2" src="./images/btn_play_back.png" alt="play button" />
+            </div>
+            <img class="thumbnail" src="./images/디에갤러리.jpg" alt="Die Gallery" />
+            <h6>[Kiaf SEOUL 2021 I Dialogue : DIE GALERIE]</h6>
+        </div>
+        </a>
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=Yyydbgk-Tsk" target="_blank">
+            <div class="play-button">
+              <img class="play-button2" src="./images/btn_play_back.png" alt="play button" />
+            </div>
+            <img class="thumbnail" src="./images/금산.jpg" alt="Keumsan Gallery" />
+            <h6>[Kiaf SEOUL 2021 I Dialogue : Keumsan Gallery]</h6>
+        </div>
+        </a>
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=jUXqa5pwiAY" target="_blank">
+            <div class="play-button">
+              <img class="play-button2" src="./images/btn_play_back.png" alt="play button" />
+            </div>
+            <img class="thumbnail" src="./images/VSF.jpg" alt="Various Small Fires" />
+            <h6>[Kiaf SEOUL 2021 I Dialogue : Various Small Fires]</h6>
+        </div>
+        </a>
+      </div>
+      <div class="btn">
+        <a href="javascript:void(0)">
+          <h5>
+            <span></span>
+            Learn More Stories
+          </h5>
+          <img src="./images/arrow_right.png" alt="Learn More" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="common-contents">
+      <div class="footer-area">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="./images/logo_footer.png" alt="KiafSeoul">
+          </div>
+          <div class="navi-list">
+            <ul class="navi-item">
+              <li><a href="javascript:void(0)">About</a></li>
+              <li><a href="javascript:void(0)">Archive</a></li>
+            </ul>
+            <ul class="navi-item">
+              <li><a href="javascript:void(0)">Exhibitors</a></li>
+              <li><a href="javascript:void(0)">Partners</a></li>
+              <li><a href="javascript:void(0)">Organizer</a></li>
+            </ul>
+            <ul class="navi-item">
+              <li><a href="javascript:void(0)">Insights</a></li>
+              <li><a href="javascript:void(0)">News</a></li>
+              <li><a href="javascript:void(0)">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="container">
+            <div class="item">
+              <span class="title">General</span>
+              <span class="value">kiaf@kiaf.org</span>
+            </div>
+            <div class="item">
+              <span class="title">VVIP & VIP Inquiry</span>
+              <span class="value">vip@kiaf.org</span>
+            </div>
+            <div class="item">
+              <span class="title">Press</span>
+              <span class="value">press@kiaf.org</span>
+            </div>
+            <div class="item">
+              <span class="title">Office</span>
+              <span class="value">02-733-3706~8</span>
+            </div>
+            <div class="item">
+              <span class="title">Fax</span>
+              <span class="value">02-733-3701</span>
+            </div>
+            <div class="item">
+              <span class="title">Address</span>
+              <span class="value">102-407, 461, Samil-daero, Jongno-gu, Seoul, 03147, Korea</span>
+            </div>
+            <div class="item">
+              <span class="title">SNS</span>
+              <div class="footer-icons">
+                <a href="https://www.instagram.com/accounts/login/?next=/kiafseoul/" target="_blabk"><img
+                    src="./images/white_instagram.png" alt="instagram" /></a>
+                <a href="https://www.facebook.com/KiafSeoul" target="_blank"><img src="./images/white_facebook.png"
+                    alt="black_facebook" /></a>
+              </div>
+            </div>
+          </div>
+          <p class="copyright">
+            &copy; Copyright KIAF
+          </p>
+          <div class="info">
+            <a href="javascript:void(0)">Terms & Conditions</a>
+            <a href="javascript:void(0)">Privacy Policy Site</a>
+            <a href="javascript:void(0)">Site by BATON</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="to-top">
+    <div class="material-icons">expand_less</div>
+  </div>  
+
+  </div>
+</body>
+
+</html>
