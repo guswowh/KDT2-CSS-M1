@@ -27,7 +27,7 @@
 # 사이트
 
 - 참고사이트: https://toss.im/team
-- 클론사이트:
+- 클론사이트: https://toss-team-shinmunsoo.netlify.app/
 
 # 사용 기술
 
