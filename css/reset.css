@@ -1,0 +1,26 @@
+body, input, select, textarea, button {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  color: #1a1a1a;
+  line-height: 1;
+  font-weight: 300;
+}
+
+input, button, select {
+  border-radius: 0;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+
+button {
+  overflow: visible;
+  cursor: pointer;
+}
+
+a {
+  color: #666666;
+  text-decoration: none;
+}
