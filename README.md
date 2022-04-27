@@ -29,6 +29,9 @@ menuCloes.addEventListener('click', function() {
 ## JS가 필요한 부분은 생략하고 이유를 명시해보세요.
 
   - 메뉴 리스트 페이지의 마우스 오버 효과를 구현하지 못했습니다 ㅜㅜ
+  
+  <img width="621" alt="image" src="https://user-images.githubusercontent.com/52659692/165481764-b50dbe1d-bbb6-4740-85be-7a07a517d4f0.png">
+
 
 ## BEM 방법론을 도입해보세요.
   - 시도하여 적용 하였는데 맞게 적용한지 모르겠네요...ㅠㅠ
