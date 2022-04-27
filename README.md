@@ -31,9 +31,8 @@ menuCloes.addEventListener('click', function() {
   - 메뉴 리스트 페이지의 마우스 오버 효과를 구현하지 못했습니다 ㅜㅜ
 
 ## BEM 방법론을 도입해보세요.
-
   - 시도하여 적용 하였는데 맞게 적용한지 모르겠네요...ㅠㅠ
-  - 
+  
 ## url
 - 작업 url : https://creative-capybara-c63542.netlify.app/
 - 참고 url : https://www.acro.co.kr/Mnmn_main.action
