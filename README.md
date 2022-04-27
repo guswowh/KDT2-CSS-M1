@@ -37,7 +37,7 @@
 
 ## 클론사이트 원주소 : https://fastcampus.co.kr/b2b_MegabyteSchool_frontend
 
-## netlifty 주소 : https://dainty-blancmange-e29784.netlify.app/
+## netlify 주소 : https://dainty-blancmange-e29784.netlify.app/
 시간이 없어서 사이트 전부를 구현하지는 못하였지만 기능이 필요한 부분들은 모두 구현하였습니다. 
 
 
