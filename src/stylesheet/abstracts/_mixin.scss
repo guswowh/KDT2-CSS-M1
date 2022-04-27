@@ -1,0 +1,28 @@
+$asset-path: "~assets/font/";
+$sprite-url: '~assets/icons/sprite__homemain.svg';
+
+@mixin font-face($name, $file, $weight: noraml, $style: normal) {
+  @font-face {
+    font-family: "#{$name}";
+    src: url("#{$asset-path}#{$file}.otf") format("otf"),
+      url("#{$asset-path}#{$file}.ttf") format("truetype");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin sprite-img($sprite-position) {
+  background-image: url($sprite-url);
+  background-repeat: no-repeat;
+  background-position: $sprite-position;
+}
+
+@mixin multi-ellipsis($font-size, $line-height, $lines) {
+  font-size: $font-size;
+  line-height: $line-height;
+  max-height: $line-height * $lines;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical; /* autoprefixer: off */
+}

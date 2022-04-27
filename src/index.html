@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G마켓 - 쇼핑을 바꾸는 쇼핑</title>
+
+  <!--Open Graph-->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="G마켓" />
+  <meta property="og:description" content="쇼핑을 바꾸는 쇼핑" />
+  <meta property="og:url" content="https://www.gmarket.co.kr" />
+  <meta property="og:image" content="https://pics.gmarket.co.kr/pc/single/kr/common/sns/gmarket_sns.png" />
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./gmarket.ico" type="image/x-icon">
+
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Google material icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet"
+    href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+</head>
+
+<body class="preload">
+  <!--   HEADER영역   -->
+  <header class="header">
+    <div class="header__inner">
+      <!-- 로고 -->
+      <h1 class="brand">
+        <a href="https://gmarket.co.kr/" class="brand__link">
+          <figure class="logo logo--ir logo--colorful">
+            <span class="sr-only">Gmarket</span>
+          </figure>
+        </a>
+      </h1>
+
+      <!-- 검색 폼 -->
+      <form action="/" class="searchForm" method="GET">
+        <fieldset>
+          <legend class="sr-only">검색폼</legend>
+          <div class="searchForm__wrapper">
+            <div class="formInput">
+              <label for="searchKeyword" class="sr-only">검색어</label>
+              <input type="search" class="formInput__input" id="searchKeyword" required>
+            </div>
+            <button type="button" class="button--search" aria-label="검색"></button>
+          </div>
+        </fieldset>
+      </form>
+
+      <!-- 광고쿠폰영역 -->
+      <div class="insuranceAD">
+        <a href="/" class="insuranceAD__link">
+          <img src="./header/header__coupon.jpeg" alt="보험사 할인쿠폰">
+        </a>
+      </div>
+
+      <!-- 마이페이지 등 아이콘 영역 -->
+      <div class="buttonArea">
+        <ul class="buttonArea__list">
+          <li class="buttonArea__item" aria-label="마이페이지"><a href="#" class="buttonArea__link"><img
+                src="./header/image__header-mypage.svg" alt="마이페이지" aria-hidden="true"></a></li>
+          <li class="buttonArea__item" aria-label="최근본상품"><a href="#" class="buttonArea__link"><img
+                src="./header/image__header-recent.svg" alt="최근본상품" aria-hidden="true"></a></li>
+          <li class="buttonArea__item" aria-label="장바구니"><a href="#" class="buttonArea__link"><img
+                src="./header/image__header-cart.svg" alt="장바구니" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+
+      <!-- 카테고리 버튼 -->
+      <button type="button" class="categoryBtn"><span class="categoryBtn__text">전체 카테고리</span></button>
+
+      <!-- 네비게이션바 -->
+      <div class="navigationBar">
+        <ul class="navigationBar__list">
+          <li class="navigationBar__item"><a href="#" class="navigationBar__link">베스트</a></li>
+          <li class="navigationBar__item"><a href="#" class="navigationBar__link">슈퍼딜</a></li>
+          <li class="navigationBar__item"><a href="#" class="navigationBar__link">쿠폰·출첵</a></li>
+          <li class="navigationBar__item">
+            <a href="#" class="navigationBar__link">
+              <span class="new-badge">N</span>
+              스마일배송
+            </a>
+          </li>
+          <li class="navigationBar__item"><a href="#" class="navigationBar__link smile">스마트클럽</a></li>
+          <li class="navigationBar__item">
+            <a href="#" class="navigationBar__link smile">
+              <span class="new-badge">N</span>
+              스마트클럽비즈
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 로그인바 -->
+      <div class="loginBar">
+        <ul class="loginBar__list">
+          <li class="loginBar__item"><a href="#" class="loginBar__link">로그인</a></li>
+          <span class="divider" aria-hidden="true">ㅣ</span>
+          <li class="loginBar__item"><a href="#" class="loginBar__link">회원가입</a></li>
+          <span class="divider" aria-hidden="true">ㅣ</span>
+          <li class="loginBar__item"><a href="#" class="loginBar__link">고객센터</a></li>
+          <span class="divider" aria-hidden="true">ㅣ</span>
+          <li class="loginBar__item">
+            <button type="button">Global</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- 네비게이션 영역 -->
+  <nav class="navigation">
+
+    <div class="box__dimmed-left"></div>
+    <div class="box__dimmed-right"></div>
+    <!-- 카테고리 영역 -->
+    <div class="navigation__wrapper inner">
+      <div class="category">
+        <h2 class="sr-only">카테고리별 메인메뉴</h2>
+        <div class="category__inner">
+          <ul class="category__list category__depth1">
+            <li class="category__item">
+              <a href="#" id="menu-1" class="category__button tab" aria-expanded="false" aria-controls="menu-1-content">브랜드패션</a>
+              <div class="category__depth2 tab__list" id="menu-1-content">
+                <div class="category__depth2__section  section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">여기는 1번입니다</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">여행/항공권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">도서</strong>
+                    <li class="category__depth2__item" i><a href="#" class="category__depth2__link">도서/음반/e교육</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">e쿠폰</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">e쿠폰</a></li>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">상품권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__ad">
+                  <a href="#" class="ad__link">
+                    <img src="./nav/ad__link__image1.jpg" width="327" height="214" alt="광고" class="image">
+                    <div class="ad-description">
+                      <span class="ad-title">브랜드 패션 쿠폰북</span>
+                      <p class="ad-detail">매주 업데이트 되는 쿠폰북</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="category__depth2__section section__goto">
+                  <strong>바로가기</strong>
+                  <ul class="category-goto__list">
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">항공권</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">여행혜택</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">도서</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">해피콘</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">배달</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="category__item">
+              <a href="#" id="menu-2" class="category__button tab" aria-expanded="false" aria-controls="menu-2-content">패션의류 · 잡화 · 뷰티</a>
+              <div class="category__depth2 tab__list" id="menu-2-content">
+                <div class="category__depth2__section  section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">패션의류</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">여행/항공권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">잡화</strong>
+                    <li class="category__depth2__item" i><a href="#" class="category__depth2__link">도서/음반/e교육</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">뷰티</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">e쿠폰</a></li>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">상품권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__ad">
+                  <a href="#" class="ad__link">
+                    <img src="./images/ca2.jpg" width="327" height="214" alt="광고" class="image">
+                    <div class="ad-description">
+                      <span class="ad-title">브랜드 패션 쿠폰북</span>
+                      <p class="ad-detail">매주 업데이트 되는 쿠폰북</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="category__depth2__section section__goto">
+                  <strong>바로가기</strong>
+                  <ul class="category-goto__list">
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">항공권</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">여행혜택</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">도서</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">해피콘</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">배달</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="category__item">
+              <a href="#" id="menu-3" class="category__button tab" aria-expanded="false" aria-controls="menu-3-content">유아동</a>
+              <div class="category__depth2 tab__list" id="menu-3-content">
+                <div class="category__depth2__section  section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">여행</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">여행/항공권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">도서</strong>
+                    <li class="category__depth2__item" i><a href="#" class="category__depth2__link">도서/음반/e교육</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">e쿠폰</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">e쿠폰</a></li>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">상품권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__ad">
+                  <a href="#" class="ad__link">
+                    <img src="./images/ca3.jpg" width="327" height="214" alt="광고" class="image">
+                    <div class="ad-description">
+                      <span class="ad-title">브랜드 패션 쿠폰북</span>
+                      <p class="ad-detail">매주 업데이트 되는 쿠폰북</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="category__depth2__section section__goto">
+                  <strong>바로가기 </strong>
+                  <ul class="category-goto__list">
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">항공권</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">여행혜택</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">도서</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">해피콘</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">배달</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="category__item">
+              <a href="#" id="menu-4" class="category__button tab" aria-expanded="false" aria-controls="menu-4-content">식품 · 생필품</a>
+              <div class="category__depth2 tab__list" id="menu-4-content">
+                <div class="category__depth2__section  section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">여행</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">여행/항공권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">도서</strong>
+                    <li class="category__depth2__item" i><a href="#" class="category__depth2__link">도서/음반/e교육</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">e쿠폰</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">e쿠폰</a></li>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">상품권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__ad">
+                  <a href="#" class="ad__link">
+                    <img src="./images/ca4.jpg" width="327" height="214" alt="광고" class="image">
+                    <div class="ad-description">
+                      <span class="ad-title">브랜드 패션 쿠폰북</span>
+                      <p class="ad-detail">매주 업데이트 되는 쿠폰북</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="category__depth2__section section__goto">
+                  <strong>바로가기</strong>
+                  <ul class="category-goto__list">
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">항공권</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">여행혜택</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">도서</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">해피콘</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">배달</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="category__item">
+              <a href="#" id="menu-5" class="category__button tab" aria-expanded="false" aria-controls="menu-5-content">홈데코 · 문구 · 취미 · 반려</a>
+              <div class="category__depth2 tab__list" id="menu-5-content">
+                <div class="category__depth2__section  section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">여행</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">여행/항공권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">도서</strong>
+                    <li class="category__depth2__item" i><a href="#" class="category__depth2__link">도서/음반/e교육</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">e쿠폰</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">e쿠폰</a></li>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">상품권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__ad">
+                  <a href="#" class="ad__link">
+                    <img src="./images/ca5.jpg" width="327" height="214" alt="광고" class="image">
+                    <div class="ad-description">
+                      <span class="ad-title">브랜드 패션 쿠폰북</span>
+                      <p class="ad-detail">매주 업데이트 되는 쿠폰북</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="category__depth2__section section__goto">
+                  <strong>바로가기</strong>
+                  <ul class="category-goto__list">
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">항공권</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">여행혜택</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">도서</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">해피콘</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">배달</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="category__item">
+              <a href="#" id="menu-6" class="category__button tab" aria-expanded="false" aria-controls="menu-6-content">컴퓨터 · 디지털 · 가전</a>
+              <div class="category__depth2 tab__list" id="menu-6-content">
+                <div class="category__depth2__section  section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">여행</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">여행/항공권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">도서</strong>
+                    <li class="category__depth2__item" i><a href="#" class="category__depth2__link">도서/음반/e교육</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">e쿠폰</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">e쿠폰</a></li>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">상품권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__ad">
+                  <a href="#" class="ad__link">
+                    <img src="./images/ca6.jpg" width="327" height="214" alt="광고" class="image">
+                    <div class="ad-description">
+                      <span class="ad-title">브랜드 패션 쿠폰북</span>
+                      <p class="ad-detail">매주 업데이트 되는 쿠폰북</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="category__depth2__section section__goto">
+                  <strong>바로가기</strong>
+                  <ul class="category-goto__list">
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">항공권</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">여행혜택</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">도서</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">해피콘</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">배달</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="category__item">
+              <a href="#" id="menu-7" class="category__button tab" aria-expanded="false" aria-controls="menu-7-content">스포츠 · 건강 · 렌탈</a>
+              <div class="category__depth2 tab__list" id="menu-7-content">
+                <div class="category__depth2__section  section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">여행</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">여행/항공권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">도서</strong>
+                    <li class="category__depth2__item" i><a href="#" class="category__depth2__link">도서/음반/e교육</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">e쿠폰</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">e쿠폰</a></li>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">상품권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__ad">
+                  <a href="#" class="ad__link">
+                    <img src="./images/ca7.jpg" width="327" height="214" alt="광고" class="image">
+                    <div class="ad-description">
+                      <span class="ad-title">브랜드 패션 쿠폰북</span>
+                      <p class="ad-detail">매주 업데이트 되는 쿠폰북</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="category__depth2__section section__goto">
+                  <strong>바로가기</strong>
+                  <ul class="category-goto__list">
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">항공권</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">여행혜택</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">도서</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">해피콘</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">배달</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="category__item">
+              <a href="#" id="menu-8" class="category__button tab" aria-expanded="false" aria-controls="menu-8-content">자동차 · 공구</a>
+              <div class="category__depth2 tab__list" id="menu-8-content">
+                <div class="category__depth2__section  section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">여행</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">여행/항공권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">도서</strong>
+                    <li class="category__depth2__item" i><a href="#" class="category__depth2__link">도서/음반/e교육</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">e쿠폰</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">e쿠폰</a></li>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">상품권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__ad">
+                  <a href="#" class="ad__link">
+                    <img src="./images/ca8.jpg" width="327" height="214" alt="광고" class="image">
+                    <div class="ad-description">
+                      <span class="ad-title">브랜드 패션 쿠폰북</span>
+                      <p class="ad-detail">매주 업데이트 되는 쿠폰북</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="category__depth2__section section__goto">
+                  <strong>바로가기</strong>
+                  <ul class="category-goto__list">
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">항공권</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">여행혜택</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">도서</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">해피콘</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">배달</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="category__item">
+              <a href="#" id="menu-9" class="category__button tab" aria-expanded="false" aria-controls="menu-9-content">브랜드패션</a>
+              <div class="category__depth2 tab__list" id="menu-9-content">
+                <div class="category__depth2__section  section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">여행</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">여행/항공권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">도서</strong>
+                    <li class="category__depth2__item" i><a href="#" class="category__depth2__link">도서/음반/e교육</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">e쿠폰</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">e쿠폰</a></li>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">상품권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__ad">
+                  <a href="#" class="ad__link">
+                    <img src="./nav/ad__link__image1.jpg" width="327" height="214" alt="광고" class="image">
+                    <div class="ad-description">
+                      <span class="ad-title">브랜드 패션 쿠폰북</span>
+                      <p class="ad-detail">매주 업데이트 되는 쿠폰북</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="category__depth2__section section__goto">
+                  <strong>바로가기</strong>
+                  <ul class="category-goto__list">
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">항공권</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">여행혜택</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">도서</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">해피콘</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">배달</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="category__item">
+              <a href="#" id="menu-10" class="category__button tab" aria-expanded="false" aria-controls="menu-10-content">여행 · 도서 · e쿠폰</a>
+              <div class="category__depth2 tab__list" id="menu-10-content">
+                <div class="category__depth2__section  section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">여행</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">여행/항공권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">도서</strong>
+                    <li class="category__depth2__item" i><a href="#" class="category__depth2__link">도서/음반/e교육</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__list">
+                  <ul class="category__depth2__list">
+                    <strong class="title">e쿠폰</strong>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">e쿠폰</a></li>
+                    <li class="category__depth2__item"><a href="#" class="category__depth2__link">상품권</a></li>
+                  </ul>
+                </div>
+                <div class="category__depth2__section section__ad">
+                  <a href="#" class="ad__link">
+                    <img src="./nav/ad__link__image1.jpg" width="327" height="214" alt="광고" class="image">
+                    <div class="ad-description">
+                      <span class="ad-title">브랜드 패션 쿠폰북</span>
+                      <p class="ad-detail">매주 업데이트 되는 쿠폰북</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="category__depth2__section section__goto">
+                  <strong>바로가기</strong>
+                  <ul class="category-goto__list">
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">항공권</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">여행혜택</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">도서</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">해피콘</a></li>
+                    <li class="category-goto__item"><a href="#" class="cateogry-goto__link">배달</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 프로모션 영역 -->
+      <div class="promotion">
+        <h2 class="sr-only">프로모션 배너</h2>
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion1.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion2.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion3.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion1.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion2.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion3.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion1.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion2.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion3.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion1.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion2.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+            <li class="swiper-slide"><a href="/" class="swiper-slide__link"><img src="./nav/promotion3.jpeg" alt="생략"
+                  class="swiper-slide__image"></a></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="controler">
+        <button class="playbtn" aria-pressed="false" aria-label="자동 재생 일시 정지"></button>
+        <div class="swiper-pagination"></div>
+        <button type="button" class="button__more">
+          <span class="sr-only">프로모션 펼쳐보기</span>
+        </button>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+  </nav>
+
+  <!-- 배너 영역 -->
+  <section class="banner">
+    <div class="banner__inner inner">
+      <a href="/" class="banner__link"><img src="./icons/banner.png" alt="대한민국 숙박대전 최대 10만원 할인! 지금 바로 혜택받기"
+          class="banner__image"></a>
+    </div>
+  </section>
+
+  <!-- besst상품 영역 -->
+  <section class="best inner">
+    <div class="best__headline common__headline">
+      <h2 class="title"><a href="#" class="title__link">지금 제일 잘 나가는 상품</a> </h2>
+      <a src="#" class="show-all">전체보기</a>
+    </div>
+    <div class="swiper-container">
+      <ul class="swiper-wrapper best__list">
+      </ul>
+    </div>
+    <button type="button" class="button__prev" aria-label="이전 버튼"><span class="sr-only">이전</span></button>
+    <button type="button" class="button__next" aria-label="다음 버튼"><span class="sr-only">다음</span></button>
+  </section>
+
+  <!-- G마켓에서 장보기, 스마일 배송 영역 -->
+  <section class="delivery inner">
+
+    <!-- G마켓에서 장보기 -->
+    <article class="deliveryUnit delivery__Gmarket">
+      <!-- G마켓에서 장보기 중 이미지카드 영역 -->
+      <div class="delivery__headline common__headline">
+        <h2 class="title"><a href="#" class="title__link">G마켓에서 장보기</a> </h2>
+        <a src="#" class="show-all" aria-label="바로가기 버튼">바로가기</a>
+      </div>
+      <div class="delevery__banner">
+        <p class="delevery__title ">집 앞까지 신선하게 G마켓 당일배송</p>
+        <!--  G마켓에서 장보기 중 슬라이드 영역 -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="delevery__banner__link">
+                <div class="product__info">
+                  <div class="text">
+                    <div class="product-brand-logo__image logo1">
+                      <span class="brand">롯데슈퍼프레시</span>
+                    </div>
+                    <div class="product__title">달콤하고 시원한<br> 수분 가득한 수박</div>
+                    <div class="prodcut__sub-title">365일 신선배송, 롯데프레시</div>
+                  </div>
+                  <div class="product__image">
+                    <img src="./images/market2.jpg" alt="달콤하고 시원한 수분 가득한 수박" width="194">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="delevery__banner__link">
+                <div class="product__info">
+                  <div class="text">
+                    <div class="product-brand-logo__image logo2">
+                      <span class="brand" lang="en">Homeplus</span>
+                    </div>
+                    <div class="product__title">물가안정 프로젝트 <br>국내산 신선특란</div>
+                    <div class="prodcut__sub-title">맛있는 마트,홈플러스</div>
+                  </div>
+                  <div class="product__image">
+                    <img src="./images/market3.jpg" alt="물가안정 프로젝트 국내산 신선특란" width="194">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="delevery__banner__link">
+                <div class="product__info">
+                  <div class="text">
+                    <div class="product-brand-logo__image logo3">
+                      <span class="brand" lang="en">GS Fresh Mall</span>
+                    </div>
+                    <div class="product__title">이런 할인 봄? <br>15%쿠폰 혜택</div>
+                    <div class="prodcut__sub-title">신선함의 시작, GS프레시</div>
+                  </div>
+                  <div class="product__image">
+                    <img src="./images/market3.jpg" alt="밥값 하는 쌀" width="194">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="delevery__banner__link">
+                <div class="product__info">
+                  <div class="text">
+                    <div class="product-brand-logo__image logo4">
+                      <span class="brand" lang="en">LOTTE Mart</span>
+                    </div>
+                    <div class="product__title">달콤하고 시원한 맛 <br>당도선별 성주참외</div>
+                    <div class="prodcut__sub-title">문 앞까지 안심배송, 롯데마트</div>
+                  </div>
+                  <div class="product__image">
+                    <img src="./images/market1.jpg" alt="달콤하고 시원한 맛 당도선별 성주참외" width="194">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next" aria-label="이전 버튼"></div>
+          <div class="swiper-button-prev" aria-label="다음 버튼"></div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="tabs__inner">
+          <div id="tab-1" class="tab brand">
+            <span class="logo-text">롯데슈퍼프레시</span>
+          </div>
+          <div class="divider">|</div>
+          <div id="tab-2" class="tab brand">
+            <span class="logo-text">Homeplus</span>
+          </div>
+          <div class="divider">|</div>
+          <div id="tab-3" class="tab brand">
+            <span class="logo-text">GS Fresh Mall</span>
+          </div>
+          <div class="divider">|</div>
+          <div id="tab-4" class="tab brand">
+            <span class="logo-text">LOTTE Mart</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content">
+        <!-- Tab1 -->
+        <ul id="tab-1-content" class="tab__list show">
+          <div class="tab-content-wrapper">
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte1.jpeg" alt="농심 올리브 짜파게티" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type1">전단상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte2.jpeg" alt="롯데 의성마늘비엔나 160G 2" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type1">전단상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">롯데 의성마늘비엔나 160G 2</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">3,990 <span class="currencyUnit">원</span></em>
+                  </div>
+
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte3.jpeg" alt="제주 삼다수 2L 6입" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type2">행사상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">제주 삼다수 2L 6입</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">6,240 <span class="currencyUnit">원</span></em>
+                  </div>
+
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte4.jpeg" alt="강원오대쌀20KG/포" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type2">행사상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">강원오대쌀20KG/포</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">45,410 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte5.jpeg" alt="빙그레)샤인머스캣85G 4" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type3">균일가</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">빙그레)샤인머스캣85G 4</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">1,490 <span class="currencyUnit">원</span></em>
+                  </div>
+
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte6.jpeg" alt="팔도 비빔면 130G 4입" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type3">균일가</span>
+                  </div>
+                  <div class="product__desc">
+
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">팔도 비빔면 130G 4입</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">2,980 <span class="currencyUnit">원</span></em>
+                  </div>
+
+                </div>
+              </a>
+            </li>
+          </div>
+        </ul>
+
+        <!-- Tab2 -->
+        <ul id="tab-2-content" class="tab__list">
+          <div class="tab-content-wrapper">
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus1.jpeg" alt="농심 올리브 짜파게티" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type1">전단상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
+                  </div>
+
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus2.jpeg" alt="롯데 의성마늘비엔나 160G 2" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type1">전단상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">롯데 의성마늘비엔나 160G 2</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">3,990 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus3.jpeg" alt="제주 삼다수 2L 6입" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type2">행사상품</span>
+                  </div>  
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">제주 삼다수 2L 6입</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">6,240 <span class="currencyUnit">원</span></em>
+                </div>
+              </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus4.jpeg" alt="강원오대쌀20KG/포" width="100" />
+                </div>
+                <div class="product__detail">
+                <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type2">행사상품</span>
+                </div>
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">강원오대쌀20KG/포</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">45,410 <span class="currencyUnit">원</span></em>
+                </div>
+              </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus5.jpeg" alt="빙그레)샤인머스캣85G 4" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type4">1+1</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">빙그레)샤인머스캣85G 4</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">1,490 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus6.jpeg" alt="팔도 비빔면 130G 4입" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type4">1+1</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">팔도 비빔면 130G 4입</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">2,980 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </div>
+        </ul>
+
+        <!-- Tab3 -->
+        <ul id="tab-3-content" class="tab__list">
+          <div class="tab-content-wrapper">
+
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte1.jpeg" alt="농심 올리브 짜파게티" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type1">전단상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte2.jpeg" alt="롯데 의성마늘비엔나 160G 2" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type1">전단상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">롯데 의성마늘비엔나 160G 2</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">3,990 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte3.jpeg" alt="제주 삼다수 2L 6입" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type2">행사상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">제주 삼다수 2L 6입</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">6,240 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte4.jpeg" alt="강원오대쌀20KG/포" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type2">행사상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">강원오대쌀20KG/포</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">45,410 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+                </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte5.jpeg" alt="빙그레)샤인머스캣85G 4" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type3">균일가</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">빙그레)샤인머스캣85G 4</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">1,490 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/lotte6.jpeg" alt="팔도 비빔면 130G 4입" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type3">균일가</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">팔도 비빔면 130G 4입</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">2,980 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </div>
+        </ul>
+
+        <!-- Tab4 -->
+        <ul id="tab-4-content" class="tab__list">
+          <div class="tab-content-wrapper">
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus1.jpeg" alt="농심 올리브 짜파게티" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type1">전단상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus2.jpeg" alt="롯데 의성마늘비엔나 160G 2" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type1">전단상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">롯데 의성마늘비엔나 160G 2</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">3,990 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus3.jpeg" alt="제주 삼다수 2L 6입" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type2">행사상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">제주 삼다수 2L 6입</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">6,240 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus4.jpeg" alt="강원오대쌀20KG/포" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type2">행사상품</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">강원오대쌀20KG/포</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">45,410 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus5.jpeg" alt="빙그레)샤인머스캣85G 4" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type4">1+1</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">빙그레)샤인머스캣85G 4</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">1,490 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/homplus6.jpeg" alt="팔도 비빔면 130G 4입" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type4">1+1</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text">팔도 비빔면 130G 4입</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">2,980 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <a href="#" id="gotoLink" class="goto-product__link">롯데마트 바로가기 <span class="goto"> </span></a>
+
+    </article>
+
+    <!-- 스마일배송 -->
+    <article class="deliveryUnit delivery__smile">
+      <!-- 스마일배송 중 이미지카드 영역 -->
+      <div class="delivery__headline common__headline">
+        <h2 class="title"><a href="#" class="title__link">스마일배송</a> </h2>
+        <a src="#" class="show-all" aria-label="바로가기 버튼">바로가기</a>
+      </div>
+      <div class="delevery__banner">
+        <p class="delevery__title">오늘 주문! 내일 도착! 빠르고 정확한 스마일배송</p>
+        <!--  슬라이드 영역 -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="delevery__banner__link">
+                <div class="product__info">
+                  <div class="text">
+                    <div class="product__title">스마트배송<br> 매일 15%중복쿠폰</div>
+                    <div class="prodcut__sub-title">스마트클럽이라면 무조건!</div>
+                  </div>
+                  <div class="product__image">
+                    <img src="./images/smile1.jpg" alt="스마트배송 이달의 할인" width="194">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="delevery__banner__link">
+                <div class="product__info">
+                  <div class="text">
+                    <div class="product__title">짜릿한 국민 탄산! <br>코카콜라</div>
+                    <div class="prodcut__sub-title">스마일배송으로 주문하세요!</div>
+                  </div>
+                  <div class="product__image">
+                    <img src="./images/smile2.png" alt="코카콜라" width="194">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="delevery__banner__link">
+                <div class="product__info">
+                  <div class="text">
+                    <div class="product__title">건강한 생필품 <br> P&G</div>
+                    <div class="prodcut__sub-title">무겁게 들지말고 한 번에 주문!</div>
+                  </div>
+                  <div class="product__image">
+                    <img src="./images/smile3.png" alt="Dowuny 실내 건조" width="194">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="delevery__banner__link">
+                <div class="product__info">
+                  <div class="text">
+                    <div class="product__title">디지털 가전도 <br>역시 스마일배송</div>
+                    <div class="prodcut__sub-title">집에서 편리하게 주문하세요!</div>
+                  </div>
+                  <div class="product__image">
+                    <img src="./images/smile5.png" alt="오븐" width="194">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next" aria-label="이전 버튼"></div>
+          <div class="swiper-button-prev" aria-label="다음 버튼"></div>
+        </div>
+      </div>
+      </div>
+
+      <div class="tabs">
+        <div class="tabs__inner">
+          <div id="tab-5" class="tab product-title">
+            <span class="popular-text">인기상품</span>
+          </div>
+          <div class="divider">|</div>
+          <div id="tab-6" class="tab product-title">
+            <span class="popular-text">무료배송 상품</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content">
+        <!-- Tab5 -->
+        <ul id="tab-5-content" class="tab__list show">
+          <div class="tab-content-wrapper">
+
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./delivery/25.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./delivery/26.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./delivery/27.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./delivery/28.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./delivery/29.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./delivery/30.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </div>
+        </ul>
+
+        <!-- Tab6 -->
+        <ul id="tab-6-content" class="tab__list">
+          <div class="tab-content-wrapper">
+
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./delivery/31.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./delivery/32.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./delivery/33.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./delivery/34.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./images/free1.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="offer__item">
+              <a href="/" class="offer__link">
+                <div class="product__image">
+                  <img src="./delivery/35.jpeg" alt="국산 일회용 마스크 50매 블랙 1+1" width="100" />
+                </div>
+                <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">배송유형</span>
+                    <span class="type type1">무료배송</span>
+                  </div>
+                  <div class="product__desc">
+                    <span class="sr-only">상품 설명</span>
+                    <p class="desc__text"> <em class="text-style">서가</em> 국산 일회용 마스크 50매 블랙 1+1</p>
+                  </div>
+                  <div class="product__price">
+                    <span class="sr-only">판매가</span>
+                    <em class="price" role="text">7,900 <span class="currencyUnit">원</span></em>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <a href="#" id="gotoLink" class="goto-product__link">무료배송 상품 더보기 <span class="goto"> </span></a>
+
+
+    </article>
+
+  </section>
+
+  <section class="service inner">
+    <h2 class="service__title">G마켓 서비스</h2>
+    <div class="service__content">
+      <ul class="content__list">
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/logo1.png" alt="스마트클럽" />
+              <figcaption class="product__caption">
+                스마트클럽
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/logo2.png" alt="스마트배송" />
+              <figcaption class="product__caption">
+                스마트배송
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/logo3.png" alt="스마트카드" />
+              <figcaption class="product__caption">
+                스마트카드
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/lgoo4.png" alt="스마일페이" />
+              <figcaption class="product__caption">
+                스마일페이
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/logo5.png" alt="당일배송" />
+              <figcaption class="product__caption">
+                당일배송
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/logo6.png" alt="여행항공" />
+              <figcaption class="product__caption">
+                여행항공
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/logo7.png" alt="도서" />
+              <figcaption class="product__caption">
+                도서
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/logo8.png" alt="해외직구" />
+              <figcaption class="product__caption">
+                해외직구
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/logo9.png" alt="렌탈" />
+              <figcaption class="product__caption">
+                렌탈
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/logo10.png" alt="BIZ ON" />
+              <figcaption class="product__caption">
+                BIZ ON
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/logo11.png" alt="후원쇼핑" />
+              <figcaption class="product__caption">
+                후원쇼핑
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="content__item">
+          <a href="#" class="content__link">
+            <figure class="product__card">
+              <img src="./images/logo12.png" alt="G9" />
+              <figcaption class="product__caption">
+                G9
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 홈쇼핑 모아보기 -->
+  <section class="video inner">
+    <div class="video__headline common__headline inner">
+      <h2 class="title">홈쇼핑모아보기<a href="#" class="title__link" aria-label="홈쇼핑 연결링크"></a></h2>
+      <div class="box__dimmed-left"></div>
+      <div class="box__dimmed-right"></div>
+    </div>
+    <div class="swiper-container">
+      <ul class="swiper-wrapper">
+        <!-- 동영상 대신 임의 이미지 삽입 -->
+        <li class="swiper-slide">
+          <img src="./images/1.jpg" />
+          <div class="detail">
+            <div class="desc">셀렙샵 에디션 22SS 썸머 에어리 블라우스3종</div>
+            <div class="product__price">
+              <span class="sr-only">판매가</span>
+              <em class="price" role="text">9,900 <span class="currencyUnit">원</span></em>
+            </div>
+            <figure class="logo">
+              <img src="./images/11.svg" />
+              <figcaption class="product__caption">
+                CJ 온스타일
+              </figcaption>
+            </figure>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <img src="./images/2.jpg" />
+          <div class="detail">
+            <div class="desc">셀렙샵 에디션 22SS 썸머 에어리 블라우스3종</div>
+            <div class="product__price">
+              <span class="sr-only">판매가</span>
+              <em class="price" role="text">9,900 <span class="currencyUnit">원</span></em>
+            </div>
+            <figure class="logo">
+              <img src="./images/22.svg" />
+              <figcaption class="product__caption">
+                롯데홈쇼핑
+              </figcaption>
+            </figure>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <img src="./images/3.jpg" />
+          <div class="detail">
+            <div class="desc">셀렙샵 에디션 22SS 썸머 에어리 블라우스3종</div>
+            <div class="product__price">
+              <span class="sr-only">판매가</span>
+              <em class="price" role="text">9,900 <span class="currencyUnit">원</span></em>
+            </div>
+            <figure class="logo">
+              <img src="./images/33.svg" />
+              <figcaption class="product__caption">
+                현대홈쇼핑
+              </figcaption>
+            </figure>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <img src="./images/4.jpg" />
+          <div class="detail">
+            <div class="desc">셀렙샵 에디션 22SS 썸머 에어리 블라우스3종</div>
+            <div class="product__price">
+              <span class="sr-only">판매가</span>
+              <em class="price" role="text">9,900 <span class="currencyUnit">원</span></em>
+            </div>
+            <figure class="logo">
+              <img src="./images/44.svg" />
+              <figcaption class="product__caption">
+                GH SHOP
+              </figcaption>
+            </figure>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <img src="./images/5.jpg" />
+          <div class="detail">
+            <div class="desc">셀렙샵 에디션 22SS 썸머 에어리 블라우스3종</div>
+            <div class="product__price">
+              <span class="sr-only">판매가</span>
+              <em class="price" role="text">9,900 <span class="currencyUnit">원</span></em>
+            </div>
+            <figure class="logo">
+              <img src="./images/5.png" />
+              <figcaption class="product__caption">
+                쇼핑엔티
+              </figcaption>
+            </figure>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    <button type="button" class="button__prev" aria-label="이전 버튼"><span class="sr-only">이전</span></button>
+    <button type="button" class="button__next" aria-label="다음 버튼"><span class="sr-only">다음</span></button>
+
+  </section>
+
+  <!-- 슈퍼딜 -->
+  <section class="superDeal">
+    <div class="superDeal__headline common__headline inner">
+      <h2 class="title">
+        <a href="#" class="title__link">
+          <span class="sr-only">슈퍼딜</span>
+        </a>
+      </h2>
+      <a src="#" class="show-all">전체보기</a>
+    </div>
+
+    <div class="superDeal__main inner">
+      <ul class="product__list">
+        <li class="product__item">
+          <a href="#" class="product__link__item">
+            <div class="item__image">
+              <img class="image" src="./images/super1.jpg" alt="도브 비누/ 키엘 향수 ">
+            </div>
+            <div class="product__price__detail">
+              <div class="product__discount">
+                <span class="sr-only">할인율</span>
+                <span class="discount">6%</span>
+              </div>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">9,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </div>
+            <div class="product__desc">
+              <span class="sr-only">제품 설명</span>
+              <span class="text">(특가) 도브 비누/ 키엘 향수 외 미국 뷰티</span>
+            </div>
+            <div class="product__etc">
+              <div class="product__rating">
+                <span class="sr-only">구매자 수</span>
+                <span class="rating">구매 1,009</span>
+              </div>
+              <div class="product__delivery">
+                <span class="sr-only">배송유형</span>
+                <span class="rating">무료배송</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product__link__brand">
+            <img src="./images/home.png" alt="아이콘" width="24">
+            <span class="brand__name">salesmart</span>
+          </a>
+          <button type="button" class="like">
+            <span class="sr-only">관심상품추가</span>
+          </button>
+        </li>
+        <li class="product__item">
+          <a href="#" class="product__link__item">
+            <div class="item__image">
+              <img class="image" src="./images/5.jpg" alt="브라운 전도면도기">
+            </div>
+            <div class="product__price__detail">
+              <div class="product__discount">
+                <span class="sr-only">할인율</span>
+                <span class="discount">6%</span>
+              </div>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">40,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </div>
+            <div class="product__desc">
+              <span class="sr-only">제품 설명</span>
+              <span class="text">[사은품]브라운 전기면도기 시리즈9 Pro 9465cc</span>
+            </div>
+            <div class="product__etc">
+              <div class="product__rating">
+                <span class="sr-only">구매자 수</span>
+                <span class="rating">구매 1,009</span>
+              </div>
+              <div class="product__delivery">
+                <span class="sr-only">배송유형</span>
+                <span class="rating">무료배송</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product__link__brand">
+            <img src="./images/home.png" alt="아이콘" width="24">
+            <span class="brand__name">salesmart</span>
+          </a>
+          <button type="button" class="like">
+            <span class="sr-only">관심상품추가</span>
+          </button>
+        </li>
+        <li class="product__item">
+          <a href="#" class="product__link__item">
+            <div class="item__image">
+              <img class="image" src="./images/2.jpg" alt="도브 비누/ 키엘 향수 ">
+            </div>
+            <div class="product__price__detail">
+              <div class="product__discount">
+                <span class="sr-only">할인율</span>
+                <span class="discount">6%</span>
+              </div>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">12,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </div>
+            <div class="product__desc">
+              <span class="sr-only">제품 설명</span>
+              <span class="text">[10%+12%]캔마트 3040 캐주얼 미시룩</span>
+            </div>
+            <div class="product__etc">
+              <div class="product__rating">
+                <span class="sr-only">구매자 수</span>
+                <span class="rating">구매 1,009</span>
+              </div>
+              <div class="product__delivery">
+                <span class="sr-only">배송유형</span>
+                <span class="rating">무료배송</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product__link__brand">
+            <img src="./images/home.png" alt="아이콘" width="24">
+            <span class="brand__name">salesmart</span>
+          </a>
+          <button type="button" class="like">
+            <span class="sr-only">관심상품추가</span>
+          </button>
+        </li>
+        <li class="product__item">
+          <a href="#" class="product__link__item">
+            <div class="item__image">
+              <img class="image" src="./images/3.jpg" alt="인기 신차 즉시출고!+주유상품권 15만원 ">
+            </div>
+            <div class="product__price__detail">
+              <div class="product__discount">
+                <span class="sr-only">할인율</span>
+                <span class="discount">6%</span>
+              </div>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">9,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </div>
+            <div class="product__desc">
+              <span class="sr-only">제품 설명</span>
+              <span class="text">인기 신차 즉시출고!+주유상품권 15만원</span>
+            </div>
+            <div class="product__etc">
+              <div class="product__rating">
+                <span class="sr-only">구매자 수</span>
+                <span class="rating">구매 1,009</span>
+              </div>
+              <div class="product__delivery">
+                <span class="sr-only">배송유형</span>
+                <span class="rating">무료배송</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product__link__brand">
+            <img src="./images/home.png" alt="아이콘" width="24">
+            <span class="brand__name">salesmart</span>
+          </a>
+          <button type="button" class="like">
+            <span class="sr-only">관심상품추가</span>
+          </button>
+        </li>
+        <li class="product__item">
+          <a href="#" class="product__link__item">
+            <div class="item__image">
+              <img class="image" src="./images/super1.jpg" alt="도브 비누/ 키엘 향수 ">
+            </div>
+            <div class="product__price__detail">
+              <div class="product__discount">
+                <span class="sr-only">할인율</span>
+                <span class="discount">6%</span>
+              </div>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">9,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </div>
+            <div class="product__desc">
+              <span class="sr-only">제품 설명</span>
+              <span class="text">(특가) 도브 비누/ 키엘 향수 외 미국 뷰티</span>
+            </div>
+            <div class="product__etc">
+              <div class="product__rating">
+                <span class="sr-only">구매자 수</span>
+                <span class="rating">구매 1,009</span>
+              </div>
+              <div class="product__delivery">
+                <span class="sr-only">배송유형</span>
+                <span class="rating">무료배송</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product__link__brand">
+            <img src="./images/home.png" alt="아이콘" width="24">
+            <span class="brand__name">salesmart</span>
+          </a>
+          <button type="button" class="like">
+            <span class="sr-only">관심상품추가</span>
+          </button>
+        </li>
+        <li class="product__item">
+          <a href="#" class="product__link__item">
+            <div class="item__image">
+              <img class="image" src="./images/5.jpg" alt="브라운 전도면도기">
+            </div>
+            <div class="product__price__detail">
+              <div class="product__discount">
+                <span class="sr-only">할인율</span>
+                <span class="discount">6%</span>
+              </div>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">40,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </div>
+            <div class="product__desc">
+              <span class="sr-only">제품 설명</span>
+              <span class="text">[사은품]브라운 전기면도기 시리즈9 Pro 9465cc</span>
+            </div>
+            <div class="product__etc">
+              <div class="product__rating">
+                <span class="sr-only">구매자 수</span>
+                <span class="rating">구매 1,009</span>
+              </div>
+              <div class="product__delivery">
+                <span class="sr-only">배송유형</span>
+                <span class="rating">무료배송</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product__link__brand">
+            <img src="./images/home.png" alt="아이콘" width="24">
+            <span class="brand__name">salesmart</span>
+          </a>
+          <button type="button" class="like">
+            <span class="sr-only">관심상품추가</span>
+          </button>
+        </li>
+        <li class="product__item">
+          <a href="#" class="product__link__item">
+            <div class="item__image">
+              <img class="image" src="./images/2.jpg" alt="도브 비누/ 키엘 향수 ">
+            </div>
+            <div class="product__price__detail">
+              <div class="product__discount">
+                <span class="sr-only">할인율</span>
+                <span class="discount">6%</span>
+              </div>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">12,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </div>
+            <div class="product__desc">
+              <span class="sr-only">제품 설명</span>
+              <span class="text">[10%+12%]캔마트 3040 캐주얼 미시룩</span>
+            </div>
+            <div class="product__etc">
+              <div class="product__rating">
+                <span class="sr-only">구매자 수</span>
+                <span class="rating">구매 1,009</span>
+              </div>
+              <div class="product__delivery">
+                <span class="sr-only">배송유형</span>
+                <span class="rating">무료배송</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product__link__brand">
+            <img src="./images/home.png" alt="아이콘" width="24">
+            <span class="brand__name">salesmart</span>
+          </a>
+          <button type="button" class="like">
+            <span class="sr-only">관심상품추가</span>
+          </button>
+        </li>
+        <li class="product__item">
+          <a href="#" class="product__link__item">
+            <div class="item__image">
+              <img class="image" src="./images/3.jpg" alt="인기 신차 즉시출고!+주유상품권 15만원 ">
+            </div>
+            <div class="product__price__detail">
+              <div class="product__discount">
+                <span class="sr-only">할인율</span>
+                <span class="discount">6%</span>
+              </div>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">9,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </div>
+            <div class="product__desc">
+              <span class="sr-only">제품 설명</span>
+              <span class="text">인기 신차 즉시출고!+주유상품권 15만원</span>
+            </div>
+            <div class="product__etc">
+              <div class="product__rating">
+                <span class="sr-only">구매자 수</span>
+                <span class="rating">구매 1,009</span>
+              </div>
+              <div class="product__delivery">
+                <span class="sr-only">배송유형</span>
+                <span class="rating">무료배송</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product__link__brand">
+            <img src="./images/home.png" alt="아이콘" width="24">
+            <span class="brand__name">salesmart</span>
+          </a>
+          <button type="button" class="like">
+            <span class="sr-only">관심상품추가</span>
+          </button>
+        </li>
+        <li class="product__item">
+          <a href="#" class="product__link__item">
+            <div class="item__image">
+              <img class="image" src="./images/super1.jpg" alt="도브 비누/ 키엘 향수 ">
+            </div>
+            <div class="product__price__detail">
+              <div class="product__discount">
+                <span class="sr-only">할인율</span>
+                <span class="discount">6%</span>
+              </div>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">9,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </div>
+            <div class="product__desc">
+              <span class="sr-only">제품 설명</span>
+              <span class="text">(특가) 도브 비누/ 키엘 향수 외 미국 뷰티</span>
+            </div>
+            <div class="product__etc">
+              <div class="product__rating">
+                <span class="sr-only">구매자 수</span>
+                <span class="rating">구매 1,009</span>
+              </div>
+              <div class="product__delivery">
+                <span class="sr-only">배송유형</span>
+                <span class="rating">무료배송</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product__link__brand">
+            <img src="./images/home.png" alt="아이콘" width="24">
+            <span class="brand__name">salesmart</span>
+          </a>
+          <button type="button" class="like">
+            <span class="sr-only">관심상품추가</span>
+          </button>
+        </li>
+
+      </ul>
+      <a href="#" id="gotoLink" class="goto-product__link">슈퍼딜 전체보기 <span class="goto"> </span></a>
+    </div>
+  </section>
+
+  <!-- 해외직구 -->
+  <section class="direct-purchase">
+    <div class="inner">
+      <div class="direct-purchase__wrapper">
+        <div class="direct-purchase__headline common__headline inner">
+          <h2 class="title">
+            <a href="#" class="title__link">
+              해외직구
+            </a>
+          </h2>
+        </div>
+        <div class="direct-purchase__main">
+          <img src="./images/direct.jpg" alt="해외직구" class="direct-purchase__img">
+          <div class="direct-purchase__content">
+            <div class="direct-purchase__title">
+              <p class="sub-title">GLOBAL SHOPPING 해외직구</p>
+              <h4 class="main-title">쉽고, 빠르고, 안전한 직구</h4>
+            </div>
+            <div class="item__list">
+              <ul class="dp__list">
+                <li class="dp__item">
+                  <a href="#" class="dp__link">
+                    <img src="./images/g91.jpg" alt="무선 미니선풍기">
+                    <div class="product__desc">
+                      <span class="sr-only">상품 설명</span>
+                      <p class="desc__text">소베SOBE 미니 무선 선</p>
+                    </div>
+                    <div class="product__price">
+                      <span class="sr-only">판매가</span>
+                      <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
+                    </div>
+                  </a>
+                </li>
+                <li class="dp__item">
+                  <a href="#" class="dp__link">
+                    <img src="./images/g92.jpg" alt="IKEA FRAKTA 비닐백 1+1">
+                    <div class="product__desc">
+                      <span class="sr-only">상품 설명</span>
+                      <p class="desc__text">IKEA FRAKTA 비닐백 1+1</p>
+                    </div>
+                    <div class="product__price">
+                      <span class="sr-only">판매가</span>
+                      <em class="price" role="text">4,290 <span class="currencyUnit">원</span></em>
+                    </div>
+                  </a>
+                </li>
+                <li class="dp__item">
+                  <a href="#" class="dp__link">
+                    <img src="./images/g93.jpg" alt="제니쿠키 4믹스쿠키 외">
+                    <div class="product__desc">
+                      <span class="sr-only">상품 설명</span>
+                      <p class="desc__text">제니쿠키 4믹스쿠키 외</p>
+                    </div>
+                    <div class="product__price">
+                      <span class="sr-only">판매가</span>
+                      <em class="price" role="text">33,480 <span class="currencyUnit">원</span></em>
+                    </div>
+                  </a>
+                </li>
+                <li class="dp__item">
+                  <a href="#" class="dp__link">
+                    <img src="./images/g94.jpg" alt="이와타니 터프마루 주니">
+                    <div class="product__desc">
+                      <span class="sr-only">상품 설명</span>
+                      <p class="desc__text">이와타니 터프마루 주니</p>
+                    </div>
+                    <div class="product__price">
+                      <span class="sr-only">판매가</span>
+                      <em class="price" role="text">106,560 <span class="currencyUnit">원</span></em>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 트랜드라이프쇼핑 -->
+  <section class="trand-product inner">
+    <div class="trand-product__wrapper">
+      <div class="trand-product__headline common__headline inner">
+        <h2 class="title">
+          <a href="#" class="title__link">
+            트랜드 라이프 쇼핑 G9
+          </a>
+        </h2>
+        <a src="#" class="show-all">G9 바로가기</a>
+      </div>
+      <div class="trand-product__main">
+        <img src="./images/power.jpg" alt="매일 9시 할인!" class="trand-purchase__img" width="465">
+        <div class="trand-product__content">
+          <ul class="trand-productt__list">
+            <li class="trand-product__item">
+              <figure class="product__card">
+                <img src="./images/power11.jpg" alt="" width="194" />
+                <figcaption class="product__caption">
+                  일리 프란시스 캡슐 머신
+                </figcaption>
+              </figure>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">9,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </li>
+            <li class="trand-product__item">
+              <figure class="product__card">
+                <img src="./images/power22.jpg" alt="" width="194" />
+                <figcaption class="product__caption">
+                  나파 지퍼 파우치 클러치백
+                </figcaption>
+              </figure>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">350,200 <span class="currencyUnit">원</span></em>
+              </div>
+            </li>
+            <li class="trand-product__item">
+              <figure class="product__card">
+                <img src="./images/power33.jpg" alt="" width="194" />
+                <figcaption class="product__caption">
+                  없었던 일로 (총 540정)
+                </figcaption>
+              </figure>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">59,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <!-- 오늘의 파워상품 -->
+  <section class="today-power inner">
+    <div class="today-power__wrapper">
+      <div class="trand-product__headline common__headline inner">
+        <h2 class="title">
+          <a href="#" class="title__link">
+            오늘의 파워상품
+          </a>
+        </h2>
+        <span class="ad_btn"></span>
+      </div>
+      <ul class="product__list">
+        <li class="trand-product__item">
+          <figure class="product__card">
+            <img src="./images/today1.jpeg" alt="" />
+            <figcaption class="product__caption">
+              명인김규흔 하루한끼 영양바 총25개(5개입 x 5박스)
+            </figcaption>
+          </figure>
+          <div class="product__price">
+            <span class="sr-only">판매가</span>
+            <em class="price" role="text">19,900 <span class="currencyUnit">원</span></em>
+          </div>
+        </li>
+        <li class="trand-product__item">
+          <figure class="product__card">
+            <img src="./images/today2.jpeg" alt="" />
+            <figcaption class="product__caption">
+              명인김규흔 하루한끼 영양바 총25개(5개입 x 5박스)
+            </figcaption>
+          </figure>
+          <div class="product__price">
+            <span class="sr-only">판매가</span>
+            <em class="price" role="text">19,900 <span class="currencyUnit">원</span></em>
+          </div>
+        </li>
+        <li class="trand-product__item">
+          <figure class="product__card">
+            <img src="./images/today3.jpeg" alt="" />
+            <figcaption class="product__caption">
+              명인김규흔 하루한끼 영양바 총25개(5개입 x 5박스)
+            </figcaption>
+          </figure>
+          <div class="product__price">
+            <span class="sr-only">판매가</span>
+            <em class="price" role="text">19,900 <span class="currencyUnit">원</span></em>
+          </div>
+        </li>
+        <li class="trand-product__item">
+          <figure class="product__card">
+            <img src="./images/today4.jpeg" alt="" />
+            <figcaption class="product__caption">
+              명인김규흔 하루한끼 영양바 총25개(5개입 x 5박스)
+            </figcaption>
+          </figure>
+          <div class="product__price">
+            <span class="sr-only">판매가</span>
+            <em class="price" role="text">19,900 <span class="currencyUnit">원</span></em>
+          </div>
+        </li>
+        <li class="trand-product__item">
+          <figure class="product__card">
+            <img src="./images/today5.jpeg" alt="" />
+            <figcaption class="product__caption">
+              명인김규흔 하루한끼 영양바 총25개(5개입 x 5박스)
+            </figcaption>
+          </figure>
+          <div class="product__price">
+            <span class="sr-only">판매가</span>
+            <em class="price" role="text">19,900 <span class="currencyUnit">원</span></em>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 파워미니샵 & 찬스상품-->
+  <section class="sub-event inner">
+    <div class="sub-event__wrapper">
+      <div class="sub-event__headline common__headline">
+        <h2 class="title">
+          <a href="#" class="title__link">
+            파워미니샵
+          </a>
+        </h2>
+        <span class="ad_btn"></span>
+      </div>
+      <div class="sub-event__main">
+        <a href="#" class="sub-event__link"><img src="./images/minishop.jpg" alt="" class="sub-event__img"></a>
+      </div>
+    </div>
+
+    <div class="chance">
+      <div class="chance__headline common__headline">
+        <h2 class="title">
+          <a href="#" class="title__link">
+            찬스상품
+          </a>
+        </h2>
+        <span class="ad_btn"></span>
+      </div>
+      <div class="chance__contents">
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <figure class="product__card">
+                <img src="./images/chance1.jpeg" alt="" width="194" />
+                <figcaption class="product__caption">
+                  없었던 일로 (총 540정)
+                </figcaption>
+              </figure>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">59,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <figure class="product__card">
+                <img src="./images/chance2.jpeg" alt="" width="194" />
+                <figcaption class="product__caption">
+                  없었던 일로 (총 540정)
+                </figcaption>
+              </figure>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">59,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <figure class="product__card">
+                <img src="./images/chance3.jpeg" alt="" width="194" />
+                <figcaption class="product__caption">
+                  없었던 일로 (총 540정)
+                </figcaption>
+              </figure>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">59,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <figure class="product__card">
+                <img src="./images/chance4.png" alt="" width="194" />
+                <figcaption class="product__caption">
+                  없었던 일로 (총 540정)
+                </figcaption>
+              </figure>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">59,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <figure class="product__card">
+                <img src="./images/chance5.jpeg" alt="" width="194" />
+                <figcaption class="product__caption">
+                  없었던 일로 (총 540정)
+                </figcaption>
+              </figure>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">59,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <figure class="product__card">
+                <img src="./images/chance6.jpeg" alt="" width="194" />
+                <figcaption class="product__caption">
+                  없었던 일로 (총 540정)
+                </figcaption>
+              </figure>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">59,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <figure class="product__card">
+                <img src="./images/power33.jpg" alt="" width="194" />
+                <figcaption class="product__caption">
+                  없었던 일로 (총 540정)
+                </figcaption>
+              </figure>
+              <div class="product__price">
+                <span class="sr-only">판매가</span>
+                <em class="price" role="text">59,900 <span class="currencyUnit">원</span></em>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="button__prev" aria-label="이전 버튼"><span class="sr-only">이전</span></button>
+        <button type="button" class="button__next" aria-label="다음 버튼"><span class="sr-only">다음</span></button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 공지사항 -->
+  <section class="notice inner">
+    <h2 class="notice__title"><a href="#" class="notice__link"><span class="text">알립니다</span></a></h2>
+    <span class="notice__desc"><a href="#" class="notice__desc__link">[점검] G마켓 사이트 이용 일시 중단</a></span>
+  </section>
+
+  <!-- G마켓 산스-->
+  <section class="font-sans">
+    <div class="inner">
+      <a href="#" class="font-sans__link"><img src="./images/notice.png" alt="폰트를 소개합니다" class="font-sans__img"></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <!-- customerGuide -->
+    <div class="customerGuide inner">
+      <ul class="customerGuide__list">
+        <li class="customerGuide__item"><a href="#" class="customerGuide__link">G마켓 소개</a></li>
+        <li class="customerGuide__item"><span class="divider"></span><a href="#" class="customerGuide__link">채용정보</a>
+        </li>
+        <li class="customerGuide__item"><span class="divider"></span><a href="#" class="customerGuide__link">이용약관</a>
+        </li>
+        <li class="customerGuide__item"><span class="divider"></span><a href="#"
+            class="customerGuide__link"><strong>개인정보처리방침</strong></a></li>
+        <li class="customerGuide__item"><span class="divider"></span><a href="#" class="customerGuide__link">청소년보호정책</a>
+        </li>
+        <li class="customerGuide__item"><span class="divider"></span><a href="#"
+            class="customerGuide__link">전자금융거래약관</a></li>
+        <li class="customerGuide__item"><span class="divider"></span><a href="#" class="customerGuide__link">제휴·광고</a>
+        </li>
+      </ul>
+
+      <div class="salesService">
+        <button type="button" class="salesService__btn">
+          판매자서비스
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span>
+        </button>
+        <ul class="salesService__list" >
+          <li class="salesService__item"><a href="/" class="salesService__link">판매자(e딜러) 회원가입</a></li>
+          <li class="salesService__item"><a href="/" class="salesService__link">ESM PLUS (통합판매툴)</a></li>
+          <li class="salesService__item"><a href="/" class="salesService__link">판매자 교육센터</a></li>
+          <li class="salesService__item"><a href="/" class="salesService__link">판매자 광고샵</a></li>
+          <li class="salesService__item"><a href="/" class="salesService__link">판매자 공지사항</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- 지마켓글로벌 유한회사 -->
+    <div class="Information inner">
+      <div class="Information__address">
+        <h2 class="Information__title">
+          지마켓글로벌 유한책임회사
+        </h2>
+        <div class="Information__item">
+          <span role="text"><span class="sr-only">주소</span>서울특별시 강남구 테헤란로 152 (역삼동, 강남파이낸스센터)</span>
+        </div>
+        <div class="Information__item">
+          <span role="text">사업자등록번호<span aria-hidden="true"> : </span>220-81-83676</span>
+          <span class="divider"></span>
+          <span role="text">통신판매업신고<span aria-hidden="true"> : </span>강남 10630호</span>
+          <div class="button"><span class="button_click">사업자정보확인</span></div>
+        </div>
+        <div class="Information__item">
+          <span role="text">업무집행자<span aria-hidden="true"> : </span>전향일</span>
+        </div>
+      </div>
+      <div class="customerCneter">
+        <h2 class="Information__title">
+          고객센터
+          <span class="arrow"></span>
+        </h2>
+        <div class="Information__item">
+          <span role="text"><span class="sr-only">주소</span>경기도 부천시 부일로 223 9층 (상동)</span>
+        </div>
+        <div class="Information__item">
+          <span role="text">Tel<span aria-hidden="true"> : </span><strong>1566-5701</strong> (평일 09:00 ~ 18:00)</span>
+          <span class="divider"></span>
+          <span role="text">스마일클럽 전용 Tel<span aria-hidden="true"> : </span><strong> 1522-5700</strong> (365일 09:00 ~
+            18:00)</span>
+        </div>
+        <div class="Information__item">
+          <span role="text">Fax<span aria-hidden="true"> : </span>02-589-8842</span>
+          <span class="divider"></span>
+          <span role="text">Mail<span aria-hidden="true"> : </span>gmarket@corp.gmarket.co.kr</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 전자금융분쟁처리 -->
+    <div class="payment-notice inner">
+      <div class="electronic-payment">
+        <div class="first">
+          <h3 class="title"><a href="#" class="title__link"><span class="arrow">전자금융분쟁처리</span></a></h3>
+          <div class="item__list">
+            <span role="text">Tel<span aria-hidden="true"> : </span>1566-5701</span>
+            <span class="divider"></span>
+            <span role="text">Fax<span aria-hidden="true"> : </span>02-589-8844</span>
+            <span role="text">Mail</span><span aria-hidden="true"> : </span> gmk_cs@corp.gmarket.co.kr</span>
+          </div>
+          <div class="item__list">
+            <a href="#" class="item__link">분쟁처리절차 ></a>
+          </div>
+        </div>
+        <div class="second">
+          <div class="item__list">
+            <a href="#" class="item__link">오픈마켓 자율준수규약 ></a>
+          </div>
+          <div class="item__list">
+            <a href="#" class="item__link">윤리경영 ></a>
+          </div>
+          <div class="item__list">
+            <a href="#" class="item__link">사이버범죄 신고시스템 ></a>
+          </div>
+          <div class="item__list">
+            <a href="#" class="item__link">VeRO Program ></a>
+          </div>
+          <div class="item__list">
+            <a href="#" class="item__link">안전거래센터 ></a>
+          </div>
+          <div class="item__list">
+            <a href="#" class="item__link">저작권침해신고 ></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 카피라이터 -->
+    <div class="copyrightArea inner">
+      <div class="copyright">
+        <span>G마켓은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 G마켓은 상품·거래 정보 및 가격에 대하여 책임을 지지 않습니다.</span>
+        <span class="before">본 사이트의 모든 정보, 콘텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 관련 법령에 의하여 엄격히 금지됩니다.</span>
+        <span>Copyright Gmarket Global LLC All rights reserved.</span>
+      </div>
+      <div class="copyright__last">
+        <img src="./images/logo_kolsa.png" alt="logo_kolsa" width="40">
+        <span>한국온라인쇼핑협회</span>
+        <span class="underline">수상·인증 내역</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 위로가기 버튼  -->
+    <div id="to-top" class="inner">
+      <div class="to-top-icon"></div>
+    </div>
+</body>
+
+</html>

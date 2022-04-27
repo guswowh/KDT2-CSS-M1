@@ -1,0 +1,108 @@
+.divider {
+  color: $booking-color-gray-200;
+  margin: 0 .8rem;
+  display: inline-block;
+}
+
+.new-badge {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 1.5rem;
+  background-color: $booking-color-red-400;
+  border: 1px solid;
+  color: $booking-color-white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: .5rem;
+  position: absolute;
+  right: -14px;
+  top: 10px;
+}
+
+.inner {
+  position: relative;
+  width: 120rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.common__headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .title {
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .show-all {
+    display: block;
+    position: relative;
+    color: $booking-color-gray-700;
+    line-height: 1.8rem;
+    z-index: 10;
+    padding-right: 2.2rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      @include sprite-img(0 -44px);
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+// 가격
+.product__price {
+  font-family: sans-serif; 
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  display: block;
+  .price {
+    font-weight: bold;
+    font-size: 1.9rem;
+    font-style: normal;
+    margin-left: 0.1em;
+  }
+  .currencyUnit {
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-left: 0.1em;
+  }
+}
+
+.ad_btn {
+  @include sprite-img(-154px -144px);
+  width: 2rem;
+  height: 1.4rem;
+  display: inline-block;
+}
+
+.button__prev {
+  position: absolute;
+  @include sprite-img(0 0);
+  width: 4.2rem;
+  height: 4.2rem;
+  top: 43%;
+  left: -1%;
+  z-index: 10;
+}
+
+.button__next {
+  position: absolute;
+  @include sprite-img(-42px 0);
+  width: 4.2rem;
+  height: 4.2rem;
+  top: 43%;
+  right:0;
+  z-index: 10;
+}
