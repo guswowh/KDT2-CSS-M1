@@ -40,7 +40,7 @@ Netlify 링크: [하남 스타필드 과제](https://cozy-naiad-f7bc63.netlify.a
 
 ### js
   1. 제대로 구현하지 못했거나 css로 대체했다.
-  1. 실시간 지역날씨 위젯을 해보려했지만 위치설정과 아이콘색이 배경과 물려서 방법을 찾지 못했다. [날씨 API](https://openweathermap.org/)
+  1. 실시간 지역날씨 위젯을 해보려했지만 위치설정 문제와 아이콘색이 배경과 물려서 방법을 찾지 못했다. [날씨 API](https://openweathermap.org/)
    
 
 ### 하지 못한 것
