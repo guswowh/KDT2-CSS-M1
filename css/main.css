@@ -1,7 +1,7 @@
 /*COMMON */
 body {
   color:#75675c; 
-  font-size:13px; 
+  font-size: 0.8rem; 
   font-family:"Nanum Barun Gothic", "나눔고딕", "NanumGothic", "돋움", "Dotum", sans-serif;
   line-height:1.5; 
   letter-spacing:-.05em;
@@ -62,16 +62,19 @@ aside .btn {
   margin-left: 74%;
 }
 aside .btn a {
+  display: inline-block;
   background-image: url("../images/bu_dom.png");
   background-repeat: no-repeat;
-  background-position: 10px 60%;
+  background-position: 10px 50%;
   border-radius: 0 0 5px 5px;
   color: #f9b234;
-  padding: 10px 10px 5px 25px;
+  padding: 0 10px 0 30px;
   background-color: #2c1810;
   font-size: 11px;
   height: 24px;
   letter-spacing:.1em;
+  vertical-align: top;
+  line-height: 24px;
 }
 
 
@@ -297,9 +300,11 @@ section .promotion {
   overflow: hidden;
 }
 section .promotion .swiper-pagination {
-  bottom: 170px;
-  left: 0;
-  right: 0;
+  height: 10px;
+  width: 100px;
+  position: absolute;
+  margin-left: 55rem;
+  margin-bottom: 10rem;
 }
 section .promotion .swiper-pagination .swiper-pagination-bullet {
   background-color: #d6cfcd;
@@ -322,8 +327,8 @@ section .promotion .swiper-prev {
   width: 81px;
   height: 20px;
   position: absolute;
-  top: 52%;
-  left: 15%;
+  top: 30rem;
+  margin-left: 20rem;
   z-index: 1;
   cursor: pointer;
 }
@@ -332,8 +337,8 @@ section .promotion .swiper-next {
   width: 81px;
   height: 20px;
   position: absolute;
-  top: 52%;
-  right: 10%;
+  top: 30rem;
+  margin-left: 100rem;
   z-index: 1;
   cursor: pointer;
 }
@@ -459,7 +464,7 @@ section.event .slide .slide_title > img {
 section.event .slide .slide_description {
   border-top: 1px solid #d1cccb;
   padding: 20px;
-  font-size: 16px;
+  font-size: 1rem;
   height: 51px;
   cursor: pointer;
 }
@@ -559,7 +564,7 @@ section.dunkin-menu .product .btn {
   border-radius: 5px;
   padding: 5px 16px 6px 17px;
   color: #ab9b7f;
-  font-size: 12px;
+  font-size: 0.75rem;
   width: 65px;
   height: 18px;
   margin:  auto;
@@ -595,7 +600,7 @@ section.scroll_bg2 .img-group .find_store {
   height: 380px;
   position: absolute;
   bottom: 65px;
-  left: 500px;
+  margin-left: 35rem;
   transform: rotateY(180deg);
   opacity: 0;
   transition: 1s;
@@ -629,7 +634,7 @@ section.scroll_bg2 .img-group .catering {
   height: 380px;
   position: absolute;
   bottom: -65px;
-  right: 620px;
+  margin-left: 60rem;
   transform: rotateY(180deg);
   opacity: 0;
   transition: 1s;
@@ -725,8 +730,8 @@ section.footer_slide .swiper-slide {
   
 }
 section.footer_slide img {
-  width: 260px;
-  height: 260px;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -840,9 +845,8 @@ ul.footer_menu_1 > li:last-child > ul li {
   height: 35px;
 }
 ul.footer_menu_1 > li:last-child > ul li:nth-child(4) {
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 700;
-  line-height: 22.5px;
 }
 ul.footer_menu_1 > li ul li {
   font-size: 12px;
@@ -928,6 +932,3 @@ ul.footer_menu_3 > li:nth-child(3) {
   color: #ff0000;
   font-weight: 700;
 }
-
-
-
