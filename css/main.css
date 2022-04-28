@@ -177,7 +177,6 @@ header .topBox .info .infoBox .search::before {
 .menu:hover .hide {
   height: 409px;
   opacity: 1;
-  transition: opacity 0.01s;
   transition: height 0.5s;
 }
 .hide {
@@ -189,9 +188,6 @@ header .topBox .info .infoBox .search::before {
   background-color: #fff;
   overflow: hidden;
   opacity: 0;
-  transition: opacity 0.01s;
-  transition-delay: opacity 0.5s;
-  transition: height 0.5s;
 }
 .Inner {
   width: calc((1024px/10)*8);
