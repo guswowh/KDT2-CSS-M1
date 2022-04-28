@@ -39,10 +39,10 @@ Netlify 링크: [하남 스타필드 과제](https://cozy-naiad-f7bc63.netlify.a
   1. 포지션을 활용해 디테일한 위치를 잡는 것이 가능해졌다.
 
 ### js
-  1. 뱁새가 황새 쫓다가 가랑이 찢어질뻔해서 구현하지 못했거나 css로 대체했다.
+  1. 제대로 구현하지 못했거나 css로 대체했다.
 
 ### 하지 못한 것
-topMain swiper 이미지 좌우 버튼에 마우스를 올리면 미리보기처럼 옆 사진이 보이도록 현재 화면에 보이는 이미지가 선택되도록 swiper-slide-active 클래스를 할당해줬다. 처음보이는 이미지만 구동이 되고 자동재생으로 active가 옮겨다니는걸 인식하지 못한다.
+topMain swiper 이미지 좌우 버튼에 마우스를 올리면 미리보기처럼 옆 사진이 보이는데 현재 화면에 보이는 이미지가 선택되도록 swiper-slide-active 클래스를 할당해줬다. 처음보이는 이미지만 구동이 되고 자동재생으로 active가 옮겨다니는걸 인식하지 못한다.
 ```js
 const next = document.querySelector('.topMain .swiper-next')
 const prev = document.querySelector('.topMain .swiper-prev')
@@ -69,34 +69,9 @@ next.addEventListener('mouseout', function() {
   })
 })
 ```
-swiper slide에 그림자를 줬을 때 박스 사이즈를 조절해봐도 값이 무시를 당해서 그림자가 이미지를 넘어간다.
-```js
-new Swiper('.bestMain .swiper', {
-  effect: 'coverflow',
-  slidesPerView: 3,
-  spaceBetween: 20,
-  centeredSlides: true,
-  loop: true,
-  slideShadows:true,
-  coverflowEffect: {
-    scale: 0.9,
-    rotate : 0,
-    depth: 10,
-    modifier: 1,
-    slideShadows : true
-  },
-  pagination: {
-    el: '.bestMain .swiper-pagination',
-    clickable: true
-  },
-  navigation: {
-    prevEl: '.bestMain .swiper-prev',
-    nextEl: '.bestMain .swiper-next'
-  }
-})
-```
 
-footer에 있는 bottom 클래스에 패밀리 사이트 리스트를 클릭하면 열리고 마우스를 때면 리스트가 꺼지도록 했는데 패밀리 사이트 이름의 범위만 벗어나도 리스트가 꺼지는 것을 해결하지 못했다. 일단 마우스오버, 마우스아웃으로 구현했다.
+
+footer에 있는 bottom 클래스에 패밀리 사이트 리스트를 클릭하면 열리고 마우스를 아웃하면 리스트가 꺼지도록 했는데 패밀리 사이트 텍스트 범위만 벗어나도 리스트가 꺼지는 것을 해결하지 못했다. 일단 마우스오버, 마우스아웃으로 구현했다.
 ```js
 const famSite = document.querySelector('.family')
 const famList = document.querySelector('.famList')
