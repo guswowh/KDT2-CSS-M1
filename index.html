@@ -4,329 +4,334 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>토스팀 소개</title>
-
-  <link rel="icon" href="./favicon.png" />
+  <title>지그재그</title>
+  <!-- 파비콘 -->
+  <link rel="icon" type="image/png" href="./favicon-b20ad83423dad48e2ab0c4321f7e991d.ico">
+  <!-- 브라우저 스타일 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-
-
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="./fonts/font.css" />
+  <link rel="stylesheet" href="./css/keyframes.css" />
   <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main1024px.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
-    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- IntersectionObserver -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+  <!-- Main JS -->
   <script defer src="./js/main.js"></script>
-
-
 </head>
 <body>
-
-  <!-- HEADER -->
+   
   <header>
-    <div class="inner">
-      <div class="toss">
-        <a href="https://toss.im/" class="logo">
-        <img src="./images/logo-toss-white.png" alt="TOSS" />
-        </a>
-      </div>
-      <ul class="menu">
-        <li>
-          <a href="javascript:void(0)">회사 소개</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">고객센터</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">자주 묻는 질문</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">공동인증서 관리</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">채용</a>
-        </li>
-      </ul>
-    </div>
+    <div class="center">
 
+      <div class="header-top">
+        <a href="#" class="logo">
+          <img src="./images/logo-white-7684d3487ad6b73b5fcad07c0a48109e.svg" alt="LOGO" />
+        </a>
+        <a href="#" class="pc partner">신규 입점 안내</a>
+      </div>
+
+      <div class="header-bot">
+        <div class="bot-text">
+          <h2>내 맘대로 쇼핑앱<br/>지그재그</h2>
+          <a href="#" class="mobile partner">신규 입점 안내</a>
+          <h4>3천 5백만이 선택한 국민 패션 쇼핑앱<br/>6,500개 이상 여성 쇼핑몰과 브랜드를 한 번에</h4>
+          <div class="download">
+            <div class="qr-code">
+              <p>QR코드 다운로드</p>
+              <img width="112px" height="112px" src="./images/qrcode@3x-20d2cdc56d81b9315f8579e164a14f3b.png" alt="QR-Code Download" />
+            </div>
+            <div class="appstore">
+              <p>앱스토어 다운로드</p>
+              <div class="apple">
+                <a target="_blank" rel="noreferrer" area-label="app-store" href="https://go.onelink.me/app/d3897a5b">
+                  <img src="./images/app-store-pink-b664a764dc6e2a4bd2bc5387474d6c35.svg" alt="Appstore Download" />
+                </a>
+              </div>
+              <div class="google">
+                <a target="_blank" rel="noreferrer" area-label="google-play" href="https://go.onelink.me/app/189189a0">
+                  <img src="./images/google-play-pink-fcf436496f2fe8d6fedb878dbd095871.svg" alt="Google Play Download" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app__img">
+        <img src="./images/hero_app_image-b117b918c071f9b1201f74b7baa83133.png" alt="APP" />
+      </div>
+
+    </div>
   </header>
 
- <!-- 1PAGE -->
-  <div class="top__container">
-    <div class="top__inner">
-      <div class="top__title">
-        금융, 그 이상의<br />
-        역사를 만들고 있습니다.
-      </div>
-      <div class="btn">
-        <img src="./images/down-arrow.png" alt="down-arrow">
-        
-      </div>
-    </div>
+<section id="tabMenu">
+  <div class="pinkConfetties">
+    <div class="conf conf1"></div>
+    <div class="conf conf2"></div>
+    <div class="conf conf3"></div>
+    <div class="conf conf4"></div>
+    <div class="conf conf5"></div>
+    <div class="conf conf6"></div>
+    <div class="conf conf7"></div>
+    <div class="conf conf8"></div>
+    <div class="conf conf9"></div>
+    <div class="conf conf10"></div>
+    <div class="conf conf11"></div>       
   </div>
-
-
-  <!-- 2PAGE -->
-  <div class="chart__container">
-    <div class="inner">
-      <div class="chart"></div>
-      <div class="chart__text">
-        <div class="text__title">
-          변화를 열망하는 사람들이 모여,<br>
-          역사에 남을만한 변화를 만듭니다.
-        </div>
-        <div class="text__description">
-          <div class="description__1">
-            누적 가입자 수
-          </div>
-          <div class="description__2">
-            2,200만 +
-          </div>
-        </div>
-        <div class="text__description">
-          <div class="description__1">
-            누적 투자금액
-          </div>
-          <div class="description__2">
-            1조 원 +
-          </div>
-        </div>
-        <div class="text__description">
-          <div class="description__1">
-            전체 팀원 수
-          </div>
-          <div class="description__2">
-            1,500명 +
-          </div>
-        </div>
-        <div class="text__description">
-          <div class="description__1">
-            출시 서비스 수
-          </div>
-          <div class="description__2">
-            50개 +
-          </div>
-        </div>
-        <div class="text_description__2">
-          2022년 4월 기준
-        </div>
-    </div>
-  </div>
-
-  <!-- 3PAGE -->
-
-  <div class="mission__container">
-    <div class="mission__text">
-      <div class="text__title">
-        Team Mission
-      </div>
-      <div class="text__description">
-        토스팀은 바꾸고 싶은 세상의 모습이 있고 생각만 <br>
-        해도 가슴 뛰는 목표가 있는 조직입니다. <br>
-        어렵고,불편하고,멀게 느껴지는 금융이 아닌 <br>
-        누구에게나 쉽고 상식적인 금융을 만드는 것이 <br>
-        토스팀의 존재 이유입니다.
-      </div>
-    </div>
-  </div>
-
-  <!-- 4PAGE -->
-  <div class="history__container">
-    <div class="inner">
-      <div class="title">
-        토스팀은 오늘도<br>
-        위대한 역사를 만들고 있습니다
-      </div>
-      <div class="timeline">
-        <ul class="years">
-          <li class="year active" data-year="2021" ></li>
-          <li class="year" data-year="2020" ></li>
-          <li class="year" data-year="2019" ></li>
-          <li class="year" data-year="2018" ></li>
-          <li class="year" data-year="2017" ></li>
-          <li class="year" data-year="2016" ></li>
-          <li class="year" data-year="2015" ></li>
-          <li class="year" data-year="2014" ></li>
-          <li class="year" data-year="2013" ></li>
+  <div class="center">
+    <div class="tab-container">
+      <div class="tab-wrapper">
+        <ul class="tab--menu">
+          <li id="tab1" class="on" data-index="0">즐겨찾기</li>
+          <li id="tab2" data-index="1">Z결제</li>
+          <li id="tab3" data-index="2">직진배송</li>
+          <li id="tab4" data-index="3">스마트검색</li>
+          <li id="tab5" data-index="4">내상품</li>
         </ul>
-        <ul class="year__contents">
-          <div class="contents" data-year="2021">
-            <li>
-              <h3>2021.02</h3>
-              <h4>(주)토스증권 출범</h4>
-            </li>
-            <li>
-              <h3>2021.04</h3>
-              <h4>(주)토스씨엑스 설립</h4>
-            </li>
-            <li>
-              <h3>2021.06</h3>
-              <h4>토스뱅크 컨소시엄 제3 인터넷전문은행 본인가 획득<br>4,600억 원 투자 유치 (기업가치 한화 약 8조원 돌파)</h4>
-            </li>
-            <li>
-              <h3>2021.08</h3>
-              <h4>평생 무료 송금 정책 전격 도입<br>본인확인기관 선정</h4>
-            </li>
-            <li>
-              <h3>2021.10</h3>
-              <h4>(주)토스뱅크 출범<br>(주)VCNC(타다) 인수</h4>
-            </li>
-            <li>
-              <h3>2021.11</h3>
-              <h4>전자서명인증사업자 선정</h4>
-            </li>
-            <li>
-              <h3>2021.12</h3>
-              <h4>행정안전부 주관 '2021 정보화발전 ' 장관 표창 수상</h4>
-            </li>
+        <div class="contents-wrap">
+          <div class="tab--contents show">
+            <div class="imgbox">
+              <div class="tab--img tab1"></div>
+            </div>
+            <div class="tab--textbox right left">
+              <div class="tab--text">
+                <h2>
+                  6,500개 이상 쇼핑몰에<br/>
+                  브랜드까지<br class="br" />
+                  한 번에 즐겨찾기
+                </h2>
+                <p>
+                  6,500개 이상 쇼핑몰과 브랜드<br/>
+                  한 번에 즐겨찾기
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="contents" data-year="2020">
-            <li>
-              <h3>2020.04</h3>
-              <h4>첫 월간 흑자 기록<br>토스신용카드(PLCC) 출시</h4>
-            </li>
-            <li>
-              <h3>2020.05</h3>
-              <h4>토스인증서 발급 1,100만 돌파</h4>
-            </li>
-            <li>
-              <h3>2020.07</h3>
-              <h4>고객 피해 전액 책임제 시행</h4>
-            </li>
-            <li>
-              <h3>2020.08</h3>
-              <h4>2,070억 원 투자 유치 (기업가치 한화 약 3조 원 돌파)<br>㈜토스페이먼츠 출범<br>토스보험파트너 앱 출시</h4>
-            </li>
-            <li>
-              <h3>2020.11</h3>
-              <h4>토스준비법인(토스증권) 금융투자업 본인가 획득</h4>
-            </li>
+          <div class="tab--contents">
+            <div class="imgbox">
+              <div class="tab--img tab2"></div>
+            </div>
+            <div class="tab--textbox right left">
+              <div class="tab--text">
+                <h2>
+                  결제는 한 번만<br/>
+                  포인트는 한 곳에
+                </h2>
+                <p>
+                  6,500개 쇼핑몰과 브랜드, 가입도 결제도 한 번에<br/>
+                  쇼핑은 여러 곳에서, 포인트는 한 곳에
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="contents" data-year="2019">
-            <li>
-              <h3>2019.02</h3>
-              <h4>토스 3.0 출시 및 브랜드 로고 리뉴얼</h4>
-            </li>
-            <li>
-              <h3>2019.03</h3>
-              <h4>토스준비법인(토스증권) 예비인가 획득</h4>
-            </li>
-            <li>
-              <h3>2019.04</h3>
-              <h4>토스머니카드 출시</h4>
-            </li>
-            <li>
-              <h3>2019.08</h3>
-              <h4>770억 원 투자 유치</h4>
-            </li>
-            <li>
-              <h3>2019.10</h3>
-              <h4>월간 활성 사용자 1,000만 명 돌파</h4>
-            </li>
-            <li>
-              <h3>2019.11</h3>
-              <h4>토스카드 2.0 출시</h4>
-            </li>
-            <li>
-              <h3>2019.12</h3>
-              <h4>토스뱅크 컨소시엄 제3 인터넷전문은행 예비인가 획득<br>무료 신용등급 조회 누적 사용자 1,000만 명 돌파</h4>
-            </li>
+          <div class="tab--contents">
+            <div class="imgbox">
+              <div class="tab--img tab3"></div>
+            </div>
+            <div class="tab--textbox right left">
+              <div class="tab--text">
+                <h2>
+                  지그재그가<br class="br" />
+                  선보이는<br/>
+                  빠른배송
+                </h2>
+                <p>
+                  쇼핑은 지그재그로 배송은 직진으로<br/>
+                  오늘 주문하면 전국 어디든 내일 도착!
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="contents" data-year="2018">
-            <li>
-              <h3>2018.04</h3>
-              <h4>이승건 대표 정보통신의 날 기념 대통령 표창 수상</h4>
-            </li>
-            <li>
-              <h3>2018.06</h3>
-              <h4>440억 원 투자 유치</h4>
-            </li>
-            <li>
-              <h3>2018.10</h3>
-              <h4>세계 100대 핀테크 기업 중 28위 선정</h4>
-            </li>
-            <li>
-              <h3>2018.11</h3>
-              <h4>과학기술정보통신부 주최 2018 정보보호대상 수상<br>㈜토스인슈어런스 설립</h4>
-            </li>
-            <li>
-              <h3>2018.12</h3>
-              <h4>900억 원 투자 유치 (기업가치 한화 약 1조 원 돌파)</h4>
-            </li>
+          <div class="tab--contents">
+            <div class="imgbox">
+              <div class="tab--img tab4"></div>
+            </div>
+            <div class="tab--textbox right left">
+              <div class="tab--text">
+                <h2>
+                  까다로운 검색도<br/>
+                  필터로 한 번에
+                </h2>
+                <p>
+                  카테고리, 가격, 소재, 컬러까지<br/>
+                  내 마음대로 보고 싶은 상품만<br/>
+                  쏙쏙 골라 볼 수 있어요.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="contents" data-year="2017">
-            <li>
-              <h3>2017.02</h3>
-              <h4>무료 신용등급 조회 서비스 출시</h4>
-            </li>
-            <li>
-              <h3>2017.03</h3>
-              <h4>550억 원 투자 유치</h4>
-            </li>
-            <li>
-              <h3>2017.11</h3>
-              <h4>세계 100대 핀테크 기업 중 35위 선정</h4>
-            </li>
-            <li>
-              <h3>2017.12</h3>
-              <h4>월 송금액 1조, 누적 송금액 10조 돌파</h4>
-            </li>
+          <div class="tab--contents">
+            <div class="imgbox">
+              <div class="tab--img tab5"></div>
+            </div>
+            <div class="tab--textbox right left">
+              <div class="tab--text">
+                <h2>
+                  모든 아이템을<br>
+                  내 상품에 저장!
+                </h2>
+                <p>
+                  내가 좋아하는 상품만 모아모아 저장!<br/>
+                  특별한 선택으로 가득찬 나만의 옷장을<br/>
+                  지그재그로 만들어보세요!
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="contents" data-year="2016">
-            <li>
-              <h3>2016.04</h3>
-              <h4>265억 원 투자 유치<br>
-                이승건 대표 한국핀테크산업협회 초대 회장 부임</h4>
-            </li>
-            <li>
-              <h3>2016.08</h3>
-              <h4>누적 송금액 1조 원 돌파</h4>
-            </li>
-            <li>
-              <h3>2016.12</h3>
-              <h4>구글 플레이 ‘2016 올해의 베스트앱' 대상 수상</h4>
-            </li>
-          </div>
-          <div class="contents" data-year="2015">
-            <li>
-              <h3>2015.02</h3>
-              <h4>간편 송금 서비스 출시</h4>
-            </li>
-            <li>
-              <h3>2015.07</h3>
-              <h4>50억 원 투자 유치</h4>
-            </li>
-            <li>
-              <h3>2015.10</h3>
-              <h4>토스(Toss) 상표권 등록</h4>
-            </li>
-          </div>
-          <div class="contents" data-year="2014">
-            <li>
-              <h3>2014.08</h3>
-              <h4>10억 원 투자 유치</h4>
-            </li>
-          </div>
-          <div class="contents" data-year="2013">
-            <li>
-              <h3>2013.04</h3>
-              <h4>㈜비바리퍼블리카 설립</h4>
-            </li>
-          </div>
-        </ul>
+        </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- 아직 실력이 미숙해서 공부에 시간을 투자해야겠다고 판단하고
-  뒷부분은 후에 정리할 생각 -->
 
+<section id="partner" class="scroll-spy">
+  <div class="center">
+    <div class="partner-textbox">
+      <h2 class="back-to-position to-up delay-0">
+        지그재그는<br/>
+        입점 파트너와<br/>
+        함께 성장합니다.
+      </h2>
+      <p class="back-to-position to-up delay-1">
+        매월 370만 고객이 이용하는 성공 플랫폼<br/>
+        지그재그, 지금 바로 시작하세요.
+      </p>
+      <div class="partner-btn back-to-position delay-3">
+        <a href="#" class="new-partner">
+          <p>신규 파트너</p>
+          <h3>플랫폼 입점 안내</h3>
+        </a>
+        <a href="#" class="existing-partner">
+          <p>기존 파트너</p>
+          <h3>파트너 센터 로그인</h3>
+        </a>
+      </div>
+    </div>
+    <div class="partner-img back-to-position delay-4"></div>
+  </div>
+</section>
+
+
+<section id="counting">
+  <div class="countbox">
+    <div class="whatAbout">
+      <h3>여성 쇼핑몰&브랜드</h3>
+      <h3>2021년 거래액</h3>
+      <h3>매월 사용자</h3>
+      <h3>앱 다운로드</h3>
+    </div>
+    <div class="howMany">
+      <h3>
+        <span class="count_no" data="6500">0</span> 개
+      </h3>
+      <h3>
+        <span class="count_no" data="1">0</span> 조
+      </h3>
+      <h3>
+        <span class="count_no" data="370">0</span> 만
+      </h3>
+      <h3>
+        <span class="count_no" data="3500">0</span> 만
+      </h3>
+    </div>
+  </div>
+  <p class="based_on">
+    2021년 12월 기준
+  </p>
+</section>
+
+
+<section id="foot-download">
+  <div class="center">
+    <h3>
+      지금 바로 지그재그를<br/>
+      다운로드 하세요.
+    </h3>
+    <div class="download">
+      <div class="qr-code">
+        <p>QR코드 다운로드</p>
+        <img width="112px" height="112px" src="./images/qrcode-pink@3x-05d34eb2ba0d098f9c38164a9f33bee0.png" alt="QR-Code Download" />
+      </div>
+      <div class="appstore">
+        <p>앱스토어 다운로드</p>
+        <div class="apple">
+          <a target="_blank" rel="noreferrer" area-label="app-store" href="https://go.onelink.me/app/d3897a5b">
+            <img src="./images/app-store-pink-b664a764dc6e2a4bd2bc5387474d6c35.svg" alt="Appstore Download" />
+          </a>
+        </div>
+        <div class="google">
+          <a target="_blank" rel="noreferrer" area-label="google-play" href="https://go.onelink.me/app/189189a0">
+            <img src="./images/google-play-pink-fcf436496f2fe8d6fedb878dbd095871.svg" alt="Google Play Download" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="center">
+    <h4>(주) 카카오스타일</h4>
+    <div class="foot--contents">
+      <div>
+        <p>대표 : 서정훈</p>
+        <p>주소 : 서울시 강남구 테헤란로 521 파르나스타워, 27층</p>
+      </div>
+      <div>
+        <p>쇼핑몰/브랜드 제휴 문의 : shop@zigzag.kr</p>
+        <p>마케팅 제휴문의 : marketing@zigzag.kr</p>
+        <p>홍보문의 : pr@zigzag.kr</p>
+      </div>
+      <div>
+        <p>고객문의 : support@zigzag.kr / 1670-8050 (09:00~18:00)</p>
+        <p>전화번호 : 02-1670-8050</p>
+      </div>
+      <div>
+        <p>통신판매업 신고번호 : 2018-서울강남-03345</p>
+        <p>사업자등록번호 : 214-88-91525</p>
+      </div>
+    </div>
+    <p class="copyright">
+      (주)카카오스타일은 통신판매중개자로서 통신판매의 당사자가 아닙니다. 따라서, 등록된 상품 거래정보 및 거래에 대하여 (주)카카오스타일은 어떠한 책임도 지지 않습니다.<br/>
+      Copyright &copy; kakaostyle Corp. All rights reserved.
+    </p>
+    <div class="utilMenu">
+      <ul class="foot--menu">
+        <li><a href="#">사업자정보확인</a></li>
+        <li><a href="#">셀러 이용약관</a></li>
+        <li><a href="#">유저 이용약관</a></li>
+        <li><a href="#">셀러 개인정보처리방침</a></li>
+        <li><a href="#">유저 개인정보처리방침</a></li>
+        <li><a href="#">인재영입</a></li>
+      </ul>
+      <ul class="sns">
+        <li><a class="sns__insta" target="_blank" rel="noreferrer" href="https://www.instagram.com/zigzag_korea/"></a></li>
+        <li><a class="sns__1boon" target="_blank" rel="noreferrer" href="https://1boon.kakao.com/zigzag"></a></li>
+        <li><a class="sns__katalk" target="_blank" rel="noreferrer" href="https://pf.kakao.com/_eddbM"></a></li>
+        <li><a class="sns__youtube" target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UC5CTLf-G91F8BCEKMPQEDDg"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="m_download">
+  <div class="m_appstore">
+    <div class="m_apple">
+      <a target="_blank" rel="noreferrer" area-label="app-store" href="https://go.onelink.me/app/d3897a5b">
+        <div class="m_apple_img"></div>
+      </a>
+    </div>
+    <div class="m_google">
+      <a target="_blank" rel="noreferrer" area-label="google-play" href="https://go.onelink.me/app/189189a0">
+        <div class="m_google_img"></div>
+      </a>
+    </div>
+  </div>
+</div>
 </body>
 </html>
