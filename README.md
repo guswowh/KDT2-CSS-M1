@@ -45,6 +45,8 @@
 <br/>
 <h2>DEMO</h2>
 https://timely-starburst-5c0190.netlify.app/
+  
+원본 사이트 : https://toss.im/team
 
 <br/>
 <h2>Review</h2>
