@@ -1,0 +1,2130 @@
+body {
+  min-width: 1064px;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+span {
+  flex: content;
+}
+img {
+  vertical-align: top;
+}
+button {
+  overflow: visible;
+  border: 0 none;
+  background-color: transparent;
+  font-size: 100%;
+  cursor: pointer;
+}
+em {
+  font-style: normal;
+}
+footer {
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border-top: 1px solid #000;
+  font-family: "맑은 고딕", "Malgun Gothic", verdana, sans-serif
+}
+ol,ul {
+  list-style: none;
+}
+.list_menu {
+  position: relative;
+  width: max-content;
+  height: 32px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/bg_gnbm.png) repeat-x;
+}
+.sub_menu {
+  position: relative;
+}
+.sub_menu li{
+  width: 97px;
+  text-align: center;
+}
+.sub_menu li a:hover {
+  height: 30px;
+}
+.sp_h {
+  display: inline-block;
+  overflow: hidden;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/common/sp_h_190320.png) no-repeat;
+}
+.sp_com {
+  display: inline-block;
+  overflow: hidden;
+  cursor:pointer;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/common/sp_com_v2.png) no-repeat;
+}
+.add_option button {
+  margin-top: 5px;
+}
+button {
+  overflow: visible;
+  border: 0 none;
+  background-color: transparent;
+  font-size: 100%;
+  cursor: pointer;
+}
+.hx {
+  padding-bottom: 14px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/bg_hbar.gif) repeat-x 0 100%;
+  text-align: center;
+}
+
+
+/* HEADER */
+.header_wrap .main_menu{
+  display: flex;
+}
+.header_wrap .main_menu > li {
+  width: 97px;
+  text-align: center;
+}
+
+.header .inner {
+  height: 62px;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #dde1e5;
+  background-color: #fff;
+  position: relative;
+}
+
+.header .inner .menu {
+  padding: 23px 23px 21px;
+  left: -5px;
+  font-size:17px;
+  color: #17191d;
+  box-sizing: border-box;
+  text-align: center;
+  transition-duration: .4s;
+  position: absolute;
+  display: flex;
+  margin: 0;
+}
+.header .inner .menu:hover {
+  color: #07f;
+  transition-timing-function: linear;
+}
+.header .inner .menu .menu_small {
+  padding-top: 3px;
+  padding-left: 5px;
+}
+.header .inner .logo {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.header .inner .pc_room {
+  top: 2px;
+  width: 33px;
+  right: 180px;
+  height: 42px;
+  padding: 21px 5px 0 6px; 
+  position: absolute;
+  display: inline-block;
+}
+.header .inner .pc_room .pc_room_icon {
+  width: 22px;
+  height: 22px;
+  background: #191919 url(//rs.nxfs.nexon.com/gnb/images/set_gnb_icon.png) 0 0 no-repeat;
+  position: absolute;
+}
+.header .inner .pc_room .pc_room_hidden_name {
+  position: absolute;
+  top: 41px;
+  height: 18px;
+  left: -2px;
+  width: 25px;
+  padding: 1px 6px 0;
+  border-radius: 15px;
+  background-color: #1b1f24;
+  font-size: 11px;
+  line-height: 16px;
+  color: hsla(0,0%,100%,.9);
+  transition: all .2s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+.header .inner .pc_room:hover .pc_room_hidden_name {
+  visibility: visible;
+  opacity: 1;
+}
+.header .inner .pc_room .pc_room_on_off {
+  position: absolute;
+    width: 22px;
+    height: 14px;
+    top: 19px;
+    left: 17px;
+    display: block;
+    background: transparent url(//rs.nxfs.nexon.com/gnb/images/set_gnb_icon.png) 0 0 no-repeat;
+    background-position: -50px -250px;
+}
+.header .inner .sign-up a {
+  top: 26px;
+  right: 120px;
+  width: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #17191d;
+  cursor: pointer;
+  transition-duration: .4s;
+  position: absolute;
+}
+.header .inner .sign-up a:hover {
+  color: #07f;
+  transition-timing-function: linear;
+}
+.header .inner .sign-in a {
+  top: 14px;
+  height: 22px;
+  right: 28px; 
+  width: 45px;
+  padding: 10px 18px 0;
+  color: #080410;
+  font-size: 15px;
+  font-weight: 900;
+  border-radius: 19px;
+  border: 2px solid #17191d;
+  cursor : pointer;
+  text-align: center;
+  transition-duration: .4s;
+  position: absolute;
+}
+.header .inner .sign-in a:hover {
+  color: #fff;
+  background-color: #07f;
+  border-color: #07f;
+}
+
+
+/* HEADER SIDE BAR */
+.barWrapper {
+  min-width: 1064px;
+  position: relative;
+  width: 100%;
+  height: 62px;
+  color: #737881;
+  border-bottom: 1px solid #dde1e5;
+  background-color: #fff;
+  /* transform: translateZ(0); */
+  opacity: 1;
+}
+.sideBarEffectLayer {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 5;
+} 
+
+.header_side_bar {
+  background-color: #fff;
+  box-shadow: 0 0 16px 0 rgb(0 0 0 / 20%);
+  transition: all .5s cubic-bezier(.23,1,.32,1);
+  position: fixed;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 440px;
+  padding: 62px 0 195px;
+  z-index: 10;
+  transform: translateX(-100%);
+  opacity: 0;
+  box-sizing: border-box;
+}
+.header_side_bar .side_bar_white_menu {
+  width: 100%;
+  height: 100%;
+  position: relative; 
+  border-top: 1px solid #dde1e5;
+}
+.header_side_bar a {
+  color: #737881;
+  transition: all .15s linear;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .PC_game_list .pcCell ul li a:hover,
+.header_side_bar .side_bar_white_menu .scrollContent .Mobile_game_list ul li a:hover, 
+.header_side_bar .side_bar_white_menu .scrollContent .game_tab ul li a:hover
+{
+  color: #07f;
+  transition: all .2s linear;
+}
+.header_side_bar .service_icon {
+  display: inline-block;
+  background: transparent url(//rs.nxfs.nexon.com/gnb/images/set_service.png) 0 0 no-repeat;
+}
+
+.header_side_bar .side_bar_white_menu .scrollContent {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden
+}
+.header_side_bar .side_bar_white_menu .scrollContent:hover {
+  overflow-y: scroll;
+}
+.header_side_bar .side_bar_white_menu .scrollContent::-webkit-scrollbar {
+  width: 7px;
+}
+.header_side_bar .side_bar_white_menu .scrollContent::-webkit-scrollbar-thumb {
+  height: min-content;
+  background-color: #dde1e5;
+  border-radius: 10px;    
+}
+.header_side_bar .side_bar_white_menu .scrollContent::-webkit-scrollbar-track {
+  display: none;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .game_tab {
+  height: 75px;
+  padding-top: 20px;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .game_tab ul {
+  display: inline-block;
+  width: 270px;
+  padding: 9px 0 0 42px;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .game_tab ul li {
+  display: inline-block;
+  height: 20px;
+  margin: 0 15px 0 0;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .game_tab ul li a {
+  display: block;
+  height: 20px;
+  color: #9fa1a7;
+  font: 12px Gothic;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .game_tab > a {
+  width: 80px;
+  height: 22px;
+  padding: 6px 14px;
+  color: #9fa1a7;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid #9fa1a7;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .game_tab > a:active,
+.header_side_bar .side_bar_white_menu .scrollContent .game_tab > a:hover {
+  color: #fff;
+  background-color: #9fa1a7;
+  transition: all .2s linear;
+}
+
+.header_side_bar .side_bar_white_menu .scrollContent .PC_game_list {
+  padding: 40px 0 50px 42px;
+  margin-top: -75px;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .PC_game_list .pcCell {
+  display: inline-block;
+  vertical-align: top;
+  width: 188px;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .PC_game_list .pcCell h3 {
+  height: 26px;
+  padding-top: 21px;
+  color: #17191d;
+  font: 12px Gothic;
+  font-weight: 700;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .PC_game_list .pcCell ul li {
+  min-height: 22px;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .PC_game_list .pcCell ul li a {
+  letter-spacing: -.3px;
+  font-size: 12px;
+}
+
+.header_side_bar .side_bar_white_menu .scrollContent .Mobile_game_list {
+  padding: 40px 0 50px 42px;
+  margin-top: -75px;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .Mobile_game_list .mobileCell {
+  display: inline-block;
+  vertical-align: top;
+  width: 188px;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .Mobile_game_list .mobileCell h3 {
+  height: 26px;
+  padding-top: 21px;
+  color: #17191d;
+  font: 12px Gothic;
+  font-weight: 700;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .Mobile_game_list .mobileCell ul li {
+  min-height: 22px;
+}
+.header_side_bar .side_bar_white_menu .scrollContent .Mobile_game_list .mobileCell ul li a {
+  letter-spacing: -.3px;
+  font-size: 12px;
+}
+
+/* .header_side_bar .side_bar_white_menu .ScrollPane {
+  width: 6px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 6px;
+  transition: .2s;
+  opacity: 0;
+}
+.header_side_bar .side_bar_white_menu:hover .ScrollPane {
+  opacity: 1;
+}
+.header_side_bar .side_bar_white_menu .ScrollSlider {
+  width: 6px;
+  height: 255px;
+  margin: 0;
+  background: #dde1e5;
+  position: relative;
+  border-radius: 3px;
+} */
+
+.header_side_bar .game_service {
+  left: 0;
+  bottom: 0;
+  width: 440px;
+  height: 203px;
+  position: absolute;
+  background-color: #222426;
+  overflow: hidden;
+}
+.header_side_bar .game_service ul {
+  height: 118px;
+  padding: 27px 0 0 35px;
+}
+.header_side_bar .game_service ul li {
+  display: inline-block;
+  width: 106px;
+  height: 35px;
+  padding-left: 11px;
+}
+.header_side_bar .game_service ul li a {
+  color: #fff;
+  font-size: 12px
+}
+.header_side_bar .game_service ul li a:hover {
+  color: #07f;
+}
+.header_side_bar .game_service ul li a .service_icon {
+  width: 18px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  position: relative;
+}
+.header_side_bar .game_service ul li a .service_icon.service_iconService1 {
+  background-position: 0 0;
+}
+.header_side_bar .game_service ul li a .service_icon.service_iconService2 {
+  background-position: 0 -50px;
+}
+.header_side_bar .game_service ul li a .service_icon.service_iconService3 {
+  background-position: 0 -100px;
+}
+.header_side_bar .game_service ul li a .service_icon.service_iconService4 {
+  background-position: 0 -150px;
+}
+.header_side_bar .game_service ul li a .service_icon.service_iconService5 {
+  background-position: 0 -200px;
+}
+.header_side_bar .game_service ul li a .service_icon.service_iconService6 {
+  background-position: 0 -250px;
+}
+.header_side_bar .game_service ul li a .service_icon.service_iconService7 {
+  background-position: 0 -300px;
+}
+.header_side_bar .game_service ul li a .service_icon.service_iconService8 {
+  background-position: 0 -350px;
+}
+.header_side_bar .game_service ul li a .service_icon.service_iconService9 {
+  background-position: 0 -400px;
+}
+.header_side_bar .game_service a:hover .service_icon.service_iconService1 {
+  background-position: -50px 0;
+}
+.header_side_bar .game_service a:hover .service_icon.service_iconService2 {
+  background-position: -50px -50px;
+}
+.header_side_bar .game_service a:hover .service_icon.service_iconService3 {
+  background-position: -50px -100px;
+}
+.header_side_bar .game_service a:hover .service_icon.service_iconService4 {
+  background-position: -50px -150px;
+}
+.header_side_bar .game_service a:hover .service_icon.service_iconService5 {
+  background-position: -50px -200px;
+}
+.header_side_bar .game_service a:hover .service_icon.service_iconService6 {
+  background-position: -50px -250px;
+}
+.header_side_bar .game_service a:hover .service_icon.service_iconService7 {
+  background-position: -50px -300px;
+}
+.header_side_bar  .game_service a:hover .service_icon.service_iconService8 {
+  background-position: -50px -350px;
+}
+.header_side_bar .game_service a:hover .service_icon.service_iconService9 {
+  background-position: -50px -400px;
+}
+.header_side_bar .game_service .service_button {
+  display: block;
+  width: 440px;
+  height: 50px;
+  padding-top: 24px;
+  text-align: center;
+  font-family: MalgunGothic;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -.3px;
+  color: #fff;
+  background-color: #17191d;
+}
+.header_side_bar .game_service .service_button:hover {
+  color: #fff;
+  background-color: #07f;
+}
+.header_side_bar .layerButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header_side_bar .layerButton a {
+  display: block;
+  padding: 23px;
+}
+.header_side_bar .layerButton .service_icon {
+  width: 18px;
+  height: 18px;
+  background: transparent url(//rs.nxfs.nexon.com/gnb/images/set_gnb.png) 0 0 no-repeat;
+  background-position: 0 -50px;
+  background-color: #17191d;
+  transition: all .15s linear;
+}
+.header_side_bar .layerButton a:hover .service_icon{
+  background-color: #07f;
+}
+.header_side_bar .layerButton .layerButtonAcchidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+}
+
+
+
+/* NAV */
+
+.Nav .list_menu ul{
+  display: flex;
+}
+.Nav .list_menu ul li {
+  position: static;
+  width: auto;
+  margin: 0 5px;
+}
+.Nav .main_menu li a {
+  display: inline-block;
+  height: 26px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/common/sp_h_190320.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .sub_menu {
+  display: none;
+  position: absolute;
+  top: 24px;
+  padding-top: 14px;
+}
+.Nav .header_wrap .main_menu .sub_menu .list_menu ul li a {
+  display: block;
+  overflow: hidden;
+  height: 32px;
+  background: none;
+  line-height: 32px;
+}
+.Nav .header_wrap .main_menu .sub_menu .list_menu ul li .tit {
+  display: inline-block;
+  height: 14px;
+  margin: 9px 0;
+  background: url(https://lwi.nexon.com/kart/contents/common/spr_header_269D2C6731A16755.png?v=1) no-repeat;
+}
+.Nav .header_wrap .main_menu .sub_menu .list_menu .bg_l {
+  position: absolute;
+  left: -56px;
+  top: 0;
+  width: 56px;
+  height: 32px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/bg_gnbl.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .sub_menu .list_menu .bg_r {
+  position: absolute;
+  right: -56px;
+  top: 0;
+  width: 56px;
+  height: 32px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/bg_gnbr.png) no-repeat;
+}
+
+.Nav {
+  position: relative;
+  height: 131px;
+}
+.Nav .logo_section {
+  height: 131px;
+}
+.Nav .logo_img {
+  position: absolute;
+  left: 50%;
+  top: -4px;
+  margin-left: -75px;
+}
+.Nav .header_wrap {
+  left: 0;
+  top: 50px;
+  position: absolute;
+}
+.Nav .header_wrap .main_menu {
+  position: relative;
+  padding: 0 0 0 10px;
+}
+.Nav .header_wrap .main_menu .news .news_img {
+  width: 50px;
+  background-position: 2px 0;
+}
+.Nav .header_wrap .main_menu .news .news_img:hover {
+  width: 50px;
+  background-position: 0 -30px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu {
+  display: none;
+  left: 7px;
+  position: absolute;
+  top: 24px;
+  padding-top: 14px;
+}
+
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .notice .tit {
+  width: 52px;
+  background-position: 0 -66px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .notice .tit:hover {
+  background-position: 0 -84px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .patch .tit {
+  width: 53px;
+  background-position: -56px -66px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .patch .tit:hover {
+  background-position: -56px -84px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .p_item .tit {
+  width: 90px;
+  background-position: -385px -100px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .p_item .tit:hover {
+  background-position: -385px -118px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .event .tit {
+  width: 43px;
+  background-position: -112px -66px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .event .tit:hover {
+  background-position: -112px -84px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .leagueNote .tit {
+  width: 68px;
+  background-position: -399px -411px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .leagueNote .tit:hover {
+  background-position: -399px -431px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .megazin .tit {
+  width: 65px;
+  background-position: -156px -66px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .megazin .tit:hover {
+  background-position: -156px -84px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .media .tit {
+  width: 42px;
+  background-position: -384px -65px;
+}
+.Nav .header_wrap .main_menu .news .sub_menu .list_menu .media .tit:hover {
+  background-position: -384px -82px;
+}
+
+
+.Nav .header_wrap .main_menu .guide {
+  width: 115px;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu {
+  display: none;
+  position: absolute;
+  top: 24px;
+  padding-top: 14px;
+  left: 20px;
+}
+.Nav .header_wrap .main_menu .guide .guide_img {
+  width: 65px;
+  display: inline-block;
+  height: 26px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/sp_guide.png) 0 -3px no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .guide_img:hover {
+  width: 78px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/sp_guide_on.png) 0 -3px no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .begin .tit {
+  width: 53px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_01.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .begin .tit:hover {
+  width: 53px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_01_on.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .learn .tit {
+  width: 63px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_02.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .learn .tit:hover {
+  width: 63px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_02_on.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .item .tit {
+  width: 42px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_03.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .item .tit:hover {
+  width: 42px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_03_on.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .service .tit {
+  width: 87px;
+    background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_06.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .service .tit:hover {
+  width: 87px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_06_on.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .coupon .tit {
+  width: 63px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_04.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .coupon .tit:hover {
+  width: 63px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_04_on.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .merge .tit {
+  width: 63px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_05.png) no-repeat;
+}
+.Nav .header_wrap .main_menu .guide .sub_menu .list_menu .merge .tit:hover {
+  width: 63px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/guide/d2_05_on.png) no-repeat;
+}
+  
+.Nav .header_wrap .main_menu .guild {
+  width: 92px;
+}
+.Nav .header_wrap .main_menu .guild .guild_img {
+  width: 42px;
+  background-position: -49px 0;
+}
+.Nav .header_wrap .main_menu .guild .guild_img:hover {
+  width: 50px;
+  display: inline-block;
+  background-position: -51px -30px;
+}
+.Nav .header_wrap .main_menu .guild .sub_menu {
+  left: 159px;
+}
+.Nav .header_wrap .main_menu .guild .sub_menu .list_menu .gstory .tit {
+  width: 75px;
+  background-position: 0 -102px;
+}
+.Nav .header_wrap .main_menu .guild .sub_menu .list_menu .gstory .tit:hover {
+  width: 75px;
+  background-position: 0 -120px;
+}
+.Nav .header_wrap .main_menu .guild .sub_menu .list_menu .gsear .tit {
+  width: 54px;
+    background-position: -80px -102px;
+}
+.Nav .header_wrap .main_menu .guild .sub_menu .list_menu .gsear .tit:hover {
+  width: 54px;
+    background-position: -80px -120px;
+}
+
+.Nav .header_wrap .main_menu .ranking .ranking_img {
+  width: 50px;
+  background-position: 0 -375px;
+}
+.Nav .header_wrap .main_menu .ranking .ranking_img:hover {
+  width: 50px;
+  display: inline-block;
+  background-position: -50px -375px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu {
+  left: 29px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .rp .tit {
+  width: 52px;
+  background-position: -416px -375px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .rp .tit:hover {
+  width: 52px;
+  background-position: -416px -393px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .grand .tit {
+  width: 52px;
+  background-position: -106px -375px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .grand .tit:hover {
+  width: 52px;
+  background-position: -106px -393px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .vsmode .tit {
+  width: 60px;
+  background-position: -334px -375px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .vsmode .tit:hover {
+  width: 60px;
+  background-position: -334px -393px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .emblem .tit {
+  width: 42px;
+  background-position: -164px -375px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .emblem .tit:hover {
+  width: 42px;
+  background-position: -164px -393px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .time_a .tit {
+  width: 91px;
+  background-position: -289px -412px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .time_a .tit:hover {
+  width: 91px;
+  background-position: -289px -432px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .s_mode .tit {
+  width: 87px;
+  background: url(https://lwi.nexon.com/kart/contents/common/s_mode_sg.png) no-repeat;
+  background-position: 0 -1px;
+}
+.Nav .header_wrap .main_menu .ranking .sub_menu .list_menu .s_mode .tit:hover {
+  width: 87px;
+  background-position: 0 -21px;
+}
+
+.Nav .header_wrap .main_menu .league {
+  width: 80px;
+  margin-left: 181px;
+}
+.Nav .header_wrap .main_menu .league .league_img {
+  width: 52px;
+  background-position: 3px -416px;
+}
+.Nav .header_wrap .main_menu .league .league_img:hover {
+  width: 53px;
+  background-position: -49px -416px;
+}
+.Nav .header_wrap .main_menu .league .sub_menu {
+  left: 29px;
+}
+
+.Nav .header_wrap .main_menu .community {
+  width: 111px;
+}
+.Nav .header_wrap .main_menu .community .community_img {
+  width: 84px;
+  background-position: -90px 0;
+}
+.Nav .header_wrap .main_menu .community .community_img:hover {
+  width: 98px;
+    background-position: -102px -30px;
+}
+.Nav .header_wrap .main_menu .community .sub_menu {
+  left: 600px;
+  width: 400px;
+}
+.Nav .header_wrap .main_menu .community .sub_menu .list_menu .f_board .tit {
+  width: 64px;
+  background-position: 0 -138px;
+}
+.Nav .header_wrap .main_menu .community .sub_menu .list_menu .f_board .tit:hover {
+  width: 64px;
+  background-position: 0 -156px;
+}
+.Nav .header_wrap .main_menu .community .sub_menu .list_menu .info_board .tit {
+  width: 64px;
+  background-position: -70px -138px;
+}
+.Nav .header_wrap .main_menu .community .sub_menu .list_menu .info_board .tit:hover {
+  width: 64px;
+  background-position: -70px -156px;
+}
+.Nav .header_wrap .main_menu .community .sub_menu .list_menu .img_board .tit {
+  width: 74px;
+  background-position: -136px -138px;
+}
+.Nav .header_wrap .main_menu .community .sub_menu .list_menu .img_board .tit:hover {
+  width: 74px;
+  background-position: -136px -156px;
+}
+.Nav .header_wrap .main_menu .community .sub_menu .list_menu .idea_board .tit {
+  width: 86px;
+  background-position: -216px -138px;
+}
+.Nav .header_wrap .main_menu .community .sub_menu .list_menu .idea_board .tit:hover {
+  width: 86px;
+  background-position: -216px -156px;
+}
+.Nav .header_wrap .main_menu .community .sub_menu .list_menu .qsearch_board .tit {
+  width: 54px;
+  background-position: -304px -138px;
+}
+.Nav .header_wrap .main_menu .community .sub_menu .list_menu .qsearch_board .tit:hover {
+  width: 54px;
+  background-position: -304px -156px;
+}
+
+
+
+
+
+.Nav .header_wrap .main_menu .pds {
+  width: 96px;
+}
+.Nav .header_wrap .main_menu .pds .pds_img {
+  width: 64px;
+  background-position: -172px 0;
+}
+.Nav .header_wrap .main_menu .pds .pds_img:hover {
+  width: 78px;
+  background-position: -200px -30px;
+}
+.Nav .header_wrap .main_menu .pds .sub_menu {
+  left: 767px;
+}
+.Nav .header_wrap .main_menu .pds .sub_menu .list_menu .download .tit {
+  width: 52px;
+  background-position: 0 -174px;
+}
+.Nav .header_wrap .main_menu .pds .sub_menu .list_menu .download .tit:hover {
+  width: 52px;
+  background-position: 0 -192px;
+}
+.Nav .header_wrap .main_menu .pds .sub_menu .list_menu .kart_movie .tit {
+  width: 54px;
+  background-position: -54px -174px;
+}
+.Nav .header_wrap .main_menu .pds .sub_menu .list_menu .kart_movie .tit:hover {
+  width: 54px;
+  background-position: -54px -192px;
+}
+.Nav .header_wrap .main_menu .pds .sub_menu .list_menu .openapi .tit {
+  width: 58px;
+  background-position: -419px -138px;
+}
+.Nav .header_wrap .main_menu .pds .sub_menu .list_menu .openapi .tit:hover {
+  width: 58px;
+  background-position: -419px -157px;
+}
+
+
+
+
+.Nav .header_wrap .main_menu .customer {
+  width: 118px;
+}
+.Nav .header_wrap .main_menu .customer .customer_img {
+  width: 85px;
+  background-position: -236px 0;
+}
+.Nav .header_wrap .main_menu .customer .customer_img:hover {
+  width: 102px;
+  background-position: -278px -30px;
+}
+.Nav .header_wrap .main_menu .customer .sub_menu {
+  left: 826px;
+  width: 186px;
+}
+.Nav .header_wrap .main_menu .customer .sub_menu .list_menu .er .tit {
+  width: 52px;
+  background-position: -146px -174px;
+}
+.Nav .header_wrap .main_menu .customer .sub_menu .list_menu .er .tit:hover {
+  width: 52px;
+  background-position: -146px -192px;
+}
+.Nav .header_wrap .main_menu .customer .sub_menu .list_menu .propose .tit {
+  width: 52px;
+  background-position: -361px -137px;
+}
+.Nav .header_wrap .main_menu .customer .sub_menu .list_menu .propose .tit:hover {
+  width: 52px;
+  background-position: -361px -156px;
+}
+.Nav .header_wrap .main_menu .customer .sub_menu .list_menu .security .tit {
+  width: 52px;
+  background-position: -198px -174px;
+}
+.Nav .header_wrap .main_menu .customer .sub_menu .list_menu .security .tit:hover {
+  width: 52px;
+  background-position: -198px -192px;
+}
+
+
+/* Out Wrap */
+.OutWrap {
+  position: relative;
+  min-width: 1000px;
+  overflow: hidden;
+  background: #0c1d1c url(https://lwi.nexon.com/kart/contents/common/bg_20211216_1ACEE7056B40E89D.jpg) 50% 0 no-repeat;
+}
+
+/* Inner Wrap */
+.InnerWrap{
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  height: auto;
+  min-height: 1457px;
+}
+
+
+/* QUICK_FACEBOOK */
+.quick_facebook {
+  position: absolute;
+  right: -105px;
+  top: 141px;
+  width: 110px;
+  text-align: center;
+  z-index: 1;
+}
+.quick_facebook .fixed{
+  position: absolute;
+  width: 105px;
+  animation-delay: 2s;
+}
+.quick_facebook .btn_yt,
+.quick_facebook .btn_fb {
+  width: 80px;
+  height: 112px;
+  margin: 0 auto;
+  display: inline-block;
+}
+.quick_facebook .btn_yt:hover,
+.quick_facebook .btn_fb:hover,
+.quick_facebook .bn_tmi:hover {
+  background-position: 0 100%;
+}
+.quick_facebook .btn_fb {
+  background-image: url(https://lwi.nexon.com/kart/contents/common/btn_facebook_20201112_EF192A1FC9490A9A.png);
+}
+.quick_facebook .btn_yt {
+  background-image: url(https://lwi.nexon.com/kart/contents/common/btn_youtube_20201112_EF192A1FC9490A9A.png);
+}
+.quick_facebook .bn_tmi {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 184px;
+  margin: 15px auto 0;
+  background: url(https://lwi.nexon.com/kart/contents/common/btn_tmi_20201112_EF192A1FC9490A9A.png) no-repeat;
+}
+.quick_facebook .bn_tmi .tran1 {
+  position:absolute;
+  left: 43px;
+  top: 6px;
+  width: 88px;
+  height: 91px;
+  margin-left: -40px; 
+  z-index: 1;
+  animation-name: Graph;
+  animation-duration: 8s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.quick_facebook .bn_tmi .tran2 {
+  position: absolute;
+  top: 4px;
+  width: 88px;
+  height: 98px;
+  margin-top: 3px;
+  animation-name: Charactor;
+  animation-duration: 8s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@keyframes Graph {
+  0% {
+    top: 51px;
+    width: 0;
+    height: 53px;
+    margin-left: -51px;
+    background: url(https://ssl.nexon.com/s2/game/kart/v2/common/bn_tmi_g1.png) no-repeat;
+  }
+  8% {
+    top: 51px;
+    width: 103px;
+    height: 53px;
+    margin-left: -51px;
+  }
+  49% {
+    top: 51px;
+    width: 103px;
+    height: 53px;
+    margin-left: -51px;
+    background: url(https://ssl.nexon.com/s2/game/kart/v2/common/bn_tmi_g1.png) no-repeat;
+  }      
+  50% {
+    left: initial;
+    right: -15px;
+    top: 43px;
+    width: 0;
+    background: url(https://ssl.nexon.com/s2/game/kart/v2/common/bn_tmi_g2.png) no-repeat right top;
+  }
+  58% {
+    left: initial;
+    right: -15px;
+    top: 43px;
+    width: 103px;
+  }
+  99% {
+    left: initial;
+    right: -15px;
+    top: 43px;
+    width: 103px;
+    background: url(https://ssl.nexon.com/s2/game/kart/v2/common/bn_tmi_g2.png) no-repeat right top;
+  }
+  100% {
+    top: 51px;
+    height: 53px;
+    margin-left: -53px;
+  }
+}
+@keyframes Charactor {
+  0% {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://ssl.nexon.com/s2/game/kart/v2/common/bn_tmi_c1.png) no-repeat;
+  } 
+  47% {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://ssl.nexon.com/s2/game/kart/v2/common/bn_tmi_c1.png) no-repeat;
+  }     
+  50% {
+    left: -5px;
+    top: 2px;
+    width: 110px;
+    height: 100%;
+    background: url(https://ssl.nexon.com/s2/game/kart/v2/common/bn_tmi_c2.png) no-repeat;
+  }
+  97% {
+    left: -5px;
+    top: 2px;
+    width: 110px;
+    height: 100%;
+    background: url(https://ssl.nexon.com/s2/game/kart/v2/common/bn_tmi_c2.png) no-repeat;
+  }
+  100% {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://ssl.nexon.com/s2/game/kart/v2/common/bn_tmi_c1.png) no-repeat;
+  }
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1000px;
+  width: 500px;
+  height: 100%;
+}
+.right {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  margin-right: -500px;
+  width: 500px;
+  height: 100%;
+}
+
+
+
+/* MAIN SECTION */
+.kart_main_secinner {
+  padding: 5px;
+  /* background: url(https://ssl.nexon.com/s2/game/kart/v2/common/bg_body_main.png) no-repeat; */
+}
+
+
+/* RIGHT: ASIDE SECTION */
+aside {
+  position: absolute;
+  right: 5px;
+  margin: 5px 0 0 5px;
+  width: 248px;
+  height: 1055px;
+}
+.play_box {
+  position: relative;
+  margin-bottom: 4px;
+  border: 1px solid #080808;
+}
+.play_box .go_game {
+  width: 246px;
+  height: 148px;
+}
+.play_box .add_option {
+  height: 23px;
+  padding-left: 28px;
+  background: #c21b00;
+}
+.play_box .add_option ul {
+  display: flex;
+}
+.play_box .add_option ul li {
+  margin: 0 11px;
+}
+.play_box .add_option .btn_download {
+  width: 80px;
+  height: 16px;
+  background-position: -276px -174px;
+}
+.play_box .add_option .btn_guide {
+  width: 70px;
+  height: 16px;
+  background-position: -276px -192px;
+}
+
+.login {
+  position: relative;
+  width: 226px;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #080808;
+  background: #fff;
+}
+.login .gc_login {
+  height: 134px;
+  text-align: center;
+}
+.login .gc_login > p {
+  padding: 30px 0 0 0;
+}
+.login .gc_login > a {
+  display: block;
+  margin: 12px 0 0 0;
+}
+.login .option_menus {
+  margin-top: 6px;
+  display: flex;
+}
+.login .option_menus li {
+  padding: 0 12px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/bg_menu_bar.gif) no-repeat 0 50%;
+}
+.login .option_menus li:first-child {
+  background: none;
+}
+.login .option_menus li a {
+  display: block;
+  height: 12px;
+}
+.login .option_menus .idsear .sp_h {
+  width: 51px;
+  background-position: -220px -230px;
+}
+.login .option_menus .pwsear .sp_h {
+  width: 60px;
+  background-position: -276px -230px;
+}
+.login .option_menus .joins .sp_h {
+  width: 38px;
+  background-position: -342px -230px;
+}
+.quick_start {
+  position: relative;
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+  padding-bottom: 7px;
+}
+
+.notice_side {
+  position: relative;
+  border: 1px solid #080808;
+}
+.notice_side .news {
+  position: relative;
+  width: 226px;
+  padding: 0 10px 5px;
+  background: #fff;
+}
+.notice_side .news h3 {
+  width: 100%;
+  height: 19px;
+  padding: 21px 0 8px;
+  border-bottom: 1px solid #d1d1d1;
+  text-align: center;
+}
+.notice_side .news h3 .sp_h {
+  width: 26px;
+  height: 16px;
+  background-position: 0 -246px;
+}
+
+.notice_side .news .news_viewlist {
+  height: 126px;
+  margin-top: 8px;
+}
+.notice_side .news .news_viewlist li {
+  margin-top: 2px;
+  padding-left: 12px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/bu_squea.gif) no-repeat 5px 7px;
+  font-size: 12px;
+  color: #555;
+  vertical-align: top;
+}
+.notice_side .news .news_viewlist li:first-child {
+  margin-top: 0;
+}
+.notice_side .news .news_viewlist li a {
+  display: block;
+  color: #555;
+}
+.news_viewlist li .txt_ellipsis {
+  line-height: 18px;
+}
+.news_viewlist li .txt_ellipsis a:hover {
+  text-decoration: underline;
+}
+.notice_side .news .news_viewlist li .txt_ellipsis a.new {
+  color: #ef0101;
+  font-weight: bold;
+}
+
+.notice_side  .news .btn_ref {
+  right: 10px;
+  top: 20px;
+}
+.btn_ref {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  width: auto;
+  font-size: 11px;
+  color: #445561;
+  letter-spacing: -1px;
+  text-align: right;
+}
+
+.qsearch {
+  position: relative;
+  width: 226px;
+  padding: 0 10px;
+  background: #fff url(https://ssl.nexon.com/s2/game/kart/v2/main/bg_qsearch.jpg) no-repeat;
+}
+.qsearch h3 {
+  width: 100%;
+  height: 19px;
+  padding: 15px 0 9px;
+  border-bottom: 1px solid #d1d1d1;
+  text-align: center;
+}
+.qsearch .sp_h {
+  width: 56px;
+  height: 16px;
+  background-position: -32px -246px;
+}
+.qsearch .group_data {
+  position: relative;
+  overflow: hidden;
+  padding: 9px 0 15px;
+  font-size: 12px;
+  color: #555;
+  letter-spacing: -1px;
+}
+.qsearch .group_data p {
+  overflow: hidden;
+  width: 208px;
+  padding: 0 5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  line-height: 18px;
+}
+.qsearch .group_data p a {
+  color: #555;
+}
+.qsearch .group_data p a:hover {
+  text-decoration: underline;
+}
+.qsearch .btn_entry {
+  display: none;
+  width: 57px;
+  height: 21px;
+  margin: 9px 0 0 5px;
+  background-position: -24px -18px;
+}
+.qsearch .btn_ref {
+  right: 10px;
+  top: 15px;
+}
+.btn_ref .sp_com {
+  width: 14px;
+  height: 14px;
+  background-position: -54px 0;
+}
+.kart_fsear {
+  width: 246px;
+  height: 45px;
+}
+.kart_fsear .btns {
+  overflow: hidden;
+}
+.kart_fsear .btn_faq .sp_h {
+  width: 246px;
+  height: 45px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/common/btn_customer.jpg) no-repeat;
+}
+
+.recommend_mov {
+  position: relative;
+  margin-top: 10px;
+  padding: 158px 15px 20px;
+  background-color: #fff;
+  border: 1px solid #080808;
+  box-shadow: 1px 2px 5px 0px rgb(0 0 0 / 20%);
+  box-sizing: border-box;
+}
+.recommend_mov a:hover .description {
+  text-decoration: underline;
+}
+.recommend_mov .tmb {
+  display: block;
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 246px;
+  height: 138px;
+  background-color: #3f3f3f;
+}
+.recommend_mov .tmb img {
+  width: 247px;
+  height: 138px;
+}
+.recommend_mov h3 {
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  line-height: 19px;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.recommend_mov .description {
+  display: block;
+  margin-bottom: 7px;
+  padding-bottom: 11px;
+  font-size: 12px;
+  line-height: 19px;
+  color: #555;
+  line-height: 18px;
+  border-bottom: 1px solid #ebebeb;
+  letter-spacing: -1px;
+}
+.recommend_mov .channel, .layer_movie .channel {
+  font-size: 12px;
+  color: #4973ea;
+}
+.NCCRecommendContent .channel::before,
+.layer_movie .channel::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin: -3px 3px 0;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/common/spr_movie.png) no-repeat;
+  background-position: 0 -187px;
+}
+.recommend_mov .btn_other {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  font-size: 12px;
+  color: #999999;
+}
+.recommend_mov .btn_other:hover {
+  color: #545454;
+}
+.nccHiddenViewLayer .layer_movie {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 1280px;
+}
+.nccHiddenViewLayer .layer_movie .dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.82;
+}
+.nccHiddenViewLayer .layer_movie .layer_wrap {
+  position: absolute;
+  top: 122px;
+  left: 50%;
+  width: 890px;
+  margin-left: -445px;
+  padding: 53px 45px 54px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.nccHiddenViewLayer .layer_movie h3 {
+  max-width: 684px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  line-height: 19px;
+  letter-spacing: -1px;
+}
+.nccHiddenViewLayer .layer_movie .player {
+  width: 800px;
+  height: 450px;
+  background: #3f3f3f url(https://ssl.nexon.com/s2/game/kart/v2/common/tmb_movie.png) no-repeat center center;
+}
+.nccHiddenViewLayer .layer_movie .player iframe {
+  width: 100%;
+  height: 100%;
+}
+.nccHiddenViewLayer .layer_movie .description2 {
+  max-width: 100%;
+  margin: 25px 0 17px;
+  font-weight: normal;
+  line-height: 19px;
+  color: #555555;
+  letter-spacing: -1px;
+}
+.nccHiddenViewLayer .layer_movie .time {
+  margin-left: 18px;
+  font-size: 12px;
+  color: #999;
+}
+.nccHiddenViewLayer .layer_movie .btn_other {
+  position: absolute;
+  right: 45px;
+  top: 50px;
+  width: 95px;
+  height: 29px;
+  font-size: 12px;
+  color: #545454;
+  border: 1px solid #e6e6e6;
+}
+.nccHiddenViewLayer .layer_movie .noti {
+  margin-top: 27px;
+  padding-top: 18px;
+  font-size: 12px;
+  color: #808080;
+  border-top: 1px solid #ebebeb;
+}
+.nccHiddenViewLayer .layer_movie .btn_layer_close {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -43px;
+  width: 65px;
+  height: 43px;
+  background-position: -45px -187px;
+}
+
+/* LEFT: MAIN CONTAINER SECTION */
+
+.kart_main_container {
+  position: relative;
+  padding: 0;
+  width: 732px;
+  height: 1318px;
+}
+
+
+/* PROMOTION SECTION */
+.promotion {
+  width: 732px;
+  height: 361px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.promotion .swiper-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.promotion .swiper-container .swiper-wrapper {
+  display: flex;
+}
+.promotion .swiper-container .swiper-slide {
+  opacity: 0;
+}
+.promotion .swiper-container .swiper-slide-active {
+  opacity: 1;
+}
+.promotion .swiper-container .swiper-pagination {
+  left: -40%;
+  top: 15px;
+}
+.promotion .swiper-container .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/common/sp_com.png) no-repeat;
+  opacity: 1;
+}
+.promotion .swiper-container .swiper-pagination-bullet-active {
+  width: 14px;
+  height: 14px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/common/sp_com.png) no-repeat;
+  background-position: -16px 0;
+}
+
+/* KARTRIDER CONTAINER */
+
+.kart_main_container .kart_container {
+  width: 732px;
+  height: 1318px;
+  position: relative;
+  overflow: hidden;
+}
+.kart_main_container .kart_container .kart_ingame {
+  margin-bottom: 12px;
+  position: relative;
+}
+.kart_main_container .kart_container .kart_ingame .ingame_sec {
+  width: 730px;
+  height: 35px;
+  position: relative;
+  border: 1px solid #080808;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/bg_kartingame.jpg) no-repeat;
+}
+.kart_main_container .kart_container .kart_ingame .ingame_sec .tit {
+  position: relative;
+  width: 74px;
+  height: 30px;
+  left: 35px;
+  top: 10px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/sp_h.png) no-repeat 0 -210px;
+}
+.kart_main_container .kart_container .kart_ingame .ingame_sec .rolling_txt {
+  overflow: hidden;
+  width: auto;
+  height: 25px;
+  margin: -24px 10px 0 135px;
+  padding-left: 18px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/bg_notibx.jpg) no-repeat;
+}
+.kart_main_container .kart_container .kart_ingame .ingame_sec .rolling_txt .swiper-container .swiper-wrapper {
+  width: 470px;
+  font-size: 13px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fffc00;
+  line-height: 25px;
+}
+.kart_main_container .kart_container .kart_ingame .ingame_sec .rolling_txt .swiper-container .swiper-wrapper .swiper-slide {
+  /* display: inline-block; */
+
+  animation-name: text-scroll;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes text-scroll{
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-170%);
+  }
+}
+
+.kart_main_container .kart_container .kart_ingame .ingame_sec .rolling_txt .swiper-container .swiper-prev,
+.kart_main_container .kart_container .kart_ingame .ingame_sec .rolling_txt .swiper-container .swiper-next {
+  position: absolute;
+  width: 7px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+.kart_main_container .kart_container .kart_ingame .ingame_sec .rolling_txt .swiper-container .swiper-prev {
+  right: 70px;
+  top: 3px;
+}
+.kart_main_container .kart_container .kart_ingame .ingame_sec .rolling_txt .swiper-container .swiper-next {
+  right: 50px;
+  top: 3px;
+}
+.kart_main_container .kart_container .kart_ingame .ingame_sec .rolling_txt .swiper-container .swiper-prev .sp_com {
+  width: 7px;
+  height: 11px;
+  background-position: -32px 0;
+}
+.kart_main_container .kart_container .kart_ingame .ingame_sec .rolling_txt .swiper-container .swiper-next .sp_com {
+  width: 7px;
+  height: 11px;
+  background-position: -42px 0;
+}
+
+
+/* ALWAYS BANNER */
+.kart_main_container section.always_banner {
+  position: relative;
+  width: auto;
+  height: 184px;
+}
+/* ALWAYS BANNER LEFT */
+.kart_main_container section.banner_left {
+  position: absolute;
+  width: 371px;
+  height: 184px;
+  overflow: hidden;
+}
+.kart_main_container section.banner_left .mask {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 359px;
+  height: 172px;
+  border: 1px solid #080808;
+}
+
+/* ALWAYS BANNER RIGHT */
+.kart_main_container section.banner_right {
+  position: absolute;
+  width: 361px;
+  height: 184px;
+  right: 0;
+  overflow: hidden;
+}
+.kart_main_container section.banner_right .mask {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 359px;
+  height: 172px;
+  border: 1px solid #080808;
+}
+
+/* MEDIA CONTENTS */
+.kart_main_container section.media_story {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 305px;
+  padding: 21px;
+  background: #e9eef1;
+  border: 1px solid #080808;
+  box-sizing: border-box;
+}
+.kart_main_container section.media_story .button_container {
+  display: flex;
+}
+.kart_main_container section.media_story .button_container .sp_h {
+  margin: 0 267px 0 270px;
+  width: 150px;
+  height: 18px;
+  background-position: -126px -421px;
+}
+.kart_main_container section.media_story .button_container .swiper-prev .sp_com {
+  margin: 5px 0 0 -50px;
+  width: 14px;
+  height: 14px;
+  background-position: -105px 0;
+}
+.kart_main_container section.media_story .button_container .swiper-prev:hover .sp_com {
+  background-position: -153px 0;
+}
+.kart_main_container section.media_story .button_container .swiper-next .sp_com {
+  margin: 5px 0 0 -37px;
+  width: 14px;
+  height: 14px;
+  background-position: -129px 0;
+}
+.kart_main_container section.media_story .button_container .swiper-next:hover .sp_com {
+  background-position: -173px 0;
+}
+.kart_main_container section.media_story .swiper-wrapper {
+  width: 100%;
+  padding: 17px 0 0 0;
+}
+.kart_main_container section.media_story .button_container .swiper-pagination {
+  width: 30px;
+  bottom: 92%;
+  left: 88%;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.kart_main_container section.media_story .swiper-slide {
+  width: 155px !important;
+  height: 175px;
+  margin: 0 0 0 5px;
+  padding: 0 3px 0 8px;
+  border-left: 1px dotted #b1b1b1;
+  font-size: 12px;
+  line-height: 14px;
+}
+.kart_main_container section.media_story .swiper-slide:hover .subject {
+  text-decoration: underline;
+}
+.kart_main_container section.media_story .swiper-slide:first-child {
+  margin-right: 5px;
+  padding: 0;
+  border: none;
+}
+.kart_main_container section.media_story .swiper-slide .img {
+  display: block;
+  width: 155px;
+  height: 100px;
+}
+.kart_main_container section.media_story .swiper-slide .img > img {
+  width: 155px;
+  height: 100px;
+}
+.kart_main_container section.media_story .swiper-slide .subject {
+  overflow: hidden;
+  display: block;
+  height: 28px;
+  margin: 12px 0 0 0;
+  font-weight: bold;
+  color: #444;
+}
+.kart_main_container section.media_story .swiper-slide .cont {
+  overflow: hidden;
+  height: 28px;
+  margin: 7px 0 0 0;
+  line-height: 15px;
+  color: #767676;
+}
+
+.kart_main_container section.media_story .controller {
+  right: 42px;
+  top: 23px;
+  color: #484850;
+  font-size: 11px;
+  font-family: 'dotum', '돋움', sans-serif !important;
+  position: absolute;
+  display: flex;
+}
+.kart_main_container section.media_story .btn_ref {
+  top: 5px;
+  right: 0px;
+}
+
+/* KART STORY AND CLUB GUILD */
+.kart_main_container section.story_club{
+  display: flex;
+}
+
+/* OUR KART SROTY */
+.kart_main_container section.kart_story {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+  width: 317px;
+  height: 311px;
+  padding: 21px 21px 15px 21px;
+  background: #e9eef1;
+  border: 1px solid #080808;
+}
+.kart_main_container section.kart_story .sp_h {
+  width: 146px;
+  height: 19px;
+  background-position: -78px -210px;
+}
+.kart_main_container section.kart_story .swiper-container {
+  position: relative;
+  margin-top: 6px;
+  width: 317px;
+  height: 267px;
+  overflow: hidden;
+}
+.kart_main_container section.kart_story .story_list_wrap .swiper-wrapper {
+  position: absolute;
+  width: 317px;
+  top: -1px;
+  margin-top: 6px;
+}
+
+.kart_main_container section.kart_story .story_list_wrap .swiper-slide:first-child {
+  background: none;
+}
+.kart_main_container section.kart_story .story_list_wrap .swiper-slide .info_sec {
+  width: 100%;
+  height: 67px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/bg_lstline.gif) repeat-x 0 0;
+  display: block;
+  overflow: hidden;
+  padding: 6px 0 4px 10px;
+}
+.kart_main_container section.kart_story .story_list_wrap .swiper-slide .info_sec_odd {
+  width: 100%;
+  height: 67px;
+  background: none;
+}
+.kart_main_container section.kart_story .story_list_wrap .swiper-slide .tit {
+  display: flex;
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.kart_main_container section.kart_story .story_list_wrap .swiper-slide .tit img {
+  margin: 3px 4px 0 0;
+  vertical-align: top;
+}
+.txt_ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: top;
+  line-height: 18px;
+}
+.kart_main_container section.kart_story .story_list_wrap .swiper-slide .txt_ellipsis {
+  display: block;
+  padding-top: 4px;
+  line-height: 17px;
+}
+.kart_main_container section.kart_story .story_list_wrap .swiper-slide .tit a {
+  color: #444;
+}
+.kart_main_container section.kart_story .story_list_wrap .swiper-slide .player_info {
+  display: block;
+  margin-top: 7px;
+}
+.kart_main_container section.kart_story .story_list_wrap .swiper-slide .player {
+  display: inline-block;
+  padding: 2px 0 0 5px;
+  font-size: 11px;
+  color: #555;
+}
+
+.kart_main_container section.kart_story .story_list_wrap .swiper-slide .player_info .class {
+  width: 18px;
+  height: 20px;
+}
+
+
+/* COMEONE CLUB GUILD */
+.kart_main_container section.club_guild {
+  position: relative;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  width: 317px;
+  height: 305px;
+  padding: 21px;
+  background: #e9eef1;
+  border: 1px solid #080808;
+}
+.kart_main_container section.club_guild .sp_h {
+  width: 104px;
+  height: 19px;
+  background-position: -230px -210px;
+}
+.kart_main_container section.club_guild .guild_lst {
+  min-height: 195px;
+  font-size: 12px;
+}
+.kart_main_container section.club_guild .guild_lst li {
+  height: 18px;
+  padding: 7px 10px 6px 0;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/bg_lstline.gif) repeat-x 0 0;
+}
+.kart_main_container section.club_guild .guild_lst li:first-child {
+  background: none;
+  padding-top: 16px;
+}
+.kart_main_container section.club_guild .guild_lst .infos {
+  width: 184px;
+  padding-left: 10px;
+  line-height: 20px;
+}
+.kart_main_container section.club_guild .txt_ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: top;
+  line-height: 18px;
+}
+.kart_main_container section.club_guild .guild_lst li a {
+  display: inline-block;
+  width: 100%;
+  color: #555;
+}
+.kart_main_container section.club_guild .guild_lst .infos span {
+  display: inline-block;
+  padding-left: 8px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/main/bu_squea.gif) no-repeat 0 50%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+}
+.kart_main_container section.club_guild .guild_lst .user {
+  margin-top: 2px;
+  font-size: 11px;
+  color: #767676;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+/* FOOTER */
+.footer-box {
+  position: relative;
+  width: 1000px;
+  height: 175px;
+  margin: 0 auto;
+  padding: 0 0 0 8px;
+  text-align: left;
+}
+.footer-box .link-list {
+  overflow: hidden;
+  padding: 28px 0 0 0;
+  font-weight: bold;
+  display: flex;
+  text-decoration: none;
+}
+.footer-box .link-list li a {
+  font-size: 12px;
+  color: #666;
+}
+.footer-box .link-list li a:hover {
+  text-decoration: underline;
+}
+.footer-box .link-list li:first-child:before {
+  display: none;
+}
+.footer-box .link-list li::before {
+  display: inline-block;
+  content: '';
+  height: 11px;
+  margin: 3px 0 0 10px;
+  padding: 0 0 0 9px;
+  border-left: 1px solid #d1d1d1;
+}
+.footer-box .link-list .user_data {
+  font-size: 12px;
+  color: #000;
+}
+
+.footer-box .info {
+  position: relative;
+  overflow: hidden;
+  margin: 12.5px 0 0 0;
+  font-size: 11px;
+  color: #888;
+  line-height: 16px;
+  display: flex;
+}
+.footer-box .info a {
+  font-size: 11px;
+  color: #888;
+}
+.footer-box .info dl {
+  width: 610px;
+}
+.footer-box .info dl dt,
+.footer-box .info dl dd {
+  display: inline-block;
+}
+.footer-box .info dl dd {
+  margin: 0 5px 0 0;
+}
+.footer-box .info .copy {
+  margin: 1px 0 0 0;
+}
+.footer-box .info .view_more {
+  position: absolute;
+  left: 594px;
+  top: 16px;
+  text-decoration: underline;
+}
+
+.footer-box .footer-logo {
+  overflow: hidden;
+  position: relative;
+  margin: 8px 0 0 0;
+  display: flex;
+}
+.footer-box .footer-logo .logo {
+  width: 70px;
+  height: 21px;
+  margin: 12px 0 0 0;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/common/logo_footer.png) no-repeat 0 0;
+}
+.footer-box .footer-logo .kespa {
+  position: relative;
+  width: 55px;
+  height: 25px;
+  margin: 0 0 0 32px;
+  background: url(https://ssl.nexon.com/s2/game/kart/v2/common/logo_footer.png) no-repeat 0 0;
+  background-position: -80px 0;
+}
+.footer-box .footer-logo .kespa:after {
+  position: absolute;
+  top: 9px;
+  left: -16px;
+  display: block;
+  content: '';
+  height: 20px;
+  border-left: 1px solid #dfe0e0;
+}

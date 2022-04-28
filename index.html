@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="icon" href="./img/favicon.png" />
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  
+  <!-- GSAP & ScrollTOPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollToPlugin.min.js" integrity="sha512-+ttrmEd3X+83MZZiqXnhD8J9Thp89psMxpRhCwTDo412Vu9cjFPC8nxpoqz4Q0eRWYeCbWnFHvCLsiZ/jr52fA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./CSS/main.css">
+  <script defer src="./JS/main.js"></script>
+
+  <title>::: Enjoy Drift! - 크레이지레이싱 카트라이더 :::</title>
+</head>
+<body>
+
+  <section>
+    <div class="barWrapper">
+      <!-- HEADER -->
+      <section class="header">
+        <div class="inner">
+
+          <a href="javascript:void(0)" class="menu">
+            <div class="material-icons">menu</div>
+            <div class="menu_small">메뉴</div>
+          </a>
+
+          <a href="javascript:void(0)" class="logo">
+            <img src="https://rs.nxfs.nexon.com/gnb/images/logo_nexon.png" alt="NEXON" />
+          </a>
+
+            <div class="pc_room">
+                <span class="pc_room_icon"></span>
+                <span class="pc_room_hidden_name">PC방</span>
+                <span class="pc_room_on_off"></span>
+            </div>
+
+            <div class="sign-up">
+              <a href="javascript:void(0)">
+                회원가입
+              </a>
+            </div>
+
+            <div class="sign-in">
+              <a href="javascript:void(0)">
+                로그인
+              </a>
+            </div>
+
+            <div class="sideBarEffectLayer"></div>
+
+            <!-- HEADER SIDE BAR -->
+            <section>
+
+              <div class="header_side_bar">
+
+                <div class="side_bar_white_menu">
+
+                  <div class="scrollContent">
+
+                    <div class="game_tab">
+                      <ul>
+                        <li class="PC_Button">
+                          <a href="javascript:void(0)">PC 게임</a>
+                        </li>
+                        <li class="Mobile_Button">
+                          <a href="javascript:void(0)">모바일 게임</a>
+                        </li>
+                      </ul>
+                      <a href="javascript:void(0)">고객센터</a>
+                    </div>
+                    
+                    <div class="PC_game_list">
+                      <div class="pcCell">
+                        <h3>A~Z</h3>
+                        <ul>
+                          <li>
+                            <a href="javascript:void(0)">EA SPORTS™ FIFA ONLINE 4</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">V4</a>
+                          </li>
+                        </ul>
+                        <h3>ㄱ~ㄹ</h3>
+                        <ul>
+                          <li>
+                            <a href="javascript:void(0)">던전앤파이터</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">던전앤파이터 모바일</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">드래곤네스트</a>
+                          </li>
+                        </ul>
+                        <h3>ㅁ~ㅅ</h3>
+                        <ul>
+                          <li>
+                            <a href="javascript:void(0)">마비노기</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">마비노기영웅전</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">메이플스토리</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">메이플스토리2</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">바람의나라</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">바람의나라: 연</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">버블파이터</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">사이퍼즈</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">서든어택</a>
+                          </li>
+                        </ul>
+                        <h3>ㅇ~ㅈ</h3>
+                        <ul>
+                          <li>
+                          <a href="javascript:void(0)">아스가르드</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">아키에이지</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">어둠의전설</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">엘소드</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">일랜시아</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="pcCell">
+                      <h3>ㅊ~ㅋ</h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:void(0)">천애명월도</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">카운터사이드</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">카운터스트라이크온라인</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">카트라이더</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">카트라이더: 드리프트</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">커츠펠</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">크레이지아케이드</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">클로저스</a>
+                        </li>
+                      </ul>
+                      <h3>ㅌ~ㅎ</h3>
+                      <ul>
+                        <li>
+                          <a href="hjavascript:void(0)">테일즈런너</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">테일즈위버</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">트리오브세이비어</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">파이널판타지14</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">프로젝트 D</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">프로젝트 HP (가제)</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">프리스타일2</a>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+
+                  <div class="Mobile_game_list">
+                    <div class="mobileCell">
+                      <h3>A~Z</h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:void(0)">EA SPORTS™ FIFA Mobile</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">EA SPORTS™ FIFA ONLINE 4 M</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">V4</a>
+                        </li>
+                      </ul>
+                      <h3>ㄱ~ㄹ</h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:void(0)">고질라 디펜스 포스</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">다크어벤저3</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">던전앤파이터 모바일</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">런웨이 스토리</a>
+                        </li>
+                      </ul>
+                      <h3>ㅁ~ㅅ</h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:void(0)">메이플스토리M</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">바람의나라: 연</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">블루 아카이브</a>
+                        </li>
+                      </ul>
+                      <h3>ㅇ~ㅈ</h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:void(0)">액스</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mobileCell">
+                      <h3>ㅊ~ㅋ</h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:void(0)">카운터사이드</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">카트라이더 러쉬플러스</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">코노스바 모바일 - 판타스틱 데이즈</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">크레이지아케이드 BnB M</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+  
+                </div>
+                
+              </div>
+
+              <div class="game_service">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span class="service_icon service_iconService1"></span>내정보
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span class="service_icon service_iconService2"></span>이벤트
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span class="service_icon service_iconService3"></span>넥슨캐시
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span class="service_icon service_iconService4"></span>보안센터
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span class="service_icon service_iconService5"></span>공지사항
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span class="service_icon service_iconService9"></span>넥슨플러그
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span class="service_icon service_iconService7"></span>고객센터
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span class="service_icon service_iconService8"></span>넥슨달력
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <span class="service_icon service_iconService6"></span>넥슨플레이
+                    </a>
+                  </li>
+                </ul>
+                <a class="service_button" href="javascript:void(0)">전체서비스
+                </a>
+              </div>
+
+              <div class="layerButton">
+                  <a href="javascript:void(0)">
+                    <span class="service_icon"></span>
+                  </a>
+              </div>
+
+
+            </div>
+            
+          </section>
+
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- OUT WRAP -->
+  <section class="OutWrap">
+
+  <!-- INNER WRAP -->
+  <section class="InnerWrap">
+
+    <!-- QUICK_FACEBOOK -->
+    <div class="quick_facebook">
+      <div class="fixed">
+      <a href="javascript:void(0)" class="btn_fb"></a>
+      <a href="javascript:void(0)" class="btn_yt"></a>
+      <a href="javascript:void(0)" class="bn_tmi">
+          <span class="tran1">
+          </span>
+          <span class="tran2">
+          </span>
+      </a>      
+      </div>
+    </div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <!-- NAV -->
+    <section class="Nav">
+      <div class="logo_section">
+        
+          <div class="logo_img">
+            <a href="javascript:void(0)">
+              <img src="./img/logo.png" alt="카트라이더 2015"></a>
+          </div>
+
+      </div>
+
+      <div class="header_wrap">
+        
+        <ul class="main_menu">
+
+          <li class="news">
+            
+            <a href="javascript:void(0)" class="news_img"></a>
+            
+            <div class="sub_menu">
+              
+              <div class="list_menu">
+                <ul>
+                  <li class="notice">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="patch">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="p_item">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="event">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="leagueNote">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="megazin">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="media">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                </ul>
+                <span class="bg_l"></span>
+                <span class="bg_r"></span>
+              </div>
+                
+            </div>
+
+          </li>
+
+          <li class="guide">
+            
+            <a href="javascript:void(0)" class="guide_img"></a>
+            
+            <div class="sub_menu">
+              
+              <div class="list_menu">
+                <ul>
+                  <li class="begin">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="learn">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="service">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="coupon">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="merge">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="media">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                </ul>
+                <span class="bg_l"></span>
+                <span class="bg_r"></span>
+              </div>
+                
+            </div>
+
+          </li>
+
+          <li class="guild">
+            
+            <a href="javascript:void(0)" class="guild_img"></a>
+            
+            <div class="sub_menu">
+              
+              <div class="list_menu">
+                <ul>
+                  <li class="gstory">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="gsear">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                </ul>
+                <span class="bg_l"></span>
+                <span class="bg_r"></span>
+              </div>
+                
+            </div>
+
+          </li>
+
+          <li class="ranking">
+            
+            <a href="javascript:void(0)" class="ranking_img"></a>
+            
+            <div class="sub_menu">
+              
+              <div class="list_menu">
+                <ul>
+                  <li class="rp">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="grand">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="vsmode">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="emblem">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="time_a">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="s_mode">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                </ul>
+                <span class="bg_l"></span>
+                <span class="bg_r"></span>
+              </div>
+                
+            </div>
+
+          </li>
+
+          <li class="league">
+            
+            <a href="javascript:void(0)" class="league_img"></a>
+
+          </li>
+
+          <li class="community">
+            
+            <a href="javascript:void(0)" class="community_img"></a>
+            
+            <div class="sub_menu">
+              
+              <div class="list_menu">
+                <ul>
+                  <li class="f_board">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="info_board">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="img_board">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="idea_board">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="qsearch_board">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                </ul>
+                <span class="bg_l"></span>
+                <span class="bg_r"></span>
+              </div>
+                
+            </div>
+
+          </li>
+          
+          <li class="pds">
+            
+            <a href="javascript:void(0)" class="pds_img"></a>
+            
+            <div class="sub_menu">
+              
+              <div class="list_menu">
+                <ul>
+                  <li class="download">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="kart_movie">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="openapi">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                </ul>
+                <span class="bg_l"></span>
+                <span class="bg_r"></span>
+              </div>
+                
+            </div>
+
+          </li>
+
+          <li class="customer">
+            
+            <a href="javascript:void(0)" class="customer_img"></a>
+            
+            <div class="sub_menu">
+              
+              <div class="list_menu">
+                <ul>
+                  <li class="er">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="propose">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                  <li class="security">
+                    <a href="javacript:void(0)">
+                      <span class="tit"></span>
+                    </a>
+                  </li>
+                </ul>
+                <span class="bg_l"></span>
+                <span class="bg_r"></span>
+              </div>
+                
+            </div>
+
+          </li>
+            
+        </ul>
+          
+      </div>
+          
+    </section>
+
+
+    <!-- MAIN SECTION -->
+    <section>
+
+      <div class="kart_main_secinner">
+
+        <!-- RIGHT: ASIDE SECTION -->
+        <aside>
+
+          <div class="play_box">
+            
+            <div class="go_game">
+              <a class="btn_gamestart" href="javascript:void(0)">
+                <img src="https://ssl.nexon.com/s2/game/kart/v2/flash/btn_gameStart.jpg" alt="게임시작">
+              </a>
+            </div>
+            
+            <div class="add_option">
+              <ul>
+                <li>
+                  <button type="button" class="sp_h btn_download"></button>
+                </li>
+                <li>
+                  <button type="button" class="sp_h btn_guide"></button>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="login">
+            <div class="logout_area">
+              
+              <div class="gc_login">
+                <p>
+                  <img src="https://ssl.nexon.com/s2/game/kart/v2/common/txt_gc_login.jpg" alt="NEXON">
+                </p>
+                <a href="javascript:void(0)">
+                  <img src="https://ssl.nexon.com/s2/game/kart/v2/common/btn_gc_login.jpg" alt="NEXON">
+                </a>
+              </div>
+
+              <ul class="option_menus">
+                <li class="idsear">
+                  <a href="javascript:void(0)" class="sp_h"></a>
+                </li>
+                <li class="pwsear">
+                  <a href="javascript:void(0)" class="sp_h"></a>
+                </li>
+                <li class="joins">
+                  <a href="javascript:void(0)" class="sp_h"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="quick_start"></div>
+
+          <div class="notice_side">
+            <div class="news">
+              <h3>
+                <span class="sp_h"></span>
+              </h3>
+              <ul class="news_viewlist">
+                <li>
+                  <span class="txt_ellipsis">
+                    <a href="javascript:void(0)" class="new">
+                      <span class="tit">[공지]</span> 운영정책 위반 라이더 제재...
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <span class="txt_ellipsis">
+                    <a href="javascript:void(0)" class="new">
+                      <span class="tit">[공지]</span> 2022 카트라이더 리그 시즌...
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <span class="txt_ellipsis">
+                    <a href="javascript:void(0)">
+                      <span class="tit">[패치]</span> 4/21(목) 패치 안내
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <span class="txt_ellipsis">
+                    <a href="javascript:void(0)">
+                      <span class="tit">[이벤트]</span> 넥슨재단 보더리스 갈라 공연
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <span class="txt_ellipsis">
+                    <a href="javascript:void(0)">
+                      <span class="tit">[이벤트]</span> 이온 V1 미션 출석 체크
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <span class="txt_ellipsis">
+                    <a href="javascript:void(0)">
+                      <span class="tit">[매거진]</span> 3월의 매거진 - 카트라이더...
+                    </a>
+                  </span>
+                </li>
+              </ul>
+              <span class="btn_ref">
+                <a href="javascript:void(0)">
+                  <span class="sp_com"></span>
+                </a>
+              </span>
+            </div>
+            <div class="qsearch">
+              <h3>
+                <span class="sp_h"></span>
+              </h3>
+              <div class="group_data">
+                <p>
+                  <a href="javascript:void(0)">
+                    <span>나의 카트 패스 이용 패턴은?</span>
+                  </a>
+                </p>
+                <button class="sp_com btn_entry" type="button"></button>
+              </div>
+              <div class="btn_ref">
+                <a href="javascript:void(0)">
+                  <span class="sp_com"></span>
+                </a>
+              </div>
+            </div>
+            <div class="kart_fsear">
+              <div class="btns">
+								<a href="javascript:void(0)" class="btn_faq">
+                  <span class="sp_h"></span>
+                </a>
+							</div>
+            </div>
+          </div>
+
+          <div class="recommend_mov">
+            <div class="NCCRecommendContent"> 
+              <a href="javascript:void(0)">    
+                <h3>추천 동영상</h3>
+                  <div class="tmb">
+                   <img src="https://i.ytimg.com/vi/UL7tGKElpHU/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCB-zC6eu3M3pc90p1" alt="영상 썸네일">
+                  </div>
+                  <div class="description"> 『지름길 타기 가장 어려운 트랙』 압도적인 1위 기록 찍었습니다ㄷㄷ</div>
+             </a>
+             <div class="channel">이중선</div>
+             <button type="button" class="btn_other">다른 영상보기</button>    
+            </div>
+
+            <div class="nccHiddenViewLayer">
+              <div class="layer_movie">     
+                  <div class="dim"></div>
+                  <div class="layer_wrap">
+                      <h3>추천 동영상</h3>   
+                      <div class="player nccContent">
+                      </div>
+                      <p class="description2">『지름길 타기 가장 어려운 트랙』 압도적인 1위 기록 찍었습니다ㄷㄷ</p>
+                      <div class="channel">이중선</div>
+                      <div class="time bul"> 2022-02-03 </div>
+                          
+                      <button type="button" class="btn_other">다른 영상보기</button>
+                      <p class="noti">※ 영상이 노출되지 않을 경우 Chrome, Microsoft Edge, Apple Safari 브라우저를 사용해주세요.</p>
+                          
+                      <button type="button" class="btn btn_layer_close">레이어 닫기</button>
+                  </div>
+                
+              </div>
+
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+
+      <!-- LEFT: MAIN CONTAINER SECTION -->
+
+      <section class="kart_main_container">
+
+        <!-- PROMOTION SECTION -->
+        
+        <section class="promotion">
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <img src="https://lwi.nexon.com/kart/banner/2022/0421_banner/220421_r_main_9081788C025E382A.jpg" alt="이온 V1 미션 출석 체크">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <img src="https://lwi.nexon.com/kart/banner/2022/0303_banner/220303_r_main_C27225027381545B.jpg" alt="2022 카트라이더 리그 시즌1 팀 패키지">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <img src="https://lwi.nexon.com/kart/banner/2022/0415_banner/220415_r_main_740B3F9FC4C972B4.png" alt="포스트시즌 신한은행 이벤트 홍보 배너 (생빙송X)">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <img src="https://lwi.nexon.com/kartrideresports/kart/banner/2022/0224_banner/220224_r_main_GRNX3124X5GGA604.jpg" alt="리그 시즌1 승부예측/엠블럼 이벤트 ">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <img src="https://lwi.nexon.com/kart/banner/2022/0421_banner/220421_r_main_B7E7011FE9737D48.jpg" alt="넥슨재단 보더리스 갈라 공연 배너">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </section>
+
+        <!-- KARTRIDER CONTAINER -->
+      
+        <section class="kart_container">
+
+          <!-- KART IN GAME -->
+          <section class="kart_ingame">
+
+            <div class="ingame_sec">
+              
+              <div class="tit"></div>
+
+                <div class="rolling_txt">
+
+                  <div class="swiper-container">
+                
+                    <div class="swiper-prev">
+                      <span class="sp_com"></span>
+                    </div>
+
+                    <div class="swiper-next">
+                      <span class="sp_com"></span>
+                    </div>
+
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                        3/31(목) ~ 5/4(수) 파라오 보석으로 플라잉 파라오(무제한), 파라오의 저주 엠블럼 등 다양한 아이템 조합 가능!
+                      </div>
+                      <div class="swiper-slide">  
+                        4/7(목) ~ 8/10(수) S 보석으로 V1 특수 파츠 상자, 럭키 캐릭터 선택권 등 다양한 아이템 조합 가능!
+                      </div>
+                      <div class="swiper-slide">
+                        4/7(목) ~ 5/4(수) 다시 한번 새로운 기록에 도전! 타임 어택 경쟁전 시즌 3 OPEN!
+                      </div>
+                      <div class="swiper-slide">
+                        4/14(목) ~ 4/27(수) 첫 접속 시 드리는 이벤트권 받고, 귀양 V1 등 다채로운 보상을 만나보세요!
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  
+                </div>
+              
+            </div>
+
+          </section>
+
+      
+          <!-- ALWAYS BANNER -->
+          <section class="always_banner">
+
+            <!-- ALWAYS BANNER LEFT -->
+
+            <section class="banner_left">
+              <a href="javascript:void(0)">
+                <img src="https://lwi.nexon.com/kart/banner/2022/0421_banner/220421_i_1_C3685B46BC228108.png" alt="||||">
+              </a>
+              <span class="mask"></span>
+            </section>
+
+            <!-- ALWAYS BANNER RIGHT -->
+          
+            <section class="banner_right">
+              <a href="javascipt:void(0)">
+                <img src="https://lwi.nexon.com/kart/banner/2022/0421_banner/220421_i_2_C3685B46BC228108.png" alt="||||">
+              </a>
+              <span class="mask"></span>
+            </section>
+
+          </section>
+          <!-- MEDIA CONTENTS -->
+
+          <section class="media_story">
+            
+            <div class="swiper-container">
+              
+              <div class="button_container">
+                
+                <div class="hx">
+                  <h3 class="sp_h"></h3>
+                </div>
+
+                <div class="btn_ref">
+                  <a href="javascript:void(0)">
+                    <span class="sp_com"></span>
+                  </a>
+                </div>
+                  
+                <div class="swiper-pagination">
+                  <span class="swiper-pagination-current">1</span>
+                  / 
+                  <span class="swiper-pagination-total">4</span>
+                </div>
+                
+                <div class="swiper-prev">
+                  <span class="sp_com"></span>
+                </div>
+                <div class="swiper-next">
+                  <span class="sp_com"></span>
+                </div>
+
+              
+              </div>
+
+              <div class="swiper-wrapper">
+              
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4908963244971921361" class="mediaImg">
+                    </span>
+                    <strong class="subject">[카트 리그] LSB 박현수 "오랜만에 팬들과 만나 더욱 기쁘다"</strong>
+                  </a>
+                  <p class="cont">리브 샌드박스가 20일 2022 신한은행 헤이 영 카트라이더 리그 시즌1 준PO에서 악셀즈를 2:0으로 꺾고 PO 진출에 성공했다. 리브 샌드박스는 이제 블레이즈와 광동 프릭스 패자와 PO에서 최종 결승 진출 티켓을 놓고 만나게 된다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5413366381762580356" class="mediaImg">
+                    </span>
+                    <strong class="subject">[카트 리그] 광동 프릭스, 창단 첫 결승 진출 성공</strong>
+                  </a>
+                  <p class="cont">20일 펼쳐진 2022 신한은행 헤이 영 카트라이더 리그 시즌1 결승 진출전에서 광동 프릭스가 블레이즈를 2:1로 잡고 창단 후 첫 결승 진출에 성공했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4836905629459156309" class="mediaImg">  
+                    </span>
+                    <strong class="subject">[넥슨 카트] 아마추어의 반란, 악셀즈 준PO 진출</strong>
+                  </a>
+                  <p class="cont">8강 풀리그에서 4위를 차지한 악셀즈가 에이스 결정전 끝에 준플레이오프 진출에 성공했했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5485423975800507498" class="mediaImg">
+                    </span>
+                    <strong class="subject">[넥슨 카트] 노준현, 16강 승자전서 1위로 결승전 진출</strong>
+                  </a>
+                  <p class="cont">광동 프릭스의 노준현이 16일 경기도 광명 아이벡스 스튜디오에서 진행된 '2022 신한은행 헤이영 카트라이더 리그 시즌1' 개인전 16강 승자전에서 1위로 결승전 진출에 성공했다. 11라운드까지 진행된 치열한 경기에서 노준현은 3위, 5위, 8위, 1위, 2위, 2위, 8위, 4위, 4위, 3위, 1위로 기록, 종합 53점을 거뒀다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4908963223497084001" class="mediaImg">
+                    </span>
+                    <strong class="subject">[넥슨 카트] 블레이즈, 두두카 상대로 승리하며 결승진출전 확정</strong>
+                  </a>
+                  <p class="cont">블레이즈가 결승 진출전에서 광동 프릭스를 상대하게 됐다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4764848035421228280" class="mediaImg">
+                    </span>
+                    <strong class="subject">[카트 리그] 라떼전 승리로 PO 향하는 리브 샌드박스</strong>
+                  </a>
+                  <p class="cont">13일 진행한 2022 신한은행 헤이 영 카트라이더 리그 시즌1 28경기에서 리브 샌드박스가 라떼를 상대로 승리했다. 최근 경기에서 패배로 분위기가 내려갈 법한 리브 샌드박스였지만, 금일 경기에서 2:0 완승으로 분위기를 끌어올리며 PO로 향하게 됐다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5053078407277972459" class="mediaImg">
+                    </span>
+                    <strong class="subject">[카트 리그] 김다원이 또 해냈다 악셀즈, 팀GP에 에결 끝 승리</strong>
+                  </a>
+                  <p class="cont">9일 2022 신한은행 헤이 영 카트라이더 리그 시즌1 팀전 25경기, 아마추어의 반란 악셀즈가 팀GP를 2:1로 잡고 5승 2패로 풀리그를 마무리했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4908963223497083998" class="mediaImg">
+                    </span>
+                    <strong class="subject">[카트 리그] 완벽한 밸런스 광동, 페이즈에 퍼펙트 승리</strong>
+                  </a>
+                <p class="cont">광동 프릭스가 9일 2022 신한은행 헤이 영 카트라이더 리그 시즌1 팀전 26경기에서 페이즈를 상대로 스피드전 3:0, 아이템전 3:0 퍼펙트 게임으로 승리했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5269251197981691366" class="mediaImg">
+                    </span>
+                    <strong class="subject">[넥슨 카트] 떠오르는 신예 김다원, 16강 2경기서 1위로 승자전 진출</strong>
+                  </a>
+                  <p class="cont">악셀즈의 김다원이 1위로 최종전에 진출했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">    
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5413366386057547248" class="mediaImg">   
+                    </span>
+                    <strong class="subject">[카트 리그] DDK 상대한 광동 프릭스, 무실 라운드 완승</strong>
+                  </a>
+                  <p class="cont">6일 광명 IVEX 스튜디오에서 진행된 2022 신한은행 Hey Young 카트라이더 리그 시즌1 8강 풀리그 두두카(DDK)와 광동 프릭스의 경기는 광동 프릭스가 승리했다. 광동 프릭스는 DDK에게 단 한 라운드도 내어주지 않으면서 우승후보다운 면모를 과시했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4836905629459156306" class="mediaImg">  
+                    </span>
+                    <strong class="subject">[카트 리그] 블레이즈, 페이즈 잡아내면서 1승 추가...순위 유지</strong>
+                  </a>
+                  <p class="cont">6일 광명 IVEX 스튜디오에서 진행된 2022 신한은행 Hey Young 카트라이더 리그 시즌1 8강 풀리그 페이즈와 블레이즈의 대결은 블레이즈가 승리했다. 스피드전과 아이템전에서 1라운드 다소 고전했지만, 이후 레이스에서는 좋은 기량을 보여주면서 승리를 챙겼다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5413366398942449058" class="mediaImg">
+                    </span>
+                    <strong class="subject">[카트 리그] 명승부 끝에 승리 쟁취한 악셀즈 박대한, 김다원 인터뷰</strong>
+                  </a>
+                  <p class="cont">6일 광명 IVEX 스튜디오에서 진행된 2022 신한은행 Hey Young 카트라이더 리그 시즌1 8강 풀리그 악셀즈와 페이즈의 대결은 악셀즈가 승리했다. 에이스 결정전까지 가는 난전 끝에 김다원이 팀에 승리를 안겼다. 에이스 결정전에 나선 김다원 선수는 다음 경기에서는 더 좋은 경기력을 선보이겠다고 다짐했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                      <span class="img">
+                        <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4908963223497083996" class="mediaImg">
+                      </span>
+                      <strong class="subject">[넥슨 카트] 블레이즈, 리브 샌박상대로 접전 끝에 "에결"서 승리</strong>
+                  </a>
+                  <p class="cont">블레이즈가 호적수 리브 샌드박스와 에이스 결정전까지 가는 접전 끝에 승리를 쟁취했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                      <span class="img">
+                        <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4836905629459156305" class="mediaImg">
+                      </span>
+                      <strong class="subject">[넥슨 카트] 팀GP, 라떼 잡고 3승 라인 합류</strong>
+                  </a>
+                  <p class="cont">팀 GP가 라떼를 2대0으로 잡아내며 3승 라인에 합류했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4981020821829979248" class="mediaImg">
+                    </span>
+                    <strong class="subject">[넥슨 카트]유창현, 죽음의 1경기서 조 1위 승자전 진출</strong>
+                  </a>
+                  <p class="cont">유창현이 지옥의 16강 1경기에서 1위로 승자전에 진출했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5125136001315900761" class="mediaImg">
+                    </span>
+                    <strong class="subject">[카트 리그] 이재혁이 내려와도 승리 거뜬한 광동, 다시 승리로 전환</strong>
+                  </a>
+                  <p class="cont">30일 2022 신한은행 헤이 영 카트라이더 리그 시즌1 8강 풀리그 20경기에서 광동 프릭스가 팀 GP를 상대로 2:0으로 승리했다. 광동은 스피드전에서 접전을 벌이면서 고전했지만, 자신들의 약점으로 평가받았던 아이템전을 극복하면서 세트 스코어 2:0 승리를 완성했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5269251193686723744" class="mediaImg">
+                    </span>
+                    <strong class="subject">[넥슨 카트] 페이즈, 라운드 스코어 6대2로 라떼 제압…5위로 올라서(종합)</strong>
+                  </a>
+                  <p class="cont">페이즈가 라떼를 상대로 +4 라운드 득실을 챙기며 5위로 올라섰다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4908963223497083994" class="mediaImg">
+                    </span>
+                    <strong class="subject">[넥슨 카트] 블레이즈, 라떼 상대로 퍼펙트 경기 펼쳐(종합)</strong>
+                  </a>
+                  <p class="cont">블레이즈가 아이템전과 스피드전 모두 3 대 0으로 승리하는 완벽한 경기를 기록했다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4764848035421228274" class="mediaImg"> 
+                    </span>
+                    <strong class="subject">[카트 리그] 두 번째 경기도 6:0? 리브 샌드박스, DDK전 압승</strong>
+                  </a>
+                  <p class="cont">1경기 이어 2경기도 6:0. 프로팀의 기세가 막강하다.</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <span class="img">
+                      <img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4836905633754124656" class="mediaImg">
+                    </span>
+                    <strong class="subject">[넥슨 카트] 유창현, 32강 패자부활전서 1위하며 16강 진출</strong>
+                  </a>
+                <p class="cont">유창현이 패자부활전에서 1위로 16강 진출에 성공했다.</p>
+                </div>
+
+              </div>
+
+              
+
+            </div>
+
+          </section>
+
+          <!-- KART STORY AND CLUB GUILD -->
+          
+          <section class="story_club">
+
+            <!-- OUR KART SROTY -->
+
+            <section class="kart_story">
+              <div class="hx">
+                <h3 class="sp_h"></h3>
+              </div>
+
+              <div class="story_list_wrap">
+
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="info_sec info_sec_odd">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit.gif" alt="자유게시판">
+                            <span class="txt_ellipsis">
+                              <a href="javascript:void(0)">
+                              이번에 이온V1
+                              </a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/2990000.gif" alt="무지개금메달">
+                            <span class="player">
+                              이온V1뽑았다
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div class="swiper-slide">
+                        <div class="info_sec">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit.gif" alt="자유게시판">
+                            <span class="txt_ellipsis">
+                              <a href="javascript:void(0)">
+                                이온 뒷태 되게 신경쓰임
+                              </a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/2990000.gif" alt="무지개금메달">
+                            <span class="player">튼튼한설탕룡</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="info_sec">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit.gif" alt="자유게시판">
+                            <span class="txt_ellipsis">
+                              <a href="javascript:void(0)">
+                                카트 재밌게 하는법
+                              </a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/globe/24500.gif" alt="파랑장갑 한손가락">
+                            <span class="player">카트시작함1</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="info_sec">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit.gif" alt="자유게시판">
+                            <span class="txt_ellipsis">
+                              <a href="javascript:void(0)">이번에 골스블,EXT 나올때..</a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/2990000.gif" alt="무지개금메달">
+                            <span class="player">Or찔한그놈</span>
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div class="swiper-slide">
+                        <div class="info_sec info_sec_odd">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit2.gif" alt="공략게시판"><span class="txt_ellipsis">
+                              <a href="javascript:void(0)" >풍선공기저항 + 핸드봉 공기저항</a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/303466.gif" alt="옐로스타1">
+                            <span class="player">달려라응민</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="info_sec">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit3.gif" alt="이미지게시판">
+                            <span class="txt_ellipsis">
+                              <a href="javascript:void(0)">지금보니까 라이센스에 이런 디테일이...</a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/491448.gif" alt="블랙스타1">
+                            <span class="player">zxjkvgjeodai</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="info_sec">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit3.gif" alt="이미지게시판">
+                            <span class="txt_ellipsis"><a href="javascript:void(0)">★이벤트패스드디어완료했음★</a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/891426.gif" alt="파랑동메달">
+                            <span class="player">꼬마신선우니</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="info_sec">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit3.gif" alt="이미지게시판">
+                            <span class="txt_ellipsis">
+                              <a href="javascript:void(0)">사랑의라이벌:디지니와 마리드(그림)</a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/globe/207300.gif" alt="빨강별장갑 세손가락">
+                            <span class="player">꼴받는꼴미호</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="info_sec info_sec_odd">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit3.gif" alt="이미지게시판">
+                            <span class="txt_ellipsis">
+                              <a href="javascript:void(0)">리타는 역시 즐거운 게임이에요^^</a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/2990000.gif" alt="무지개금메달">
+                            <span class="player">o월망o</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="info_sec">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit2.gif" alt="공략게시판">
+                            <span class="txt_ellipsis">
+                              <a href="javascript:void(0)">풍선 공기저항 재실험</a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/globe/252900.gif" alt="검정별장갑 네손가락">
+                            <span class="player">MD맛이갔다오</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="info_sec">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit2.gif" alt="공략게시판">
+                            <span class="txt_ellipsis">
+                              <a href="javascript:void(0)">풍선 꼈을때 공기저항?</a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/globe/252900.gif" alt="검정별장갑 네손가락">
+                            <span class="player">MD맛이갔다오</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="info_sec">
+                          <span class="tit">
+                            <img src="https://ssl.nexon.com/s2/game/kart/v2/main/h_btit2.gif" alt="공략게시판">
+                            <span class="txt_ellipsis">
+                              <a href="javascript:void(0)">카본 비트 획득 질문</a>
+                            </span>
+                          </span>
+                          <span class="player_info">
+                            <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/globe/1750.gif" alt="노란장갑 세손가락">
+                            <span class="player">KingRacoon</span>
+                          </span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+              </div>
+              
+
+
+              <span class="btn_ref">
+                <a href="javascript:void(0)">
+                  <span class="sp_com"></span>
+                </a>
+              </span>
+            </section>
+            
+            <!-- COMEONE CLUB GUILD -->
+            
+            <section class="club_guild">
+
+                <div class="hx">
+                    <h3 class="sp_h"></h3>
+                </div>
+
+                <ul class="guild_lst">
+                    
+                  <li>
+                    <p class="infos txt_ellipsis">
+                      <a href="javascript:void(0)">
+                        <span>(실력클)Team컨트롤 초기 ...</span>
+                      </a>
+                    </p>
+                    <span class="user">
+                      <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/1772781.gif" alt="파랑은메달"> Ctrl제트
+                    </span>
+                  </li>
+              
+                  <li>
+                    <p class="infos txt_ellipsis">
+                      <a href="javascript:void(0)">
+                        <span>(실력클)Team컨트롤 초기 ...</span>
+                      </a>
+                    </p>
+                    <span class="user">
+                      <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/1772781.gif" alt="파랑은메달"> Ctrl제트
+                    </span>
+                  </li>
+              
+                  <li>
+                    <p class="infos txt_ellipsis">
+                      <a href="javascript:void(0)">
+                        <span>+3초,멀티텟이벤) Leipzig</span>
+                      </a>
+                    </p>
+                    <span class="user">
+                      <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/2990000.gif" alt="무지개금메달"> LzStay
+                    </span>
+                  </li>
+              
+                  <li>
+                    <p class="infos txt_ellipsis">
+                      <a href="javascript:void(0)">
+                        <span>💎Lv2 [셀린느] 성인/템...</span>
+                      </a>
+                    </p>
+                    <span class="user">
+                      <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/2990000.gif" alt="무지개금메달"> 셀린달
+                    </span>
+                  </li>
+              
+                  <li>
+                    <p class="infos txt_ellipsis">
+                      <a href="javascript:void(0)">
+                        <span>💎Lv2 [셀린느] 성인/템...</span>
+                      </a>
+                    </p>
+                    <span class="user">
+                      <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/2990000.gif" alt="무지개금메달"> 셀린별
+                    </span>
+                  </li>
+              
+                  <li>
+                    <p class="infos txt_ellipsis">
+                      <a href="javascript:void(0)">
+                        <span>💎Lv2 [셀린느] 성인/템...</span>
+                      </a>
+                    </p>
+                    <span class="user">
+                      <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/2990000.gif" alt="무지개금메달"> 셀린별
+                    </span>
+                  </li>
+              
+                  <li>
+                    <p class="infos txt_ellipsis">
+                      <a href="javascript:void(0)">
+                        <span>신생클럽 오리너굴잉 초기가...</span>
+                      </a>
+                    </p>
+                    <span class="user">
+                      <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/2590340.gif" alt="검정금메달"> 탱글탱글순대
+                    </span>
+                  </li>
+              
+                  <li>
+                    <p class="infos txt_ellipsis">
+                      <a href="javascript:void(0)">
+                        <span>⭐무부⭐ Lv.2 NJoy 클...</span>
+                      </a>
+                    </p>
+                    <span class="user">
+                      <img class="glove" src="https://ssl.nexon.com/s2/game/kart/kart/hands2/2990000.gif" alt="무지개금메달"> NJoyHack
+                    </span>
+                  </li>
+              
+                </ul>
+                
+                <span class="btn_ref">
+                  <a href="javascript:void(0)">
+                    <span class="sp_com"></span>
+                  </a>
+                </span>
+
+            </section>
+            
+          </section>
+
+
+        </section>
+
+      </section>
+
+    </section>
+
+
+  </section>
+ 
+        
+        
+      
+      
+  <!-- FOOTER -->
+  <footer>
+    
+    <div class="footer-box">
+      <ul class="link-list">
+        <li><a href="javascript:void(0)" class="introduce">회사소개</a></li>
+        <li><a href="javascript:void(0)">채용안내</a></li>
+        <li><a href="javascript:void(0)">이용약관</a></li>
+        <li><a href="javascript:void(0)">게임이용등급 안내</a></li>
+        <li><a href="javascript:void(0)" class="user_data">개인정보 처리방침</a></li>
+        <li><a href="javascript:void(0)">청소년 보호정책</a></li>
+        <li><a href="javascript:void(0)">넥슨 PC방</a></li>
+        <li><a href="javascript:void(0)">운영정책</a></li>
+      </ul>
+      
+      <div class="info">
+        <dl>
+          <dt>(주)넥슨코리아 대표이사</dt>
+          <dd>이정헌</dd>
+          <dd>경기도 성남시 분당구 판교로 256번길 7</dd>
+          <dt>전화 :</dt>
+          <dd>1588-7701</dd>
+          <dt>팩스 :</dt>
+          <dd>0502-258-8322</dd>
+          <dt>E-mail :</dt>
+          <dd><a href="javascript:void(0)">contact-us@nexon.co.kr</a></dd>
+          <dt>사업자등록번호 :</dt>
+          <dd>220-87-17483호</dd>
+          <dt>통신판매업 신고번호 :</dt>
+          <dd>제2013-경기성남-1659호</dd>
+          <p class="copy">© NEXON Korea Corporation All Rights Reserved.</p>
+          <a href="javascript:void(0);" class="view_more">사업자정보확인</a>
+        </dl>
+      </div>
+      
+      <div class="footer-logo">
+        <a href="javascript:void(0)" class="logo"></a>
+        <a href="javascript:void(0)" class="kespa"></a>
+      </div>
+      
+    </div>
+    
+  </footer>
+</section>
+
+</body>
+</html>
