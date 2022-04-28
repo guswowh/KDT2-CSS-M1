@@ -40,6 +40,8 @@ Netlify 링크: [하남 스타필드 과제](https://cozy-naiad-f7bc63.netlify.a
 
 ### js
   1. 제대로 구현하지 못했거나 css로 대체했다.
+  1. 실시간 지역날씨 위젯을 해보려했지만 위치설정과 아이콘색이 배경과 물려서 방법을 찾지 못했다. [날씨 API](https://openweathermap.org/)
+   
 
 ### 하지 못한 것
 topMain swiper 이미지 좌우 버튼에 마우스를 올리면 미리보기처럼 옆 사진이 보이는데 현재 화면에 보이는 이미지가 선택되도록 swiper-slide-active 클래스를 할당해줬다. 처음보이는 이미지만 구동이 되고 자동재생으로 active가 옮겨다니는걸 인식하지 못한다.
