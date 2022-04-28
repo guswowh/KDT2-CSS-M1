@@ -1,0 +1,658 @@
+/* COMMON */
+body {
+
+}
+img {
+  display: block;
+}
+@media (max-width: 720px) {
+  .rps {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  }
+
+/* INNER */
+.inner {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  border-bottom: 1px solid transparent;
+}
+header >.inner {
+  height: 60px;
+}
+.header__logo {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+  position: absolute;
+  
+}
+.header__logo a {
+  display: flex;
+}
+.inner .header__logo a img {
+  display: flex;
+  width: 78px;
+  height: 20px;
+  object-fit: cover;
+}
+.header__content {
+  display: flex;
+  position: absolute;
+  right: 0;
+  padding: 0 8px;
+}
+.header__content .header__menu {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.header__content .header__menu .header__item {
+  display: flex;
+  padding: 8px;
+}
+.header__content .header__menu .header__item a {
+  color: white;
+  padding: 12px 10px;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+/* MAIN */
+main {
+
+}
+
+/* SQUARE1 */
+.square1 {
+  background-image: url(https://static.toss.im/assets/homepage/team/kv-1.jpg);
+  background-position: center;
+  height: calc(100vh + 1px); 
+  /* 뷰포트에 이미지를 꽉차게 넣는다. */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.square1 .square1__text{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 247px;
+  text-align: center;
+  text-align: center;
+}
+.square1 .square1__text span {
+  font-size: 72px;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+}
+
+.square1 .mv-arw {
+  position: absolute;
+    bottom: 97px;
+    left: 50%;
+}
+.square1 .mv-arw img {
+  width: 28px;
+  height: auto;
+  cursor: pointer;
+  animation-name: UpDownarw;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes UpDownarw{
+  0%{
+    transform: translate(0, 0);
+    opacity:1; 
+  }
+  100%{
+    /* 밑으로 20px 만큼 가고 투명하게 바뀌기 */
+    transform: translate(0, 10px);
+    opacity:0; 
+  }
+}
+
+
+/* SQUARE2 */
+.square2 {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.square2 .square2__text-container {
+  max-width: 960px;
+}
+.square2 .square2__text-container .square2__text-bg {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 52px;
+  color: #fff;
+}
+.square2 .square2__text-container .square2__text-sm {
+  display: block;
+  color: #6b7684;
+  margin-top: 36.26px;
+  font-size: 14px;
+}
+.square2 .square2__text-container .square2__text-items {
+  display: inline-flex;
+  width: 400px;
+  margin-top: 51px;
+  flex-direction: column;
+}
+.square2 .square2__text-container .square2__text-items .square2__text-items-sm {
+  margin-bottom: 9px;
+  font-size: 21px;
+  line-height: 26.29px;
+  color: #b0b8c1;
+
+}
+.square2 .square2__text-container .square2__text-items .square2__text-items-bg {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 80.13px;
+}
+
+
+/* SQUARE3 */
+.square3 {
+  position: relative;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121417;
+}
+.square3 .square3--color {
+  position: flxed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(https://static.toss.im/assets/homepage/team/kv-2.jpg);
+}
+.square3 .square3--black {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+.square3 .square3__text-container {
+  position: absolute;
+  width: 788px;
+  height: 406px;
+  padding: 62px 92px;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: rgba(26, 30, 36, 0.65);
+  box-sizing: border-box;
+  backdrop-filter: blur(30px);
+}
+.square3 .square3__text-container .square3__text-container--title {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #b0b8c1;
+  line-height: 43.5px;
+  justify-content: center;
+  text-align: center;
+  
+}
+.square3 .square3__text-container .square3__text-container--content {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 43.5px;
+  text-align: center;
+}
+
+
+/* SQUARE4 */
+.square4 {
+
+}
+.square4 .square4__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding-bottom: 116px;
+  flex-direction: column;
+  background-color: black;
+  padding-bottom: 116px;
+}
+.square4 .square4__container span {
+  font-size: 42px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.45em;
+  text-align: center;
+  margin-bottom: 82px;
+}
+.square4 .square4__container .square4__items {
+  position: relative;
+}
+.square4 .square4__container .square4__items ul {
+  /* position: relative;
+  font-size: 1.03em;
+  font-weight: 100;
+  line-height: 1.4em;
+  text-align: left;
+  list-style: none;
+  border-radius: 2px; */
+}
+.square4 .square4__container .square4__items ul li {
+  /* position: relative;
+  width: 500px;
+  height: 75px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-left: 2px solid rgb(51, 61, 75); */
+}
+.square4 .square4__container .square4__items ul li::before {
+  /* top: -10px;
+  left: -78px;
+  padding: 3px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 25px;
+  color: rgb(78, 89, 104);
+  text-align: right;
+  content: attr(data-year); */
+}
+.square4 .square4__container .square4__items ul li::after {
+  /* left: -7px;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-color: rgb(51, 61, 75);
+  border-radius: 50%; */
+}
+
+
+/* SQUARE5 */
+.square5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 175px 0;
+}
+.square5 .square5__title {
+  margin-bottom: 13px;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1.4em;
+  color: #191f28;
+  text-align: center;
+}
+.square5 .square5__sub-title {
+  margin-bottom: 42px;
+  font-size: 24px;
+  line-height: 1.4em;
+  color: #4e5968;
+  text-align: center;
+}
+.square5 .square5__items {
+  display: flex;
+  max-width: 960px;
+  flex-wrap: wrap;
+  z-index: 1;
+  justify-content: space-between;
+}
+.square5 .square5__items .square5__items-one {
+  width: 458px;
+  height: 523px;
+  margin: 14px 0;
+}
+.square5 .square5__items .square5__items-one .square5__items-one-in {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+.square5 .square5__items .square5__items-one .square5__items-one-in .square5__items-square-img {
+  background-image: url(https://static.toss.im/assets/homepage/team/team-1core.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 16px;
+}
+.square5 .square5__items .square5__items-one .square5__items-one-in .square5__items-square-hat {
+  margin: 0 0 8px 0;
+  color: #4e5968;
+  opacity: 1;
+  font-size: 15px;
+}
+.square5 .square5__items .square5__items-one .square5__items-one-in .square5__items-square-title {
+  margin: 0 0 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 41px;
+  color: #333d4b;
+}
+.square5 .square5__items .square5__items-one .square5__items-one-in .material-icons {
+  height: 24px;
+    width: 24px;
+    min-width: 24px;
+    color: #333d4b;
+}
+.square5 .square5__items .square5__items-one .square5__items-one-in .square5__items-square-img-two {
+  background-image: url(https://static.toss.im/assets/homepage/team/team-2securities.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 16px;
+}
+.square5 .square5__items .square5__items-one .square5__items-one-in .square5__items-square-img-three {
+  background-image: url(https://static.toss.im/assets/homepage/team/team-3payments.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 16px;
+}
+.square5 .square5__items .square5__items-one .square5__items-one-in .square5__items-square-img-four {
+  background-image: url(https://static.toss.im/assets/homepage/team/team-4insu.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 16px;
+}
+.square5 .square5__items .square5__items-one .square5__items-one-in .square5__items-square-img-five {
+  background-image: url(https://static.toss.im/assets/homepage/team/team-5bank.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 16px;
+}
+.square5 .square5__items .square5__items-one .square5__items-one-in .square5__items-square-img-six {
+  background-image: url(https://static.toss.im/assets/homepage/team/team-6cx.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+/* SQUARE6 */
+.square6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 688px;
+  background-color: #f9fafb;
+}
+.square6 .square6__items {
+  
+}
+.square6 .square6__items span {
+  display: block;
+  margin-bottom: 68px;
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 1.4em;
+  color: #191f28;
+  text-align: center;
+}
+.square6 .square6__items div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 850px;
+}
+.square6 .square6__items div img {
+  width: 211px;
+  height: 102px;
+}
+
+/* SQUARE7 */
+.square7 {
+  display: flex;
+  padding: 122px 0px 138px;
+  justify-content: center;
+  align-items: center;
+}
+.square7 .square7__container {
+
+}
+.square7 .square7__container .square7__head {
+  display: flex;
+  width: 960px;
+  margin-bottom: 68px;
+}
+.square7 .square7__container .square7__head .square7__title {
+  margin-right: 38px;
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 1.4em;
+  color: rgb(25, 31, 40);
+  text-align: center;
+}
+.square7 .square7__container .square7__head .square7__years {
+  display: flex;
+  align-items: center;
+}
+.square7 .square7__container .square7__head .square7__years .square7__years-container {
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  height: 44px;
+  cursor: pointer;
+}
+.square7 .square7__container .square7__head .square7__years .square7__years-container .square7__years-items {
+  display: flex;
+  padding: 10px 18px;
+  font-weight: bold;
+  color: #4e5968;
+}
+.square7 .square7__container .square7__list {
+  padding: 0;
+}
+.square7 .square7__container .square7__list .square7__list__content {
+  position: relative;
+  padding: 44px 2px;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(69, 79, 93, 0.07);
+}
+.square7 .square7__container .square7__list .square7__list__content .square7__list__content-title {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(49, 130, 246);
+}
+.square7 .square7__container .square7__list .square7__list__content .square7__list__content-title .square7__list__content-date {
+  margin-left: 10px;
+  color: rgb(176, 184, 193);
+}
+.square7 .square7__container .square7__list .square7__list__content .square7__list__content-title .square7__list__content-content {
+  display: block;
+  margin-top: 14px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.4em;
+  color: rgb(51, 61, 75);
+}
+.square7 .square7__container .square7-fm {
+  width: 960px;
+  height: 109px;
+  text-align: left;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+.square7 .square7__container .square7-fm button {
+  font-size: 15px;
+  font-weight: 500;
+  color: #425968;
+  background-color: #f2f4f6;
+  border: 0px solid #fff;
+  border-radius: 12px;
+  padding: 14px 14px;
+  box-sizing: border-box;
+  line-height: 20px;
+}
+
+
+/* FOOTER */
+.footer {
+  padding: 50px 0 100px;
+  background-color: #f9fafb;
+}
+.footer .footer__inner {
+  max-width: 1064px;
+  margin: auto;
+  padding: 0 67px;
+  box-sizing: border-box;
+}
+.footer .footer__inner .footer__site-group-list {
+  display: flex;
+  padding-bottom: 50px;
+}
+.footer .footer__inner .footer__site-group-list .footer__site-group {
+  width: 170px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+.footer .footer__inner .footer__site-group-list .footer__site-group .footer__site-group-title {
+  padding-bottom: 5px;
+  color: #333d4b;
+  font-weight: bold;
+}
+.footer .footer__inner .footer__site-group-list .footer__site-group .footer__site-group-item {
+  display: block;
+  text-decoration: none;
+  color: #6b7684;
+  font-weight: 200;
+  line-height: 30px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+.footer .footer__inner .footer__address {
+  display: block;
+  color: #8b95a1;
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 20px;
+  white-space: nowrap;
+}
+.footer .footer__inner .footer__address .footer__address__company-name {
+  display: block;
+  padding-bottom: 16px;
+  color: #333d4b;
+  font-size: 15px;
+  font-weight: bold;
+}
+.footer .footer__inner .footer__address .footer__address-business {
+  text-decoration: none;
+  color: #6b7684;
+  font-weight: 300;
+}
+.footer .footer__inner .footer__term-wrapper {
+  display: flex;
+  margin: 0;
+  padding: 24px 0 30px;
+  list-style: none;
+}
+.footer .footer__inner .footer__term-wrapper .footer__term {
+  padding-right: 30px;
+}
+.footer .footer__inner .footer__term-wrapper .footer__term a {
+  color: #6b7684;;
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
+}
+.footer .footer__inner .footer__social-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.footer .footer__inner .footer__social-list .footer__social-list-item {
+  margin-right: 8px
+}
+.footer .footer__inner .footer__social-list .footer__social-list-item a {
+  cursor: pointer;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  opacity: .7;
+}
+.footer .footer__inner .footer__social-list .footer__social-list-item a>img {
+  display: block;
+    width: 100%;
+    height: 100%;
+}

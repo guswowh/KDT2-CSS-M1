@@ -1,105 +1,58 @@
-# airdnd 😅
+# 📌 자신이 원하는 사이트 레이아웃 클론
+
+- 과제 기한:
+  - 과제 수행 기간: 2022년 04월 14일(목) 19시 ~ 2022년 04월 28일(목) 19시
+  - 코드 리뷰 기간: 2022년 04월 28일(목) 19시 ~ 2022년 05월 06일(금) 19시
+- 내용:
+  - 원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
+  - 평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
+
+## 필수 요구사항
+
+- [X] 정리된 README.md 파일을 제공하세요!
+- [X] 결과와 비교할 수 있는 선택 사이트의 주소를 명시하세요!
+- [X] 제출 프로젝트에 확인 가능한 HTML, CSS 파일이 모두 있어야 합니다!
+- [X] 브라우저에서 정상적으로 출력돼야 합니다!
+
+## 선택 요구사항
+
+- [X] 시멘틱 태그를 최대한 활용해보세요.
+- [ ] 레거시 코드 활용보단 최신의 CSS Flex와 Grid를 활용해보세요.
+- [ ] JS가 필요한 부분은 생략하고 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
+- [ ] JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.
+- [ ] SCSS를 도입해보세요.
+- [ ] SCSS 컴파일에 Webpack이나 Parcel 같은 번들러를 활용해보세요.
+- [X] BEM 방법론을 도입해보세요.
+
+## 이미지 추출법
+
+사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 [Image Downloader](https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj?hl=ko)를 사용하세요.
+
+1. 원하는 사이트 접속
+1. Image Downloader 확장 프로그램 실행
+1. 다운로드 원하는 이미지 선택
+1. 서브 폴더 이름(Save to subfolder) 명시
+1. 다운로드!
+
+<hr/>
+
+<h1>TOSS TEAM Clone Coding</h1>
+
+<h2>선정이유</h2>
+<li>패럴랙스 스크롤링과 스타벅스 사이트와 유사하고 
+이번 과제에 실력 증진을 위해 욕심을 내고 싶어 조원들과 선정하게 되었습니다.
 
 <br/>
+<h2>DEMO</h2>
+https://timely-starburst-5c0190.netlify.app/
 
 <br/>
-
-
-# 📑 과제 개요
-
-꼭 한번 만들어 보고 싶었던 airbnb ! 벽은 높았다..
-
+<h2>Review</h2>
+제 실력에 대해 조금 더 잘 알게 되고 많은 깨달음과 클론 코딩 학습법에 대해 잘 알게 해 준 과제였던 것 같습니다. <br/>
+흔히 성장통이라고 부르는 만큼 아프지는 않았던 것 같지만 따라 치는 코딩을 넘어 직접 개발자 메뉴를 통해해서 코드를 해석할 수 있어서 즐거웠고 코드 작성이 어렵거나 이해가 가지 않아 머리를 쥐어 뜯는 경험도 할 수 있어서 즐거웠던 것 같습니다. <br/>
+혼자 공부했다면 막막해서 포기할 수도 있었을 것 같은데 조원들과 같이 울며 웃고 포기하지 않고 완벽하지는 않더라도 과제 제출 기한까지 매달려 노력했다는 경험과 기억이 앞으로 공부하는데 추억과 앞으로 힘들 때 동기 부여가 될 수 있을 것 같아서 정말 값진 프로젝트였습니다.
+<br/>
 <br/>
 
-<br/>
-
-<br/>
-
-
-# 🛠 기술 스택
-
-- HTML
-- CSS
-- Javascript
-
-<br/>
-
-<br/>
-
-<br/>
-
-# 🍀 주요 기능
-
-
-
-
-### 1. intersection observer를 사용한 navigation animation
-![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/96774661/163691199-324c8923-2939-4119-bfe5-b925e6098a81.gif)
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-
-
-
-### 2. 네비게이션 중앙의 다양한 pop-up 기능
-![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/96774661/163691202-194c8114-149a-43e3-9a75-116447aa5af6.gif)
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-
-### 3. 연령, 생물(?)에 맞는 guest추가 기능
-![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/96774661/163691204-41dc87c3-89f6-4cbf-9f18-64cf71b32ce0.gif)
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-
-### 4. profile sidebar 기능
-![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/96774661/163691205-03cb3a2d-afd7-46c1-b31d-b50b3e04cdd1.gif)
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-
-### 5. 전체 감상 😊
-![ezgif com-gif-maker (9)](https://user-images.githubusercontent.com/96774661/163691208-99b3b9ce-6e44-46b2-87a4-69dfe7216361.gif)
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-
-### 느낀점
-
-1. position을 통한 배치와 flex-items의 속성들을 통해 어느정도 내가 원하는 위치에 배치할 수 있게 되었다.
-2. 기초중의 기초! 👉🏼 HTML,CSS 능력이 정말 부족함을 깨달았다. 보다 더 연습이 필요할 것 같다.
-3. vanilla css는 힘들다.. 빨리 SCSS를 숙달하고 싶다.
-4. 나름대로의 CSS 작성 컨벤션을 만들게 되었다. position - display - width,height,margin,padding,top,right ... - background - font - etc...
-5. 속도보다는 방향. 기초를 무시하고 진도만 나간 내 모습을 돌아볼 수 있었다.
-6. 자바스크립트는 꽤 재밌다. 하지만 이론을 실무에 적용하는 것은 어렵다. 코드를 작성하는 것이 어렵다기보다는, 이미 알고 있는 이론을 실무에 적용하기 까지 사고하는게 참 어려운 것 같다. 글보다는 코드와 가까워져야겠다.
+<h2>Reference</h2>
+이 프로젝트는 토스 팀 사이트를 참조하여 학습 목적으로 만들었습니다.
