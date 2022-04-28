@@ -295,7 +295,9 @@ header .content_2 ul.service .item .item__contents ul.event > li:nth-child(3) {
 
 /* VISUAL */
 section .promotion {
+  position: relative;
   padding-top: 174px;
+  min-width: 1200px;
   height: 659px;
   overflow: hidden;
 }
@@ -304,7 +306,7 @@ section .promotion .swiper-pagination {
   width: 100px;
   position: absolute;
   margin-left: 55rem;
-  margin-bottom: 10rem;
+  bottom: 3rem;
 }
 section .promotion .swiper-pagination .swiper-pagination-bullet {
   background-color: #d6cfcd;
@@ -598,9 +600,11 @@ section.scroll_bg2 .img-group .find_store {
   background-repeat: no-repeat;
   width: 380px;
   height: 380px;
+  text-align: center;
   position: absolute;
-  bottom: 65px;
-  margin-left: 35rem;
+  right: 25rem;
+  left: 0;
+  margin: auto;
   transform: rotateY(180deg);
   opacity: 0;
   transition: 1s;
@@ -633,8 +637,10 @@ section.scroll_bg2 .img-group .catering {
   width: 380px;
   height: 380px;
   position: absolute;
+  left: 25rem;
+  right: 0;
   bottom: -65px;
-  margin-left: 60rem;
+  margin: auto;
   transform: rotateY(180deg);
   opacity: 0;
   transition: 1s;
