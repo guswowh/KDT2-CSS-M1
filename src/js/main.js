@@ -1,9 +1,9 @@
 import '../stylesheet/main.scss'
-import  { NavSwiper, bestSwiper, delSwiper, serSwiper, chaSwiper} from './swiper.js';
+import  { NavSwiper,bestSwiper, delSwiper, serSwiper, chaSwiper} from './swiper.js';
 import {selectTab, clickBtn} from './tablist.js';
 import { renderItem } from './best.js';
 import { goTo } from './gototop.js';
-
+import {showPro, hiddenPro } from './Btn.js'
 
 
 renderItem()
@@ -14,15 +14,19 @@ selectTab('navigation')
 clickBtn()
 goTo()
 
+const closeBtn = document.querySelector('.btn-close')
+const openBtn = document.querySelector('.button__more')
 
+closeBtn.addEventListener('click', showPro )
+openBtn.addEventListener('click', hiddenPro )
 
 const init = () => {
   window.addEventListener('DOMContentLoaded', () => {
       NavSwiper();
-      bestSwiper();
       delSwiper();
       serSwiper();
       chaSwiper();
+      bestSwiper();
   })
 
 }
