@@ -36,12 +36,10 @@ for (const yearEl of yearEls) {
   yearEl.addEventListener('click', function () {
     const thisYear = this.dataset.year;
     for (const yearElClass of yearEls) {
-      //active 초기화
       yearElClass.classList.remove('active');
     }
     this.classList.add('active');
     console.log(thisYear);
-    //contents 
     for (const conEl of conEls) {
       const conYear = conEl.dataset.year;
       if (conYear === thisYear) {
