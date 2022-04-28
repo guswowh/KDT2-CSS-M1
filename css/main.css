@@ -1,7 +1,7 @@
 /* COMMON */
 
 body {
-  font-size: 15px;
+  font-size: .9rem;
   line-height: 1.5;
   font-weight: 400;
   position: relative;
@@ -730,7 +730,8 @@ main {
 /* template__tip */
 .template__tip {
   grid-column: 1/3;
-  background-image: url('../images/bg-notice.png');
+  background: url(../images/bg-notice.png) no-repeat;
+  background-size: 100% 298px;
 }
 .template__tip .template__tip__top {
   background: url('../images/ico-notice.png') no-repeat 180px 45px;
@@ -832,7 +833,7 @@ main {
   position: absolute;
   top: 33px;
   left: 190px;
-  width: 30px;
+  width: 2rem;
   height: 10px;
 }
 .template__event > img {
@@ -865,7 +866,7 @@ main {
   background: url('../images/bg-health-noti-1.png') no-repeat center 0px;
 }
 .template__alarm .graph .alarm__list {
-  height: 180px;
+  height: 100%;
   padding-top: 140px;
 }
 .template__alarm .graph .alarm__list li {
@@ -889,7 +890,7 @@ main {
   text-align: center;
   background-color: #fff;
   border: 1px solid #ccc;
-  font-size: 13px;
+  font-size: 0.8rem;
   color: #44465c;
   cursor: pointer;
   display: block;
@@ -901,7 +902,7 @@ main {
   font-weight: 700;
   position: absolute;
   top: 75px;
-  left: 165px;
+  left: 159px;
 }
 
 /* template__org */
@@ -973,7 +974,7 @@ main {
   position: absolute;
   top: 44px;
   left: 190px;
-  width: 30px;
+  width: 2rem;
   height: 10px;
 }
 
@@ -1172,6 +1173,7 @@ footer .footer__area {
 .footer__text {
   line-height: 1.7em;
   padding-top: 10px;
+  font-size: .9rem;
   
 }
 .footer__mark ul {
