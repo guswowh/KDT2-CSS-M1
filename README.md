@@ -1,105 +1,74 @@
-# airdnd 😅
+# 📌 자신이 원하는 사이트 레이아웃 클론
 
-<br/>
+- 과제 기한:
+  - 과제 수행 기간: 2022년 04월 14일(목) 19시 ~ 2022년 04월 28일(목) 19시
+  - 코드 리뷰 기간: 2022년 04월 28일(목) 19시 ~ 2022년 05월 06일(금) 19시
+- 내용:
+  - 원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
+  - 평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
 
-<br/>
+## 필수 요구사항
 
+- [x] 정리된 README.md 파일을 제공하세요!
+- [ ] 결과와 비교할 수 있는 선택 사이트의 주소를 명시하세요!
+- [x] 제출 프로젝트에 확인 가능한 HTML, CSS 파일이 모두 있어야 합니다!
+- [x] 브라우저에서 정상적으로 출력돼야 합니다!
 
-# 📑 과제 개요
+## 선택 요구사항
 
-꼭 한번 만들어 보고 싶었던 airbnb ! 벽은 높았다..
+- [x] 시멘틱 태그를 최대한 활용해보세요.
+- [x] 레거시 코드 활용보단 최신의 CSS Flex와 Grid를 활용해보세요.
+- [ ] JS가 필요한 부분은 생략하고 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
+- [x] JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.
+- [ ] SCSS를 도입해보세요.
+- [ ] SCSS 컴파일에 Webpack이나 Parcel 같은 번들러를 활용해보세요.
+- [ ] BEM 방법론을 도입해보세요.
 
-<br/>
+# KBCard Clone Coding
 
-<br/>
+# 사이트
+- 참고 사이트: [국민의 행복생활 파트너 KB국민카드](https://card.kbcard.com/CMN/DVIEW/HOAMCXPRIZZC0002)
+- 클론 사이트: https://legendary-wisp-7433e4.netlify.app/
 
-<br/>
-
-
-# 🛠 기술 스택
-
+# 사용 스택
 - HTML
 - CSS
-- Javascript
+- JS
 
-<br/>
+# 구현 기술
 
-<br/>
+- tab을 클릭했을 때 보여지는 내용이 변경되는 부분이 있는데 JS로 구현을 해봤습니다! 간소화?를 하고싶은데 너무 어렵네요,, 보다 효율적인 방법을 알고 계시다면 공유부탁드립니다!  
 
-<br/>
+![ezgif-5-cf0e02b787](https://user-images.githubusercontent.com/64007362/165490833-ccc473ad-4722-469f-8b3f-a91170245879.gif)
+![ezgif-5-52f0c23bdd](https://user-images.githubusercontent.com/64007362/165493482-e740bdf6-bc73-47c9-b4e6-3ed8e9f29480.gif)
+![ezgif-5-d38126dc3b](https://user-images.githubusercontent.com/64007362/165494308-ff366c6a-1f2b-4260-a255-87b5fc50cb1a.gif)
 
-# 🍀 주요 기능
+```js
+// recomCard Tab변경
+const recomTabEls = document.querySelectorAll('.article.full .recom-card .tabs__menu li');
+const cardPanelEls = document.querySelectorAll('.article.full .recom-card .tabs__body .tabs__panel');
 
+for (let i = 0; i < recomTabEls.length; i += 1) {
+  recomTabEls[i].querySelector('a').addEventListener('click', function (e) {
+    e.preventDefault();
 
+    for (let j = 0; j < recomTabEls.length; j += 1) {
+      recomTabEls[j].classList.remove('on');
+      cardPanelEls[j].classList.remove('on');
+    }
 
+    recomTabEls[i].classList.add('on');
+    cardPanelEls[i].classList.add('on');
+  })
+}
+```
+세 개의 탭메뉴 모두 위 코드를 사용해 작성하였습니다.
 
-### 1. intersection observer를 사용한 navigation animation
-![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/96774661/163691199-324c8923-2939-4119-bfe5-b925e6098a81.gif)
+# 느낀점
+머릿속으로는 다 이해했다고 알고 있다고 생각했는데 막상 클론 코딩을 해보니 내게 부족한 점이 무엇인지 알 수 있었습니다...
 
-<br/>
+`float: left, right`를 사용한 부분이 어찌나 많은지.. Flex, Grid를 사용해 적용하다 보니까 얕게 알고 있던 지식이 확실히 내 것이 된 느낌만 들었습니다.
 
-<br/>
+개발자 도구를 열어 거의 베끼다시피 코딩한 것 같지만 이번 과제를 통해서 조금이지만 발전은 무조건 있었다고 생각합니다.
 
-<br/>
-
-<br/>
-
-
-
-
-### 2. 네비게이션 중앙의 다양한 pop-up 기능
-![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/96774661/163691202-194c8114-149a-43e3-9a75-116447aa5af6.gif)
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-
-### 3. 연령, 생물(?)에 맞는 guest추가 기능
-![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/96774661/163691204-41dc87c3-89f6-4cbf-9f18-64cf71b32ce0.gif)
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-
-### 4. profile sidebar 기능
-![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/96774661/163691205-03cb3a2d-afd7-46c1-b31d-b50b3e04cdd1.gif)
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-
-### 5. 전체 감상 😊
-![ezgif com-gif-maker (9)](https://user-images.githubusercontent.com/96774661/163691208-99b3b9ce-6e44-46b2-87a4-69dfe7216361.gif)
-
-<br/>
-
-<br/>
-
-<br/>
-
-<br/>
-
-
-### 느낀점
-
-1. position을 통한 배치와 flex-items의 속성들을 통해 어느정도 내가 원하는 위치에 배치할 수 있게 되었다.
-2. 기초중의 기초! 👉🏼 HTML,CSS 능력이 정말 부족함을 깨달았다. 보다 더 연습이 필요할 것 같다.
-3. vanilla css는 힘들다.. 빨리 SCSS를 숙달하고 싶다.
-4. 나름대로의 CSS 작성 컨벤션을 만들게 되었다. position - display - width,height,margin,padding,top,right ... - background - font - etc...
-5. 속도보다는 방향. 기초를 무시하고 진도만 나간 내 모습을 돌아볼 수 있었다.
-6. 자바스크립트는 꽤 재밌다. 하지만 이론을 실무에 적용하는 것은 어렵다. 코드를 작성하는 것이 어렵다기보다는, 이미 알고 있는 이론을 실무에 적용하기 까지 사고하는게 참 어려운 것 같다. 글보다는 코드와 가까워져야겠다.
+그리고 눈앞에 출력된 내가 만든 페이지를 보니 뿌듯합니다^^

@@ -1,710 +1,1214 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>국민의 행복생활 파트너 KB국민카드</title>
+  
+  <!-- Swipter -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
-    />
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./main.css" />
-    <script defer src="./js/common.js"></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="navigation">
-        <!-- scroll toggle part 1 -->
-        <h1>
-          <a>에어비엔비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</a>
-        </h1>
-        <!-- scroll toggle part 1 -->
-        <div class="inner">
-          <div class="navigation--info">
-            <div class="navigation--info--left">
-              <svg
-                class="logo"
-                width="102"
-                height="32"
-                fill="currentcolor"
-                style="display: block"
-              >
-                <path
-                  d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5zM41.54 24.12a5.02 5.02 0 01-3.95-1.83 6.55 6.55 0 01-1.6-4.48 6.96 6.96 0 011.66-4.58 5.3 5.3 0 014.08-1.86 4.3 4.3 0 013.7 1.92l.1-1.57h2.92V23.8h-2.93l-.1-1.76a4.52 4.52 0 01-3.88 2.08zm.76-2.88c.58 0 1.09-.16 1.57-.45.44-.32.8-.74 1.08-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.55.45zM53.45 8.46c0 .35-.06.67-.22.93-.16.25-.38.48-.67.64-.29.16-.6.22-.92.22-.32 0-.64-.06-.93-.22a1.84 1.84 0 01-.67-.64 1.82 1.82 0 01-.22-.93c0-.36.07-.68.22-.93.16-.3.39-.48.67-.64.29-.16.6-.23.93-.23a1.84 1.84 0 011.6.86 2 2 0 01.21.94zm-3.4 15.3V11.7h3.18v12.08h-3.19zm11.68-8.9v.04c-.15-.07-.35-.1-.5-.13-.2-.04-.36-.04-.55-.04-.89 0-1.56.26-2 .8-.48.55-.7 1.32-.7 2.31v5.93h-3.19V11.69h2.93l.1 1.83c.32-.64.7-1.12 1.24-1.48a3.1 3.1 0 011.81-.5c.23 0 .45.02.64.06.1.03.16.03.22.06v3.2zm1.28 8.9V6.74h3.18v6.5c.45-.58.96-1.03 1.6-1.38a5.02 5.02 0 016.08 1.31 6.55 6.55 0 011.6 4.49 6.96 6.96 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.1 1.57-2.92.03zm6.15-2.52c.57 0 1.08-.16 1.56-.45.44-.32.8-.74 1.08-1.25.26-.51.38-1.12.38-1.8 0-.67-.12-1.28-.38-1.79a3.75 3.75 0 00-1.08-1.25 2.95 2.95 0 00-3.12 0c-.45.32-.8.74-1.09 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.56.45zm7.51 2.53V11.69h2.93l.1 1.57a3.96 3.96 0 013.54-1.89 4.1 4.1 0 013.82 2.44c.35.76.54 1.7.54 2.75v7.24h-3.19v-6.82c0-.84-.19-1.5-.57-1.99-.38-.48-.9-.74-1.56-.74-.48 0-.9.1-1.27.32-.35.23-.64.52-.86.93a2.7 2.7 0 00-.32 1.35v6.92h-3.16zm12.52 0V6.73h3.19v6.5a4.67 4.67 0 013.73-1.89 5.02 5.02 0 013.95 1.83 6.57 6.57 0 011.59 4.48 6.95 6.95 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.09 1.57-2.93.03zm6.18-2.53c.58 0 1.09-.16 1.56-.45.45-.32.8-.74 1.09-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a3.63 3.63 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.95.45 1.55.45z"
-                ></path>
-              </svg>
-            </div>
-            <!-- scroll toggle part 2 -->
-            <ul class="navigation--info--center">
-              <li>
-                <button><span>숙소</span></button>
-              </li>
-              <li>
-                <button><span>체험</span></button>
-              </li>
-              <li>
-                <button><span>온라인 체험</span></button>
-              </li>
-            </ul>
-            <!-- scroll toggle part 2 -->
-            <ul class="navigation--info--right">
-              <li>호스트 되기</li>
-              <li>
-                <svg
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  role="presentation"
-                  focusable="false"
-                  style="
-                    display: block;
-                    height: 16px;
-                    width: 16px;
-                    fill: currentcolor;
-                  "
-                >
-                  <path
-                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"
-                  ></path>
-                </svg>
-              </li>
-              <li>
-                <button class="navigation--profile">
-                  <svg
-                    viewBox="0 0 32 32"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    role="presentation"
-                    focusable="false"
-                    style="
-                      display: block;
-                      fill: none;
-                      height: 16px;
-                      width: 16px;
-                      stroke: currentcolor;
-                      stroke-width: 3;
-                      overflow: visible;
-                    "
-                  >
-                    <g fill="none" fill-rule="nonzero">
-                      <path d="m2 16h28"></path>
-                      <path d="m2 24h28"></path>
-                      <path d="m2 8h28"></path>
-                    </g>
-                  </svg>
-                  <img
-                    src="https://a0.muscache.com/defaults/user_pic-50x50.png?v=3"
-                    alt="profile"
-                  />
-                </button>
-                <div class="profile-sidebar hide">
-                  <ul class="main-lists">
-                    <li><a href="/">메시지</a></li>
-                    <li><a href="/">알림</a></li>
-                    <li><a href="/">여행</a></li>
-                    <li><a href="/">위시리스트</a></li>
-                  </ul>
-                  <ul class="host-lists">
-                    <li><a href="/">숙소 호스트 되기</a></li>
-                    <li><a href="/">체험 호스팅하기</a></li>
-                    <li><a href="/">계정</a></li>
-                  </ul>
-                  <ul class="sub-lists">
-                    <li><a href="/">도움말</a></li>
-                    <li><a href="/">로그아웃</a></li>
-                  </ul>
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="inner head-area">
+
+      <div class="logo">
+        <a href="/"><img src="./images/kbcard_Logo_v3.png" alt="KB카드 로고"></a>
+      </div>
+      <ul class="g_menu">
+        <li><a href="javascript:void(0)" class="on">개인</a></li>
+        <li><a href="javascript:void(0)">기업</a></li>
+        <li><a href="javascript:void(0)">가맹점</a></li>
+      </ul>
+      <ul class="r_menu">
+        <li><a href="javascript:void(0)">회원가입</a></li>
+        <li><a href="javascript:void(0)">고객센터</a></li>
+        <li><a href="javascript:void(0)">상품공시실</a></li>
+        <li><a href="javascript:void(0)">KB국민은행</a></li>
+      </ul>
+      
+    </div>
+    <div class="gnb-area-wrap">
+      <div class="inner">
+        <ul class="gnb">
+          <li><a href="javascript:void(0)">My KB</a>
+            <!-- SUB MENU -->
+            <div class="gnb-sub">
+              <div class="inner">
+                <div class="service-menu">
+                  <a href="javascript:void(0)" class="kbbtn">결제예정금액</a>
+                  <a href="javascript:void(0)" class="kbbtn">이용내역</a>
+                  <a href="javascript:void(0)" class="kbbtn">이용대금명세서</a>
+                  <a href="javascript:void(0)" class="kbbtn">겟백서비스 안내·신청</a>
                 </div>
-              </li>
-            </ul>
-          </div>
-          <!-- scroll toggle part 3 -->
-          <div class="navigation--lodging">
-            <ul class="navigation--lodging--list">
-              <li class="navigation--lodging--location">
-                <label for=""
-                  >&NegativeVeryThinSpace; 위치<input
-                    type="text"
-                    placeholder="어디로 여행가세요?"
-                    class="navigation--lodging--search-input"
-                  />
-                </label>
-              </li>
-              <li class="navigation--lodging--checkin">
-                체크인<br /><span>날짜 입력</span>
-              </li>
-              <li class="navigation--lodging--checkout">
-                체크아웃<br /><span>날짜 입력</span>
-              </li>
-              <li class="navigation--logding--guestadd">
-                인원<br /><span>게스트 추가</span>
-              </li>
-              <button class="search-icon">
-                <svg
-                  viewBox="0 0 32 32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style="
-                    display: block;
-                    fill: none;
-                    height: 16px;
-                    width: 16px;
-                    stroke: currentColor;
-                    stroke-width: 4;
-                    overflow: visible;
-                  "
-                  aria-hidden="true"
-                  role="presentation"
-                  focusable="false"
-                >
-                  <g fill="none">
-                    <path
-                      d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"
-                    ></path>
-                  </g>
-                </svg>
-              </button>
-              <!-- guestadd pop-up  -->
-              <div class="guestadd-list-wrapper hide">
-                <ul class="guestadd-lists">
-                  <li class="guestadd-list">
-                    <span>성인</span>
-                    <span>만 13세 이상</span>
-                    <div class="button-group">
-                      <button class="guest--minus--button">
-                        <svg
-                          viewBox="0 0 32 32"
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          role="presentation"
-                          focusable="false"
-                          style="
-                            display: block;
-                            fill: none;
-                            height: 12px;
-                            width: 12px;
-                            stroke: currentcolor;
-                            stroke-width: 5.33333;
-                            overflow: visible;
-                          "
-                        >
-                          <path d="m2 16h28"></path>
-                        </svg></button
-                      ><span class="guest-number adult">0</span
-                      ><button class="guest--plus--button">
-                        <svg
-                          viewBox="0 0 32 32"
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          role="presentation"
-                          focusable="false"
-                          style="
-                            display: block;
-                            fill: none;
-                            height: 12px;
-                            width: 12px;
-                            stroke: currentcolor;
-                            stroke-width: 5.33333;
-                            overflow: visible;
-                          "
-                        >
-                          <path d="m2 16h28m-14-14v28"></path>
-                        </svg>
-                      </button>
-                    </div>
+                <ul>
+                  <li><strong>카드이용</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>결제예정금액</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>이용대금명세서</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>이용내역·매출전표</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>카드이용실적·혜택</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>이용한도</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>가족카드</span>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-
-                  <li class="guestadd-list">
-                    <span>어린이</span>
-                    <span>만 2~12세</span>
-                    <div class="button-group">
-                      <button class="guest--minus--button">
-                        <svg
-                          viewBox="0 0 32 32"
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          role="presentation"
-                          focusable="false"
-                          style="
-                            display: block;
-                            fill: none;
-                            height: 12px;
-                            width: 12px;
-                            stroke: currentcolor;
-                            stroke-width: 5.33333;
-                            overflow: visible;
-                          "
-                        >
-                          <path d="m2 16h28"></path>
-                        </svg></button
-                      ><span class="guest-number children">0</span
-                      ><button class="guest--plus--button">
-                        <svg
-                          viewBox="0 0 32 32"
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          role="presentation"
-                          focusable="false"
-                          style="
-                            display: block;
-                            fill: none;
-                            height: 12px;
-                            width: 12px;
-                            stroke: currentcolor;
-                            stroke-width: 5.33333;
-                            overflow: visible;
-                          "
-                        >
-                          <path d="m2 16h28m-14-14v28"></path>
-                        </svg>
-                      </button>
-                    </div>
+                  <li><strong>대금결제</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>카드대금결제</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>분할납부·할부관리</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>결제내역</span>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-
-                  <li class="guestadd-list">
-                    <span>유아</span>
-                    <span>만 2세 미만</span>
-                    <div class="button-group">
-                      <button class="guest--minus--button">
-                        <svg
-                          viewBox="0 0 32 32"
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          role="presentation"
-                          focusable="false"
-                          style="
-                            display: block;
-                            fill: none;
-                            height: 12px;
-                            width: 12px;
-                            stroke: currentcolor;
-                            stroke-width: 5.33333;
-                            overflow: visible;
-                          "
-                        >
-                          <path d="m2 16h28"></path>
-                        </svg></button
-                      ><span class="guest-number child">0</span
-                      ><button class="guest--plus--button">
-                        <svg
-                          viewBox="0 0 32 32"
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          role="presentation"
-                          focusable="false"
-                          style="
-                            display: block;
-                            fill: none;
-                            height: 12px;
-                            width: 12px;
-                            stroke: currentcolor;
-                            stroke-width: 5.33333;
-                            overflow: visible;
-                          "
-                        >
-                          <path d="m2 16h28m-14-14v28"></path>
-                        </svg>
-                      </button>
-                    </div>
+                  <li><strong>정보관리</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>내정보관리</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>소유카드관리</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>결제일·계좌관리</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>혜택정보(마케팅)수신동의</span>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-
-                  <li class="guestadd-list">
-                    <span>반려동물</span>
-                    <a class="service-animal"
-                      ><strong><u>보조동물을 동반하시나요?</u></strong></a
-                    >
-                    <div class="button-group">
-                      <button class="guest--minus--button">
-                        <svg
-                          viewBox="0 0 32 32"
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          role="presentation"
-                          focusable="false"
-                          style="
-                            display: block;
-                            fill: none;
-                            height: 12px;
-                            width: 12px;
-                            stroke: currentcolor;
-                            stroke-width: 5.33333;
-                            overflow: visible;
-                          "
-                        >
-                          <path d="m2 16h28"></path>
-                        </svg></button
-                      ><span class="guest-number pet">0</span
-                      ><button class="guest--plus--button">
-                        <svg
-                          viewBox="0 0 32 32"
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          role="presentation"
-                          focusable="false"
-                          style="
-                            display: block;
-                            fill: none;
-                            height: 12px;
-                            width: 12px;
-                            stroke: currentcolor;
-                            stroke-width: 5.33333;
-                            overflow: visible;
-                          "
-                        >
-                          <path d="m2 16h28m-14-14v28"></path>
-                        </svg>
-                      </button>
-                    </div>
+                  <li><strong>금융정보</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>신용카드소득공제</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>카드금융거래확인서</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>채무확인서</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>부채증명서</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>상환관리</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>KB금융그룹 금융정보</span>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-
-                  <li class="guestadd-list">
-                    <p>
-                      반려동물을 3마리 이상 동반하는 경우,반드시 호스트에게
-                      알려주세요
-                    </p>
+                  <li><strong>개인사업자</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>이용내역</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>겟백서비스</span>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
-            </ul>
-          </div>
-          <!-- scroll toggle part 3 -->
-        </div>
-      </header>
-        
-      <section class="top-banner">
-        <div class="inner">
-          <div class="advertise-banner">
-            <h1>
-              10만 명에 달하는 우크라이나 피란민에게 임시 숙소를 제공해주세요
-            </h1>
-            <a href="/" class="btn">자세히 알아보기</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="main-banner observer">
-        <div class="inner">
-          <div class="search-banner">
-            <div class="search--text-group">
-              <h2>호기심을 자극하는 숙소로 떠나보세요</h2>
-              <a href="/" class="btn"><span>유연한 검색</span> </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="travel-banner observer">
-        <span class="travel-title">설레는 다음 여행을 위한 아이디어</span>
-        <ul class="travel-list">
-          <li>
-            <img
-              src="./images/travel3.jpg"
-              alt="seoul"
-              class="travel-picture"
-            />
-            <div class="travel-text-group">
-              <span class="travel-region-text">서울</span>
-              <span class="travel-region-distance">2km 거리</span>
-            </div>
+            <!-- //SUB MENU -->
           </li>
-
-          <li>
-            <img
-              src="./images/travel2.jpg"
-              alt="incheon"
-              class="travel-picture"
-            />
-            <div class="travel-text-group">
-              <span class="travel-region-text">인천</span>
-              <span class="travel-region-distance">29km 거리</span>
+          <li><a href="javascript:void(0)">혜택</a>
+            <!-- SUB MENU -->
+            <div class="gnb-sub">
+              <div class="inner">
+                <div class="service-menu">
+                  <a href="javascript:void(0)" class="kbbtn">이벤트 메인</a>
+                  <a href="javascript:void(0)" class="kbbtn">나의 포인트리</a>
+                  <a href="javascript:void(0)" class="kbbtn">포인트리 사용·전환</a>
+                </div>
+                <ul>
+                  <li><strong>이벤트</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>이벤트 메인</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>진행 중 이벤트</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>지난 이벤트</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>응모·당첨확인</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>제휴할인 이벤트</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>적립·할인</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>포인트리안내</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>나의 포인트리</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>나의할인혜택</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>포인트리 사용·전환</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>포인트리 기부하기</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>VIP 라운지</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>VIP카드 쿠폰서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>VIP카드 혜택 조회</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>프라임서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>플래티늄 서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>VIP우대가맹점</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>KB스타클럽</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>스타샵</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>스타샵 찾기</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>스타샵 혜택</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>마이스타샵</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>혜택 가맹점</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>도서할인</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>펫코노미서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>무이자할부</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!-- //SUB MENU -->
           </li>
-
-          <li>
-            <img
-              src="./images/travel4.jpg"
-              alt="daegu"
-              class="travel-picture"
-            />
-            <div class="travel-text-group">
-              <span class="travel-region-text">대구</span>
-              <span class="travel-region-distance">237km 거리</span>
+          <li><a href="javascript:void(0)">금융</a>
+            <!-- SUB MENU -->
+            <div class="gnb-sub">
+              <div class="inner">
+                <div class="service-menu">
+                  <a href="javascript:void(0)" class="kbbtn">단기카드대출</a>
+                  <a href="javascript:void(0)" class="kbbtn">장기카드대출</a>
+                  <a href="javascript:void(0)" class="kbbtn">KB국민 신용대출</a>
+                  <a href="javascript:void(0)" class="kbbtn">중고차금융</a>
+                </div>
+                <ul>
+                  <li><strong>카드금융</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>장기카드대출(카드론)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>단기카드대출(현금서비스)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>일부결제금액이월약정(리볼빙)</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>일반대출</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>KB국민 이지론플러스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>KB국민 신용대출</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>자동차·올리스금융</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>자동차금융</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>중고차금융</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>올리스금융</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!-- SUB MENU -->
           </li>
-
-          <li>
-            <img
-              src="./images/travel1.jpg"
-              alt="daejeon"
-              class="travel-picture"
-            />
-            <div class="travel-text-group">
-              <span class="travel-region-text">대전</span>
-              <span class="travel-region-distance">140km 거리</span>
+          <li><a href="javascript:void(0)">카드</a>
+            <!-- SUB MENU -->
+            <div class="gnb-sub">
+              <div class="inner">
+                <div class="service-menu">
+                  <a href="javascript:void(0)" class="kbbtn">신용카드</a>
+                  <a href="javascript:void(0)" class="kbbtn">체크카드</a>
+                  <a href="javascript:void(0)" class="kbbtn">카드신청</a>
+                </div>
+                <ul>
+                  <li><strong>카드안내·신청</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>카드한눈에보기</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>맞춤카드</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>신용카드</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>체크카드</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>프리미엄카드</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>디지털카드</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>선불카드</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>채무조정 성실상환자 신청</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>카드발급·관리</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>발급상황조회</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>발급이력조회</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>사용등록</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>비밀번호 등록</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>카드 서비스</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>신속 발급 서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>장기거래고객 레터링카드</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>장애유형별 본인확인 방법안내</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!-- SUB MENU -->
+          </li>
+          <li><a href="javascript:void(0)">서비스</a>
+            <!-- SUB MENU -->
+            <div class="gnb-sub">
+              <div class="inner">
+                <div class="service-menu">
+                  <a href="javascript:void(0)" class="kbbtn">카드사용알림 서비스</a>
+                  <a href="javascript:void(0)" class="kbbtn">아파트관리비</a>
+                  <a href="javascript:void(0)" class="kbbtn">신용/체크 선택결제 서비스</a>
+                </div>
+                <ul>
+                  <li><strong>생활대금 자동납부</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>한눈에 보기</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>K-Bill 구독서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>초·중·고 학교납입금</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>아파트관리비</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>도시가스요금</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>4대 사회보험료</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>전화요금</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>전기요금</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>지방세·국세</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>대학등록금</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>편의서비스</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>알림·안심서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>채무면제·유예상품</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>굿터치 (Good Touch)서비스</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>결제서비스</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>신용/체크선택결제서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>체크카드 소액신용결제서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>포인트연계할부서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>KB Pay</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>일반결제(ISP)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>payOn 서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>후불교통서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>모바일티머니 후불형 서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>ARS 결제</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>해외이용</strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>해외이용 서비스</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>해외이용 가이드</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>해외 안심센터</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">
+                          <span>해외 혜택센터</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- SUB MENU -->
+          </li>
+          <li><a href="javascript:void(0)">라이프</a>
+            <div class="gnb-sub"></div>
           </li>
         </ul>
-      </section>
+        <ul class="other-btns">
+          <li><a href="javascript:void(0)" class="login-btn">로그인</a></li>
+          <li><a href="javascript:void(0)" class="search-btn">통합검색</a></li>
+          <li><a href="javascript:void(0)" class="all-menu-btn">전체메뉴</a></li>
+        </ul>
+      </div>
 
-      <section class="experience-banner observer">
-        <span class="experience-title">에어비앤비 체험 둘러보기</span>
-        <div class="experience-list">
-          <div class="experience-offload">
-            <div class="experience-text-group">
-              <span class="experience-text"
-                >여행 중 만나는 이색적인 즐길 거리</span
-              >
-              <a href="/" class="btn">체험</a>
-            </div>
-          </div>
-          <div class="experience-online">
-            <div class="experience-text-group">
-              <span class="experience-text"
-                >집에서 만나는 다양한 즐길 거리</span
-              >
-              <a href="/" class="btn">온라인 체험</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="superhost-banner observer">
-        <div class="superhost-text-group">
-          <span class="superhost-title"
-            >호스팅에 관해 궁금하신 점이 있나요?</span
-          >
-
-          <a href="/" class="btn">슈퍼호스트에게 물어보세요</a>
-        </div>
-      </section>
     </div>
-    <footer class="observer">
-      <ul class="helpdesk">
-        <li class="helpdesk--title">에어비앤비 지원</li>
-        <li><a href="/">도움말 센터</a></li>
-        <li><a href="/">안전 정보</a></li>
-        <li><a href="/">예약 취소 옵션</a></li>
-        <li><a href="/">에어비앤비의 코로나19 대응 방안</a></li>
-        <li><a href="/">장애인 지원</a></li>
-        <li><a href="/">이웃 민원 신고</a></li>
-      </ul>
-      <ul class="helpdesk">
-        <li class="helpdesk--title">커뮤니티</li>
-        <li><a href="/">Airbnb.org:재난 구호 숙소</a></li>
-        <li><a href="/">아프간 난민 지원</a></li>
-        <li><a href="/">차별 철폐를 위한 노력</a></li>
-      </ul>
-      <ul class="helpdesk">
-        <li class="helpdesk--title">호스팅</li>
-        <li><a href="/">호스팅 시작하기</a></li>
-        <li><a href="/">에어커버: 호스트를 위한 보호프로그램</a></li>
-        <li><a href="/">호스팅 자료 둘러보기</a></li>
-        <li><a href="/">커뮤니티 포럼 방문하기</a></li>
-        <li><a href="/">책임감 있는 호스팅</a></li>
-      </ul>
-      <ul class="helpdesk">
-        <li class="helpdesk--title">소개</li>
-        <li><a href="/">뉴스룸</a></li>
-        <li><a href="/">새로운 기능에 대해 알아보기</a></li>
-        <li><a href="/">에어비앤비 공동창업자의 메시지</a></li>
-        <li><a href="/">채용정보</a></li>
-        <li><a href="/">투자자정보</a></li>
-        <li><a href="/">에어비앤비 Luxe</a></li>
-      </ul>
+  </header>
+  <!-- //HEADER -->
+  <!-- MAIN -->
+  <main>
+    <section class="article">
+      <div class="wrap">
+      <!-- SECTION BANNER -->
+      <div class="banner-wrap">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class="banner-item1" title="레고랜드 카드 Big 이벤트">
+                <div class="b-con">
+                  <p class="dep">Liiv Mate</p>
+                  <p class="tit">
+                    NFT 캐릭터 공모전
+                    <br />
+                    대국민 투표 & 후원
+                  </p>
+                </div>
+                <div class="b-img">
+                  <img src="./images/pc-NFT-object01.png" alt="" class="act ttb" />
+                  <img src="./images/pc-NFT-object02.png" alt="" class="act btt" />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class="banner-item2" title="레고랜드 카드 Big 이벤트">
+                <div class="b-con">
+                  <p class="dep">레고랜드 오픈 기념</p>
+                  <p class="tit">
+                    레고랜드 카드 Big 이벤트
+                    <br />
+                    확인하세요!
+                  </p>
+                </div>
+                <div class="b-img">
+                  <img src="./images/pc-lego-object01.png" alt="" class="act ltr" />
+                  <img src="./images/pc-lego-object02.png" alt="" class="act rtl" />
+                  <img src="./images/pc-lego-object03.png" alt="" class="act ttb" />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class="banner-item3">
+                <div class="b-con">
+                  <p class="dep">온가족이 즐거운 놀이공원가기!</p>
+                  <p class="tit">
+                    엄마아빠도 신나는
+                    <br />
+                    롯데월드 부산 OPEN!
+                  </p>
+                </div>
+                <div class="b-img">
+                  <img src="./images/pc-lotte-object01.png" alt="" class="act ltr" />
+                  <img src="./images/pc-lotte-object02.png" alt="" class="act rtl" />
+                  <img src="./images/pc-lotte-object03.png" alt="" class="act btt" />
+                  
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class="banner-item4">
+                <div class="b-con">
+                  <p class="dep">흩어진 내 돈, 한 곳으로!</p>
+                  <p class="tit">
+                    마이데이터가 처음이면
+                    <br />
+                    3천P에 경품까지!
+                  </p>
+                </div>
+                <div class="b-img">
+                  <img src="./images/pc-myData-object01.png" alt="" class="act ttb" />
+                  <img src="./images/pc-myData-object02.png" alt="" class="act ltr" />
+                  <img src="./images/pc-myData-object03.png" alt="" class="act rtl" />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class="banner-item5">
+                <div class="b-con">
+                  <p class="dep">ESG와 함께하는</p>
+                  <p class="tit">
+                    숙박대전 + TTBB
+                    <br />
+                    더 할인받고 떠나~봄!
+                  </p>
+                </div>
+                <div class="b-img">
+                  <img src="./images/pc-ttbb-object01.png" alt="" class="act ttb" />
+                  <img src="./images/pc-ttbb-object02.png" alt="" class="act btt" />
+                  <img src="./images/pc-ttbb-object03.png" alt="" class="act rtl" />
+                </div>
+              </a>
+            </div>
+          </div>
 
-      <div class="footer-list">
-        <ul class="footer-list--main">
-          <li class="copyright">©<span>2022</span> Airbnb, Inc</li>
-          <li><a href="/">개인정보 처리방침</a></li>
-          <li><a href="/">이용약관</a></li>
-          <li><a href="/">사이트맵</a></li>
-          <li><a href="/">한국의 변경된 환불 정책</a></li>
-          <li><a href="/">회사 세부정보</a></li>
-        </ul>
-        <ul class="footer-list--nation">
-          <li>
-            <svg
-              viewBox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              role="presentation"
-              focusable="false"
-              style="
-                display: block;
-                height: 16px;
-                width: 16px;
-                fill: currentcolor;
-              "
-            >
-              <path
-                d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"
-              ></path>
-            </svg>
-            <button href="/">한국어(KR)</button>
+          <div class="swiper-pages">
+            <div class="swiper-pagination"></div>
+            <div class="swiper_pause-btn">정지</div>
+          </div>
+          <div class="swiper-prev"></div>
+          <div class="swiper-next"></div>
+        </div>
+      </div>
+      <!-- //SECTION BANNER -->
+      <!-- Logout-wrap -->
+      <div class="logout-case">
+        <div class="tabs">
+
+          <ul class="tabs__menu">
+            <li><a href="javascript:void(0)">PIN</a></li>
+            <li><a href="javascript:void(0)">KB Pay</a></li>
+            <li class="on"><a href="javascript:void(0)">아이디</a></li>
+            <li><a href="javascript:void(0)">공동인증서</a></li>
+          </ul>
+          <div class="tab_body">
+            <!-- tab.1 PIN -->
+            <div class="tabs_panel pin">
+              <div class="pin-txt">
+                <p>PIN 번호는 6자리 숫자만으로<br />
+                  로그인할 수 있는 안전한 인증 수단입니다.<br />
+                  (브라우저당 1명만 이용)
+                </p>
+                <div class="pos-area">
+                  <button type="button" class="btn btn--primary">PIN 설정</button>
+                </div>
+              </div>
+            </div>
+            <!-- //tab.1 PIN -->
+            <!-- tab.2 KB Pay -->
+            <div class="tabs_panel pay">
+              <div class="pos-area">
+                <button type="button" class="btn btn--primary">
+                  로그인
+                </button>
+                <a href="javascript:void(0)" class="btn-setup">KB Pay 소개</a>
+              </div>
+            </div>
+            <!-- //tab.2 KB Pay -->
+            <!-- tabs.3 Ids -->
+            <div class="tabs_panel ids on">
+              <div class="form-field">
+                <div class="form-field__cont">
+                  <span class="form-field__obj">
+                    <input type="text" title="아이디 입력" placeholder="아이디" maxlength="12" />
+                    <button type="button" class="form-field__btn-reset"></button>
+                  </span>
+                </div>
+              </div>
+              <div class="form-field form-field--pw">
+                <div class="form-field__cont">
+                  <span class="form-field__obj">
+                    <input type="password" title="비밀번호 입력" placeholder="비밀번호" maxlength="12" />
+                  </span>
+                  <input type="image" class="form-field__btn-mouse btn-virtualkey" src="./images/btn_virtualKey.png" alt="가상키보드" />
+                </div>
+              </div>
+              <div class="pos-area">
+                <button type="button" class="btn btn--primary">
+                  로그인
+                </button>
+                <a href="javascript:void(0)" class="btn-setup">아이디 찾기</a>
+                <a href="javascript:void(0)" class="btn-setup">웹 비밀번호 변경</a>
+              </div>
+            </div>
+            <!-- //tabs.3 Ids -->
+            <!-- tabs.4 browser -->
+            <div class="tabs_panel browser">
+              <div class="pos-area">
+                <button type="button" class="btn btn--primary">
+                  로그인
+                </button>
+                <a href="javascript:void(0)" class="btn-setup">등록/해제</a>
+                <a href="javascript:void(0)" class="btn-setup">인증서 안내</a>
+              </div>
+            </div>
+            <!-- //tabs.4 browser -->
+          </div>
+
+        </div>
+      </div>
+      <!-- //Login-wrap -->
+    </div>
+    </section>
+    <section class="article full">
+      
+      <ul class="quick-menu">
+        <li><a href="javascript:void(0)" class="quick-menu_item01">카드이용내역</a></li>
+        <li><a href="javascript:void(0)" class="quick-menu_item02">결제예정금액</a></li>
+        <li><a href="javascript:void(0)" class="quick-menu_item03">이용대금명세서</a></li>
+        <li><a href="javascript:void(0)" class="quick-menu_item04">즉시결제</a></li>
+        <li><a href="javascript:void(0)" class="quick-menu_item05">분실신고</a></li>
+        <li><a href="javascript:void(0)" class="quick-menu_item06">카드사용등록</a></li>
+        <li><a href="javascript:void(0)" class="quick-menu_item07">나의포인트리</a></li>
+        <li><a href="javascript:void(0)" class="quick-menu_item08">공동인증서</a></li>
+      </ul>
+      <div class="recom-card">
+        <div class="tabs">
+          <ul class="tabs__menu">
+            <li class="on"><a href="javascript:void(0);">신용카드</a></li>
+            <li><a href="javascript:void(0);">체크카드</a></li>
+            <li><a href="javascript:void(0);">프리미엄카드</a></li>
+          </ul>
+          <div class="tabs__body">
+            <!-- 신용카드 -->
+            <div class="tabs__panel on">
+              <ul class="recom-card__box">
+                <li>
+                  <a href="javascript:void(0)" class="recom-card__item">
+                    <span class="img-box">
+                      <img src="./images/04285_img.png" alt="스카이패스 티타늄 카드" />
+                    </span>
+                    <h3>스카이패스 티타늄 카드</h3>
+                    <p>대한항공 마일리지 기본적립에 해외/면세점 추가적립 혜택까지!</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="recom-card__item">
+                    <span class="img-box row">
+                      <img src="./images/09288_img.png" alt="톡톡D 카드" />
+                    </span>
+                    <h3>톡톡D 카드</h3>
+                    <p>배달앱 결제시 50% 할인</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="recom-card__item">
+                    <span class="img-box">
+                      <img src="./images/09174_img.png" alt="청춘대로 톡톡카드" />
+                    </span>
+                    <h3>청춘대로 톡톡카드</h3>
+                    <p>Simple하게 즐기자! 혜택 톡톡!</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //신용카드 -->
+            <!-- 체크카드 -->
+            <div class="tabs__panel">
+              
+              <ul class="recom-card__box">
+                <li>
+                  <a href="javascript:void(0)" class="recom-card__item">
+                    <span class="img-box row">
+                      <img src="./images/09652_img.png" alt="우리동네 체크카드(키뮤)" />
+                    </span>
+                    <h3>우리동네 체크카드(키뮤)</h3>
+                    <p>다 같이 돌자 동네 한 바퀴</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="recom-card__item">
+                    <span class="img-box row">
+                      <img src="./images/01900_img.png" alt="펭수 노리 체크카드(펭카)" />
+                    </span>
+                    <h3>펭수 노리 체크카드(펭카)</h3>
+                    <p>한정판 펭수 카드, 발급 챙겨</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="recom-card__item">
+                    <span class="img-box row">
+                      <img src="./images/01918_img.png" alt="위글위글 첵첵 체크카드" />
+                    </span>
+                    <h3>위글위글 첵첵 체크카드</h3>
+                    <p>줄 서서 발급하는 혜택 맛집!</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //체크카드 -->
+            <!-- 프리미엄카드 -->
+            <div class="tabs__panel">
+              <ul class="recom-card__box">
+                <li>
+                  <a href="javascript:void(0)" class="recom-card__item">
+                    <span class="img-box">
+                      <img src="./images/09310_img.png" alt="BeV Ⅲ 카드" />
+                    </span>
+                    <h3>BeV Ⅲ 카드</h3>
+                    <p>가치 그 이상의 VVIP 라이프</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="recom-card__item">
+                    <span class="img-box">
+                      <img src="./images/09305_img.png" alt="BeV Ⅴ 카드 (포인트형)" />
+                    </span>
+                    <h3>BeV Ⅴ 카드 (포인트형)</h3>
+                    <p>가치 그 이상의 VVIP 라이프</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="recom-card__item">
+                    <span class="img-box">
+                      <img src="./images/09009_img.png" alt="BeV Ⅸ 토탈마일 카드" />
+                    </span>
+                    <h3>BeV Ⅸ 토탈마일 카드</h3>
+                    <p>가치 그 이상의 VVIP</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //프리미엄카드 -->
+          </div>
+        </div>
+      </div>
+      <div class="finance-menu">
+        <ul class="finance-menu__list">
+          <li class="finance-menu__item cash">
+            <h2>단기카드대출</h2>
+            <p>현금이 필요할때<strong>24시간 365일 1만원부터</strong></p>
+            <a href="javascript:void(0)" class="finance-menu__link">자세히 보기</a>
           </li>
-          <li>₩<button>KRW</button></li>
-        </ul>
-        <ul class="footer-list--sns">
-          <li>
-            <a href="/"
-              ><svg
-                viewBox="0 0 32 32"
-                role="img"
-                aria-hidden="false"
-                aria-label="페이스북으로 이동하기"
-                focusable="false"
-                style="
-                  height: 18px;
-                  width: 18px;
-                  display: block;
-                  fill: currentcolor;
-                "
-              >
-                <path
-                  d="m8 14.41v-4.17c0-.42.35-.81.77-.81h2.52v-2.08c0-4.84 2.48-7.31 7.42-7.35 1.65 0 3.22.21 4.69.64.46.14.63.42.6.88l-.56 4.06c-.04.18-.14.35-.32.53-.21.11-.42.18-.63.14-.88-.25-1.78-.35-2.8-.35-1.4 0-1.61.28-1.61 1.73v1.8h4.52c.42 0 .81.42.81.88l-.35 4.17c0 .42-.35.71-.77.71h-4.21v16c0 .42-.35.81-.77.81h-5.21c-.42 0-.8-.39-.8-.81v-16h-2.52a.78.78 0 0 1 -.78-.78"
-                  fill-rule="evenodd"
-                ></path></svg
-            ></a>
+          <li class="finance-menu__item card">
+            <h2>장기카드대출</h2>
+            <p>복잡한 서류 중도상환 이자없이<strong>간편하게 신청</strong></p>
+            <a href="javascript:void(0)" class="finance-menu__link">자세히 보기</a>
           </li>
-          <li>
-            <a href="/"
-              ><svg
-                viewBox="0 0 32 32"
-                role="img"
-                aria-hidden="false"
-                aria-label="트위터로 이동하기"
-                focusable="false"
-                style="
-                  height: 18px;
-                  width: 18px;
-                  display: block;
-                  fill: currentcolor;
-                "
-              >
-                <path
-                  d="m31 6.36c-1.16.49-2.32.82-3.55.95 1.29-.76 2.22-1.87 2.72-3.38a13.05 13.05 0 0 1 -3.91 1.51c-1.23-1.28-2.75-1.94-4.51-1.94-3.41 0-6.17 2.73-6.17 6.12 0 .49.07.95.17 1.38-4.94-.23-9.51-2.6-12.66-6.38-.56.95-.86 1.97-.86 3.09 0 2.07 1.03 3.91 2.75 5.06-1-.03-1.92-.3-2.82-.76v.07c0 2.89 2.12 5.42 4.94 5.98-.63.17-1.16.23-1.62.23-.3 0-.7-.03-1.13-.13a6.07 6.07 0 0 0 5.74 4.24c-2.22 1.74-4.78 2.63-7.66 2.63-.56 0-1.06-.03-1.43-.1 2.85 1.84 6 2.76 9.41 2.76 7.29 0 12.83-4.01 15.51-9.3 1.36-2.66 2.02-5.36 2.02-8.09v-.46c-.03-.17-.03-.3-.03-.33a12.66 12.66 0 0 0 3.09-3.16"
-                  fill-rule="evenodd"
-                ></path></svg
-            ></a>
+          <li class="finance-menu__item credit">
+            
+            <a href="javascript:void(0)">
+              <h2>KB국민<br />신용대출</h2>
+            </a>
           </li>
-          <li>
-            <a href="/"
-              ><svg
-                viewBox="0 0 24 24"
-                role="img"
-                aria-hidden="false"
-                aria-label="인스타그램으로 이동하기"
-                focusable="false"
-                style="
-                  height: 18px;
-                  width: 18px;
-                  display: block;
-                  fill: currentcolor;
-                "
-              >
-                <path
-                  d="m23.09.91c-.61-.61-1.33-.91-2.17-.91h-17.84c-.85 0-1.57.3-2.17.91s-.91 1.33-.91 2.17v17.84c0 .85.3 1.57.91 2.17s1.33.91 2.17.91h17.84c.85 0 1.57-.3 2.17-.91s.91-1.33.91-2.17v-17.84c0-.85-.3-1.57-.91-2.17zm-14.48 7.74c.94-.91 2.08-1.37 3.4-1.37 1.33 0 2.47.46 3.41 1.37s1.41 2.01 1.41 3.3-.47 2.39-1.41 3.3-2.08 1.37-3.41 1.37c-1.32 0-2.46-.46-3.4-1.37s-1.41-2.01-1.41-3.3.47-2.39 1.41-3.3zm12.66 11.63c0 .27-.09.5-.28.68a.92.92 0 0 1 -.67.28h-16.7a.93.93 0 0 1 -.68-.28.92.92 0 0 1 -.27-.68v-10.13h2.2a6.74 6.74 0 0 0 -.31 2.05c0 2 .73 3.71 2.19 5.12s3.21 2.12 5.27 2.12a7.5 7.5 0 0 0 3.75-.97 7.29 7.29 0 0 0 2.72-2.63 6.93 6.93 0 0 0 1-3.63c0-.71-.11-1.39-.31-2.05h2.11v10.12zm0-13.95c0 .3-.11.56-.31.77a1.05 1.05 0 0 1 -.77.31h-2.72c-.3 0-.56-.11-.77-.31a1.05 1.05 0 0 1 -.31-.77v-2.58c0-.29.11-.54.31-.76s.47-.32.77-.32h2.72c.3 0 .56.11.77.32s.31.47.31.76z"
-                  fill-rule="evenodd"
-                ></path></svg
-            ></a>
+          <li class="finance-menu__item car">
+            <a href="javascript:void(0)">
+              <h2>자동차 금융</h2>
+            </a>
           </li>
-          <li>
-            <a href="/"
-              ><svg
-                viewBox="0 0 1024 1024"
-                role="img"
-                aria-hidden="false"
-                aria-label="네이버 블로그로 이동하기"
-                focusable="false"
-                style="
-                  height: 18px;
-                  width: 18px;
-                  display: block;
-                  fill: currentcolor;
-                "
-              >
-                <path
-                  d="m984 1024h-944c-22.1 0-40-17.9-40-40v-944c0-22.1 17.9-40 40-40h944c22.1 0 40 17.9 40 40v944c0 22.1-17.9 40-40 40z"
-                  fill="#00c73c"
-                ></path>
-                <path
-                  d="m757 203.2h-490.4c-70.4 0-127.5 57.1-127.5 127.5v303.5c0 70.7 57.3 127.9 127.9 127.9h173.8l58.7 101.6c5.4 9.3 18.9 9.3 24.2 0l58.7-101.6h174.2c70.6 0 128.5-57.8 128.5-128.5v-302.4c0-70.7-57.3-128-128.1-128z"
-                  fill="#fff"
-                ></path>
-                <g fill="#ff812c">
-                  <path
-                    d="m390.7 495.6c0 38.7-28 68.5-62.1 68.5-17.4 0-30.1-6-38.7-15.8v12.2h-38.9v-173.1h38.9v55.5c8.6-9.9 21.3-15.8 38.7-15.8 34 0 62.1 29.8 62.1 68.5zm-36.4 0c0-21.1-14-34.3-33.4-34.3s-33.4 13.2-33.4 34.3 14 34.3 33.4 34.3c19.3 0 33.4-13.2 33.4-34.3z"
-                  ></path>
-                  <path
-                    d="m477.6 495.6c0-38.7 30.6-68.5 68.8-68.5s68.8 29.9 68.8 68.5c0 38.7-30.6 68.5-68.8 68.5s-68.8-29.8-68.8-68.5zm101.1 0c0-19.9-14-33.2-32.3-33.2s-32.3 13.2-32.3 33.2c0 19.9 14 33.2 32.3 33.2 18.2 0 32.3-13.2 32.3-33.2z"
-                  ></path>
-                  <path
-                    d="m704.6 616.1c34.5 0 68.5-18.4 68.5-62.1v-123.3h-37.9v13.2c-8.6-10.6-21-16.9-37.9-16.9-36.9 0-63.9 30.1-63.9 66 0 35.8 27 65.9 63.9 65.9 16.9 0 29.3-6.2 37.9-16.9v12c0 18.4-11.2 27.8-29.3 27.8h-1.3zm-.7-90.5c-19.9 0-34-13.2-34-32.6s14-32.6 34-32.6c19.9 0 34 13.2 34 32.6s-14.1 32.6-34 32.6z"
-                  ></path>
-                  <path
-                    d="m394.3 382.7v35.1c13.4 2.6 21.3 11.8 21.3 27.4v115.3h38.9v-115.3c0-40.3-28.6-59.4-60.2-62.5z"
-                  ></path>
-                </g></svg
-            ></a>
+          <li class="finance-menu__item forward">
+            <a href="javascript:void(0)">
+              <h2>일부결제금액<br />이월약정</h2>
+            </a>
           </li>
-          <li>
-            <a href="/"
-              ><svg
-                enable-background="new 0 0 1024 1024"
-                viewBox="0 0 1024 1024"
-                role="img"
-                aria-hidden="false"
-                aria-label="네이버 포스트로 이동하기"
-                focusable="false"
-                style="
-                  height: 18px;
-                  width: 18px;
-                  display: block;
-                  fill: currentcolor;
-                "
-              >
-                <path
-                  d="m984 1024h-944c-22.1 0-40-17.9-40-40v-944c0-22.1 17.9-40 40-40h944c22.1 0 40 17.9 40 40v944c0 22.1-17.9 40-40 40z"
-                  fill="#fff"
-                ></path>
-                <g fill="#00c73c">
-                  <path d="m0 198h1024v7h-1024z"></path>
-                  <path d="m0 405h1024v7h-1024z"></path>
-                  <path d="m0 612h1024v7h-1024z"></path>
-                  <path d="m0 819h1024v7h-1024z"></path>
-                </g>
-                <path
-                  d="m307 537 188.2 324.1c7.5 12.9 26.1 12.9 33.6 0l188.2-324.1z"
-                  fill="#f4e49d"
-                ></path>
-                <path d="m307 0h410v537h-410z" fill="#00e831"></path>
-                <path d="m392 0h240v537h-240z" fill="#00c73c"></path>
-                <path
-                  d="m392 148.5v240h240v-240zm188 182h-47.8l-41.2-62.8v62.8h-47v-124h45.8l42.2 62.4v-62.4h48z"
-                  fill="#fff"
-                ></path>
-                <path d="m632 0h85v537h-85z" fill="#00a32a"></path>
-                <path
-                  d="m528.8 861.1 188.2-324.1h-85l-119.5 333.7c6.3-.1 12.6-3.3 16.3-9.6z"
-                  fill="#e0c141"
-                ></path>
-                <path
-                  d="m448.8 781.2 46.4 79.9c7.5 12.9 26.1 12.9 33.6 0l46.4-79.9z"
-                  fill="#2d2d2d"
-                ></path></svg
-            ></a>
+          <li class="finance-menu__item ollis">
+            <a href="javascript:void(0)">
+              <h2>올리스 금융</h2>
+            </a>
           </li>
         </ul>
       </div>
-    </footer>
-  </body>
+      
+    </section>
+    <section class="article">
+      <!-- MICROSITE -->
+      <div class="microsite-list">
+        <a href="javascript:void(0)" class="microsite-list__stashop">
+          <span>스타샵</span>
+        </a>
+        <a href="javascript:void(0)" class="microsite-list__goldlife">
+          <span>골든라이프</span>
+        </a>
+        <a href="javascript:void(0)" class="microsite-list__mall">
+          <img src="./images/pc-0-bi.png" alt="국카mall">
+        </a>
+      </div>
+      <!-- //MICROSITE -->
+      <!-- BENEFIT & SERVICE AREA -->
+      <div class="benefit-area">
+
+        <div class="benefit-list">
+          <a href="javascript:void(0)" class="benefit-list__event">
+            <strong class="benefit-list__tit">이벤트혜택</strong>
+            <p class="benefit-list__desc">매일 매일 혜택을<br />모아모아</p>
+          </a>
+          <a href="javascript:void(0)" class="benefit-list__plan">
+            <strong class="benefit-list__tit">무이자할부</strong>
+            <p class="benefit-list__desc">다양한 가맹점에서<br />무이자할부 혜택을</p>
+          </a>
+          <a href="javascript:void(0)" class="benefit-list__sale">
+            <strong class="benefit-list__tit">스타샵 할인+</strong>
+            <p class="benefit-list__desc">스타샵에서는<br />최대 50% 할인</p>
+          </a>
+          <div class="service-list">
+            <a href="javascript:void(0)" class="service-list__pay">생활대금납부</a>
+            <a href="javascript:void(0)" class="service-list__foreign">해외이용</a>
+            <a href="javascript:void(0)" class="service-list__notice">카드사용알림</a>
+          </div>
+        </div>
+        <!-- //BENEFIT & SERVICE AREA -->
+      </div>
+    </section>
+    <section class="article">
+      <div class="wrap">
+
+        <!-- NOTICE AREA -->
+        <div class="notice-area">
+          <h2 class="notice-area__tit">새소식</h2>
+          <ul class="notice-area__list">
+            <li>
+              <span>2022.02.23</span>
+              <a href="javascript:void(0)">KB국민카드 서비스 일시 중단 안내</a>
+            </li>
+            <li>
+              <span>2021.12.20</span>
+              <a href="javascript:void(0)">홈페이지 오류 시 조치방법 안내</a>
+            </li>
+            <li>
+              <span>2021.03.24</span>
+              <a href="javascript:void(0)">「금융소비자 보호에 관한 법률」 시행 안내</a>
+            </li>
+          </ul>
+        </div>
+        <!-- //NOTICE AREA -->
+        <!-- GUIDE AREA -->
+        <div class="guide-area">
+          <div class="tabs">
+            <ul class="tabs__menu">
+              <li class="on">
+                <a href="javascript:void(0)">소비자정보포털</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">자주하는 질문</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">해외이용종합안내</a>
+              </li>
+            </ul>
+            <div class="tabs__body">
+              <div class="tabs__panel on">
+                <a href="javascript:void(0)" class="guide-area__link consumer">
+                  <h2>소비자정보 포털</h2>
+                  <p>금융소비자로서 보호를 받으세요 </p>
+                </a>
+              </div>
+              <div class="tabs__panel">
+                <a href="javascript:void(0)" class="guide-area__link faq">
+                  <h2>자주하는 질문</h2>
+                  <p>궁금하신 내용을 확인해보세요 </p>
+                </a>
+              </div>
+              <div class="tabs__panel">
+                <a href="javascript:void(0)" class="guide-area__link foreign">
+                  <h2>해외이용종합안내</h2>
+                  <p>해외에서도 안전하게 이용하세요</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- //GUIDE AREA -->
+
+      </div>
+    </section>
+    <section class="article">
+      
+      <!-- CUSTOMER AREA -->
+      <div class="customer-area">
+        <h2 class="customer-area__tit">고객센터 1588-1688</h2>
+        <ul class="customer-area__list">
+          <li><span>카드신청</span>1899-0077</li>
+          <li><span>분실신고 가맹점 승인</span>1588-1788</li>
+          <li><span>English / 中國語</span>1644-9993</li>
+          <li><span>금융서비스</span>1588-2788</li>
+          <li><span>결제 및 각종변경(등록)</span>1899-0800</li>
+          <li><span>해외에서 전화 걸 때</span>82-2-6300-7300</li>
+        </ul>
+        <div class="customer-area__counsel">
+          <a href="javascript:void(0)" title="이메일상덤">이메일상담</a>
+          <a href="javascript:void(0)" title="고객제안">고객제안</a>
+        </div>
+      </div>
+      <!-- //CUSTOMER AREA -->
+
+    </section>
+  </main>
+  <!-- //MAIN -->
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-area">
+      <div class="inner">
+
+        <ul class="footer-menu">
+          <li><a href="javascript:void(0)">회사소개</a></li>
+          <li><a href="javascript:void(0)">개인정보 처리방침</a></li>
+          <li><a href="javascript:void(0)">고객권리안내</a></li>
+          <li><a href="javascript:void(0)">이용약관</a></li>
+          <li><a href="javascript:void(0)">공시정보</a></li>
+          <li><a href="javascript:void(0)">상품공시실</a></li>
+          <li><a href="javascript:void(0)">전자민원접수</a></li>
+          <li><a href="javascript:void(0)">그룹 내 고객정보 제공내역</a></li>
+          <li><a href="javascript:void(0)">ESG</a></li>
+        </ul>
+        <address>
+          <span>서울특별시 종로구 새문안로3길 30 (주)KB국민카드 대표이사 이창권</span>
+          <span>사업자등록번호 101-86-61717</span>
+          <a href="javascript:void(0)">
+            <span>국내대표번호 1588-1688(유료)</span>
+          </a>
+        </address>
+        <p class="copyright">&copy;KB Kookmin Card Corp. All rights reserved.</p>
+        <div class="footer-bottom">
+          <div class="awards-area">
+            <ul class="awards-area__list">
+              <li class="award01">
+                <span><strong>한국산업의 고객만족도</strong><br />6년 연속(2015~2020)<br />체크카드 부문 1위<br />KMAC 선정</span>
+              </li>
+              <li class="award02">
+                <span><strong>한국서비스 품질지수</strong><br />6년 연속(2015~2020)<br />체크카드 부문 1위</span>
+              </li>
+              <li class="award03">
+                <span><strong>(사)한국장애인단체총연합회</strong><br />한국웹접근성인증평가원<br />웹 접근성 우수사이트 인증마크<br />(WA인증마크)</span>
+              </li>
+              <li class="award04">
+                <span><strong>정보보호 및 개인정보보호 관리체계 인증</strong><br />인증범위 : 온라인서비스(카드결제, 금융서비스, 리브메이트)<br />※ 클라우드서비스 제공자의 책임 영역은 제외<br />유효기간 : 2021.8.13 ~ 2024.8.12</span>
+              </li>
+            </ul>
+          </div>
+          <div class="sns-area">
+            <ul class="sns-area__list">
+              <li class="blog"><a href="javascript:void(0)" target="_blank" title="새창으로 열기"></a></li>
+              <li class="fb"><a href="javascript:void(0)" target="_blank" title="새창으로 열기"></a></li>
+              <li class="yt"><a href="javascript:void(0)" target="_blank" title="새창으로 열기"></a></li>
+              <li class="in"><a href="javascript:void(0)" target="_blank" title="새창으로 열기"></a></li>
+            </ul>
+          </div>
+          <div class="family-site-area">
+            <a href="javascript:void(0)" class="">KB금융그룹 네트워크</a>
+            <ul class="family-site__list">
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB금융그룹</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB국민은행</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB증권</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB손해보험</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">푸르덴셜생명</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB자산운용</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB캐피탈</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB생명보험</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB부동산신탁</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB저축은행</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB인베스트먼트</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB데이타시스템</a></li>
+              <li><a href="javascript:void(0)" target="_blank" title="새창으로 열기">KB신용정보</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- //FOOTER -->
+</body>
 </html>
