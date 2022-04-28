@@ -1,54 +1,103 @@
-const headerEl = document.querySelector('header');
+// variable declaration
+const menus = document.querySelectorAll('.aside__menu a');
+const sections = document.querySelectorAll('section');
+let secOffsetTop;
+let oneWheel;
 
-window.addEventListener('scroll', _.throttle(function () {
-  if (window.scrollY > 5) {
-    headerEl.classList.add('blur');
+// window starts from position(0, 0) wherever it's loaded
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
 
-  } else {
-    headerEl.classList.remove('blur');
-  }
-}, 100));
+// when each menu is clicked
+// 1. execute 'on' function
+// 2. scroll to section
+menus.forEach((menu, index) => {
+  menu.addEventListener('click', function (e) {
+    e.preventDefault;
+    on(menu);
+    secOffsetTop = sections[index].offsetTop;
+    window.scrollTo({
+      top: secOffsetTop,
+      behavior: 'smooth',
+    });
+  });
+});
 
-// function random(min, max) {
-//   // `.toFixed()`를 통해 반환된 문자 데이터를,
-//   // `parseFloat()`을 통해 소수점을 가지는 숫자 데이터로 변환
-//   return parseFloat((Math.random() * (max - min) + min).toFixed(2))
-// }
-
-// function floatingObject(selector, delay, size) {
-//   // gsap.to(요소, 시간, 옵션);
-//   gsap.to(
-//     selector, // 선택자
-//      // 애니메이션 동작 시간
-//     { // 옵션
-//     y: size,
-//     repeat: -1,
-//     yoyo: true,
-//     ease: "power2.ease",
-//     }
-//   );
-// }
-// floatingObject('.floating1', 0, 10);
-
-const yearEls = document.querySelectorAll('.year');
-const conEls = document.querySelectorAll('.contents')
-for (const yearEl of yearEls) {
-  yearEl.addEventListener('click', function () {
-    const thisYear = this.dataset.year;
-    for (const yearElClass of yearEls) {
-      //active 초기화
-      yearElClass.classList.remove('active');
-    }
-    this.classList.add('active');
-    console.log(thisYear);
-    //contents 
-    for (const conEl of conEls) {
-      const conYear = conEl.dataset.year;
-      if (conYear === thisYear) {
-        conEl.style.display = 'block';
-      } else {
-        conEl.style.display = 'none';
-      }
-    }
-  })
+// class 'on' will be removed from the menu
+function clearOn() {
+  menus.forEach(menu => {
+    menu.classList.remove('on');
+  });
 }
+
+// class 'on' will be added to the menu
+function on(menu) {
+  // console.log(menu);
+  clearOn();
+  menu.classList.add('on');
+}
+
+// When user scrolls to the section, the menu will have 'on' class accordingly
+window.addEventListener('scroll', function () {
+  clearTimeout(oneWheel);
+  oneWheel = setTimeout(function () {
+    const scrolled = window.scrollY;
+    const innerHeight = window.innerHeight;
+    // console.log(scrolled, innerHeight);
+    if (scrolled === 0) {
+      on(menus[0]);
+    }
+    if (scrolled > innerHeight / 2) {
+      on(menus[1]);
+    }
+    if (scrolled > innerHeight + innerHeight / 2) {
+      on(menus[2]);
+    }
+    if (scrolled > innerHeight * 7 + innerHeight / 2) {
+      on(menus[3]);
+    }
+    if (scrolled > innerHeight * 8 + innerHeight / 2) {
+      on(menus[4]);
+    }
+  }, 80);
+});
+
+// Create toggle button when max width is 992px
+const toggleBtn = document.querySelector('.aside__toggle--btn');
+const menu = document.querySelector('.aside__menu');
+
+toggleBtn.addEventListener('click', function () {
+  menu.classList.toggle('open');
+  toggleBtn.classList.toggle('open');
+});
+
+// Swiper Library
+const swiper = new Swiper('.swiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  },
+});
+
+// Remove swiper related class names from 992px of screen size
+// const classSwiper = document.querySelector('.swiper');
+// const classWrapper = document.querySelector('.swiper-wrapper');
+// const classSlide = document.querySelector('.swiper-slide');
+
+// window.addEventListener('resize', function () {
+//   classSwiper.classList.remove('swiper');
+//   classWrapper.classList.remove('swiper-wrapper');
+//   classWrapper.classList.add('section__skill--cards');
+//   classSlide.classList.remove('swiper-slide');
+// });
+
+// if (window.innerWidth > 992) {
+//   classSwiper.classList.remove('swiper');
+//   classWrapper.classList.remove('swiper-wrapper');
+//   classWrapper.classList.add('section__skill--cards');
+//   classSlide.classList.remove('swiper-slide');
+// }

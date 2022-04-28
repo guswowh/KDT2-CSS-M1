@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+// ******************** <VARIABLE & MIXIN> ********************
+
+$font-family: 'Open Sans', sans-serif;
+
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-bolder: 900;
+
+$primary-color: #fa9746;
+$primary-color-80: #f5a665;
+$secondary-color: #faf2ef;
+$font-color: #4a2914;
+$white-color: #fff;
+$white-50: rgba($white-color, 0.5);
+$grey-color: #ebebeb;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@mixin border-teal {
+  border: 3px solid teal;
+}
+
+@mixin border-royalblue {
+  border: 3px solid royalblue;
+}
+
+@mixin border-tomato {
+  border: 3px solid tomato;
+}
+
+// ******************** <GLOBAL> ********************
+html {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul li,
+input,
+textarea {
+  color: $font-color;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: $font-bold;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 2.9rem;
+  font-weight: $font-bolder;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: $font-bold;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: $font-bold;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+}
+
+p,
+ul li {
+  font-size: 1rem;
+  font-weight: $font-light;
+  line-height: 1.75;
+}
+
+ul li {
+  margin-bottom: 7px;
+}
+
+ul li::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 7px;
+  height: 7px;
+  background-color: $primary-color;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.btn-primary,
+button {
+  display: inline-block;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 30px;
+  font-family: $font-family;
+  font-size: 1.1rem;
+  font-weight: $font-medium;
+  text-align: center;
+  text-decoration: none;
+  color: $white-color;
+  margin-top: 2em;
+  padding: 12px 25px;
+  min-width: 8em;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    margin-left: 0.5em;
+  }
+
+  i.fa-solid.fa-angle-down {
+    margin-right: 8px;
+  }
+}
+
+a.btn-primary {
+  max-width: 8em;
+  min-width: auto;
+  padding: 15px 25px;
+}
+
+input,
+textarea {
+  border: 1px solid $grey-color;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.25em 0.5em;
+  font-family: $font-family;
+  font-size: 1rem;
+  font-weight: $font-light;
+}
+
+input {
+  height: 2.3em;
+  margin-bottom: 0.4em;
+}
+
+textarea {
+  height: 12em;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: $font-family;
+  font-size: 1rem;
+  font-weight: $font-light;
+}
+
+// ******************** <HAMBURGER MENU ANIMATION> ********************
+
+.aside__toggle {
+  display: none;
+  position: absolute;
+  top: 17px;
+  right: 25px;
+
+  .aside__toggle--btn {
+    height: 23px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: $white-color;
+      border-radius: 10px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 10px;
+      }
+      &:nth-child(4) {
+        top: 20px;
+      }
+    }
+
+    &.open span {
+      &:nth-child(1) {
+        top: 10px;
+        width: 0%;
+        left: 50%;
+      }
+      &:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      &:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      &:nth-child(4) {
+        top: 10px;
+        width: 0%;
+        left: 50%;
+      }
+    }
+  }
+}
+
+// ******************** <SWIPER> ********************
+.swiper {
+  width: 50vw;
+  height: 50vh;
+  display: none;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+.swiper-pagination {
+  bottom: 20px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: $grey-color;
+  background: $primary-color;
+}
+
+// ******************** <ASIDE> ********************
+aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: $primary-color;
+  text-align: center;
+  z-index: 2;
+
+  .aside__logo {
+    margin: 25px;
+    .aside__logo--desktop {
+      img {
+        width: 100px;
+      }
+    }
+    .aside__logo--mobile {
+      display: none;
+    }
+  }
+
+  .aside__menu {
+    height: 80%;
+    a {
+      color: $white-50;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid $white-50;
+      height: 20%;
+      &.on {
+        color: $white-color;
+      }
+    }
+    .fa-solid {
+      font-size: 2.3em;
+      margin-bottom: 0.3em;
+    }
+    span {
+      font-size: 1em;
+    }
+  }
+}
+
+// ******************** <MAIN> ********************
+main {
+  margin-left: 200px;
+  section {
+    height: 100vh;
+    background-color: $secondary-color;
+    @include flex-center;
+  }
+}
+
+// ******************** <HOME> ********************
+.section__home {
+  position: relative;
+
+  .sectioin__home--content {
+    position: absolute;
+    top: 35%;
+    left: 3em;
+    width: 50%;
+  }
+
+  .sectioin__home--img {
+    position: absolute;
+    top: 35%;
+    right: 3em;
+    width: 50%;
+    img {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}
+
+// ******************** <ABOUT> ********************
+.section__about {
+  padding: 0 7em;
+
+  .section__about--flex-container {
+    display: flex;
+  }
+
+  .section__about--img {
+    width: 30%;
+    img {
+      max-width: 200px;
+    }
+  }
+
+  .section__about--content {
+    width: 70%;
+    p {
+      margin-bottom: 1.7em;
+    }
+  }
+}
+
+// ******************** <PORTFOLIO> ********************
+.section__portfolios {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+
+  .section__portfolio {
+    display: flex;
+    height: 100vh;
+
+    .section__portfolio--img {
+      height: 100vh;
+      width: 55%;
+      overflow: hidden;
+    }
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) .section__portfolio--img--wrapper {
+        background-image: url('../img/portfolio-#{$i}.png');
+        @include bg-img;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .section__portfolio--des {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .section__portfolio--des--container {
+        padding: 0 3em;
+      }
+    }
+  }
+}
+
+// ******************** <SKILL> ********************
+.section__skill {
+  flex-direction: column;
+  h3 {
+    margin-bottom: 1em;
+  }
+
+  .section__skill--cards {
+    display: flex;
+    .section__skill--card {
+      text-align: center;
+      background-color: $white-color;
+      width: 320px;
+      padding: 2em 1em;
+      margin-right: 1em;
+      img {
+        margin-bottom: 1em;
+      }
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+// ******************** <CONTACT> ********************
+.section__contact {
+  justify-content: space-between;
+  padding: 0 5em;
+
+  .section__contact--form {
+    width: 40%;
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 0.2em;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+  }
+
+  .section__contact--img {
+    width: 55%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  // CSS code goes here
+}
+
+@media screen and (max-width: 992px) {
+  // ******************** <GLOBAL 992> ********************
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .section__contact > .section__contact--form h2,
+  h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  ul li {
+    margin-bottom: 2px;
+  }
+
+  // ******************** <ASIDE 992> ********************
+  aside {
+    width: 100%;
+    height: auto;
+
+    .aside__logo {
+      background-color: $primary-color;
+      height: 6vh;
+      margin: 0;
+      @include flex-center;
+      .aside__logo--desktop {
+        display: none;
+      }
+      .aside__logo--mobile {
+        display: inline-block;
+        img {
+          width: 250px;
+        }
+      }
+    }
+
+    .aside__menu {
+      background-color: $primary-color;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: auto;
+      transform: translateY(-2em);
+      z-index: -1;
+      transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+        z-index 0s linear 0.01s;
+      &.open {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(0%);
+        transition-delay: 0s, 0s, 0.3s;
+      }
+      a {
+        border: none;
+        height: auto;
+        padding: 1em 2em;
+        &:hover {
+          background-color: $primary-color-80;
+        }
+      }
+      .fa-solid {
+        display: none;
+      }
+    }
+
+    .aside__toggle {
+      display: block;
+    }
+  }
+
+  // ******************** <MAIN 992> ********************
+  main {
+    margin: 6vh 0 0;
+    overflow: hidden;
+    section {
+      height: 94vh;
+      // @include border-teal;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  // mobile section padding
+  .section__about,
+  .section__contact,
+  section {
+    padding: 0 2em;
+  }
+
+  // ******************** <HOME 992> ********************
+  .section__home {
+    position: static;
+
+    .sectioin__home--content {
+      position: static;
+      width: auto;
+      order: 1;
+    }
+
+    .sectioin__home--img {
+      position: static;
+      width: 70%;
+      margin-bottom: 2em;
+    }
+  }
+
+  // ******************** <ABOUT 992> ********************
+  .section__about {
+    .section__about--flex-container {
+      @include flex-center;
+      flex-direction: column;
+
+      .section__about--img {
+        img {
+          width: 100%;
+          margin-bottom: 1em;
+        }
+      }
+
+      .section__about--content {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // ******************** <PORTFOLIO 992> ********************
+  .section__portfolios {
+    padding: 0;
+
+    .section__portfolio {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 94vh;
+      // @include border-tomato;
+
+      .section__portfolio--img {
+        height: 55vh;
+        width: 100%;
+      }
+
+      .section__portfolio--des {
+        height: 39vh;
+        width: 100%;
+        .section__portfolio--des--container {
+          padding: 0;
+        }
+      }
+    }
+
+    .section__portfolio:nth-child(2n) .section__portfolio--des {
+      order: 1;
+    }
+  }
+
+  // ******************** <SKILL 992> ********************
+  .section__skill {
+    flex-direction: column;
+    h3 {
+      margin-bottom: 1em;
+    }
+
+    .section__skill--cards {
+      display: none;
+    }
+
+    .swiper {
+      display: block;
+      img {
+        margin-bottom: 1em;
+      }
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  // ******************** <CONTACT 992> ********************
+  .section__contact {
+    justify-content: center;
+
+    .section__contact--form {
+      width: 100%;
+      order: 1;
+    }
+
+    .section__contact--img {
+      width: 70%;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  // CSS code goes here
+}
+
+@media screen and (max-width: 576px) {
+  // CSS code goes here
+}
