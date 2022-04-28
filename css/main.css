@@ -18,6 +18,11 @@ a {
   margin: 0 auto;
   position: relative;
 }
+.big_inner {
+  width: 2000px;
+  margin: 0 auto;
+  position: relative;
+}
 .flex-space {
   flex-grow: 1;
 }
@@ -297,6 +302,7 @@ header .content_2 ul.service .item .item__contents ul.event > li:nth-child(3) {
 section .promotion {
   position: relative;
   padding-top: 174px;
+  width: 2000px;
   min-width: 1200px;
   height: 659px;
   overflow: hidden;
