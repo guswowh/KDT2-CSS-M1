@@ -190,6 +190,7 @@ header .topBox .info .infoBox .search::before {
   overflow: hidden;
   opacity: 0;
   transition: opacity 0.01s;
+  transition-delay: opacity 0.5s;
   transition: height 0.5s;
 }
 .Inner {
