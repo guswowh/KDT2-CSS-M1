@@ -175,15 +175,20 @@ header .topBox .info .infoBox .search::before {
   transform: rotate(-45deg);
 }
 .menu:hover .hide {
-  display: block;
+  height: 409px;
+  opacity: 1;
+  transition: opacity 0.01s;
+  transition: height 0.5s;
 }
 .hide {
   width: 100vw;
-  display: none;
+  height: 0;
   border-top: 2px solid #d50032;
   position: absolute;
   top: 60px;
   background-color: #fff;
+  overflow: hidden;
+  opacity: 0;
 }
 .Inner {
   width: calc((1024px/10)*8);
