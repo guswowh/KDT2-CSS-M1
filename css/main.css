@@ -1,0 +1,346 @@
+/* ------ */
+/* COMMON */
+/* ------ */
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #141414;
+}
+
+
+/* ------ */
+/* HEADER */
+/* ------ */
+
+/* TOP-MENU */
+.top-menu {
+  padding: 0 55px;
+  background-color: #e5e5e5;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-menu .top-left {
+  display: flex;
+}
+.top-menu .top-left .made {
+  margin-right: 26px;
+  position: relative;
+}
+.top-menu .top-left .made::before {
+  content: "";
+  border-right: 1px solid #ccc;
+  height: 100%;
+  position: absolute;
+  right: -26px;
+}
+.top-menu .top-left .mynb {
+  margin-left: 19px;
+}
+.top-menu .top-right {
+  overflow: hidden;
+}
+.top-menu .top-right > ul {
+  display: flex;
+}
+.top-menu .top-right > ul li {
+  margin-right: 30px;
+}
+.top-menu .top-right > ul li:last-child {
+  margin-right: 0;
+}
+.top-menu .top-right > ul li a {
+  height: 16px;
+  font-size: 12px;
+  color: #444;
+  position: relative;
+}
+.top-menu .top-right > ul li a::before {
+  content: "";
+  border-right: 1px solid #ccc;
+  height: 100%;
+  position: absolute;
+  right: -15px;
+}
+
+/* GNB */
+.gnb {
+  background-color: #fff;
+  padding: 0 55px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.gnb .gnb-left {
+  display: flex;
+  align-items: center;
+}
+.gnb .gnb-left .gnb-logo {
+  margin-right: 37px;
+}
+.gnb .gnb-left > ul {
+  display: flex;
+}
+.gnb .gnb-left > ul li {
+  padding: 27px;
+}
+.gnb .gnb-left > ul li:last-child a {
+  color: #cf0a2c;
+}
+.gnb .gnb-left > ul li a {
+  font-size: 16px;
+  font-weight: 700;
+}
+.gnb .gnb-left > ul li a:hover {
+  border-bottom: 2px solid #cf0a2c;
+}
+.gnb .gnb-right {
+  display: flex;
+  align-items: center;
+}
+.gnb .gnb-right > ul {
+  display: flex;
+}
+.gnb .gnb-right > ul li {
+  padding: 0 6px;
+}
+.gnb .gnb-right > ul li:first-child {
+  border-right: 1px solid #ccc;
+}
+.gnb .gnb-right > ul li a {
+  font-size: 14px;
+}
+.gnb .gnb-right > ul li a:hover {
+  color: #cf0a2c;
+}
+.gnb .gnb-right .gnb-bag {
+  margin: 0 10px 0 20px;
+}
+
+
+/* ---- */
+/* MAIN */
+/* ---- */
+
+/* SHOE-LIST */
+.shoe-list > ul {
+  display: flex;
+  justify-content: center;
+  margin: 68px 0;
+}
+.shoe-list a:hover {
+  border-bottom: 10px solid black;
+}
+.shoe-list .list1 > a {
+  display: block;
+  width: 280px;
+  height: 280px;
+  background-image: url("../images/shoe_1.jpg");
+}
+.shoe-list .list2 > a {
+  display: block;
+  width: 280px;
+  height: 280px;
+  background-image: url("../images/shoe_2.jpg");
+}
+.shoe-list .list3 > a {
+  display: block;
+  width: 280px;
+  height: 280px;
+  background-image: url("../images/shoe_3.jpg");
+}
+.shoe-list .list4 > a {
+  display: block;
+  width: 280px;
+  height: 280px;
+  background-image: url("../images/shoe_4.jpg");
+}
+.shoe-list .list5 > a {
+  display: block;
+  width: 280px;
+  height: 280px;
+  background-image: url("../images/shoe_5.jpg");
+}
+.shoe-list a {
+  position: relative;
+}
+.shoe-list span {
+  font-size: 36px;
+  font-weight: 700;
+  position: absolute;
+  right: 40%;
+  top: 11%;
+}
+
+/* SHOE-DETAIL */
+.shoe-detail .detail1 {
+  height: 727px;
+  position: relative;
+}
+
+/* JOGGER */
+.jogger .choice {
+  height: 229px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jogger .choice h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+
+/* ------ */
+/* FOOTER */
+/* ------ */
+
+footer {
+  background-color: #232323;
+}
+
+/* FOOT-TOP */
+.foot-top {
+  height: 130px;
+  padding: 0 140px;
+  border-bottom: 1px solid #393939;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.foot-top a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.foot-top a:hover {
+  color: #cf0a2c;
+}
+.foot-top span {
+  color: #d3d3d3;
+  font-size: 14px;
+  display: block;
+  margin-top: 7px;
+}
+
+/* FOOT-BOTTOM */
+.foot-bottom {
+  padding: 60px 350px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.foot-bottom li {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+.foot-bottom li:hover {
+  color: #cf0a2c;
+}
+.foot-bottom h4 {
+  color: #fff;
+  font-size: 14px;
+}
+.foot-bottom .help {
+  margin-right: 50px;
+}
+.foot-bottom .help h4 {
+  margin-bottom: 30px;
+}
+.foot-bottom .help li {
+  line-height: 2;
+}
+.foot-bottom .info {
+  margin-right: 50px;
+}
+.foot-bottom .info h4 {
+  margin-bottom: 30px;
+}
+.foot-bottom .info li {
+  line-height: 2;
+}
+.foot-bottom .inside {
+  margin-right: 50px;
+}
+.foot-bottom .inside h4 {
+  margin-bottom: 25px;
+}
+.foot-bottom .inside li {
+  line-height: 2;
+}
+.foot-bottom .brand-info p {
+  font-size: 14px;
+  color: #acacac;
+}
+.foot-bottom .brand-info .brand-top {
+  margin: 25px 0;
+}
+.foot-bottom .brand-info .brand-top p {
+  line-height: 1.7;
+}
+.foot-bottom .brand-info .brand-top p .privacy-policy {
+  color: #fff;
+  font-weight: 700;
+}
+.foot-bottom .brand-info .brand-top p .privacy-policy:hover {
+  color: #cf0a2c;
+}
+.foot-bottom .brand-info .brand-top p .tos {
+  font-size: 14px;
+  font-weight: 400;
+  color: #acacac;
+}
+.foot-bottom .brand-info .brand-top p .tos:hover {
+  color: #cf0a2c;
+}
+.foot-bottom .brand-top p .email {
+  font-size: 14px;
+  color: #acacac;
+}
+.foot-bottom .brand-top p .email:hover {
+  color: #cf0a2c;
+}
+.foot-bottom .brand-info .brand-bottom p {
+  line-height: 1.7;
+}
+.foot-bottom .brand-info .brand-bottom p .ceo-info {
+  color: #fff;
+  text-decoration: underline;
+}
+.foot-bottom .brand-info .brand-bottom p .ceo-info:hover {
+  color: #cf0a2c;
+}
+.foot-bottom .brand-info .brand-bottom p .contents-safety {
+  color: #fff;
+  text-decoration: underline;
+}
+.foot-bottom .brand-info .brand-bottom p .contents-safety:hover {
+  color: #cf0a2c;
+}
+.foot-bottom .brand-info .certi {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.foot-bottom .brand-info .certi p {
+  line-height: 1.5;
+}
+.foot-bottom .brand-info .certi img {
+ margin-right: 25px; 
+}
+
+
+/* KAKAO-TALK */
+.kakao-talk {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 75px;
+  bottom: 60px;
+  z-index: 10;
+}
