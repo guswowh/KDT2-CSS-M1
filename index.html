@@ -1,332 +1,205 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>토스팀 소개</title>
-
-  <link rel="icon" href="./favicon.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-
-
-  <link rel="stylesheet" href="./css/main.css" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
-    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-  <script defer src="./js/main.js"></script>
-
-
+  <title>Spotify</title>
+  <!-- CSS RESET -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <!-- Google Material-icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- style -->
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header>
-    <div class="inner">
-      <div class="toss">
-        <a href="https://toss.im/" class="logo">
-        <img src="./images/logo-toss-white.png" alt="TOSS" />
-        </a>
+  <div class="wrap">
+    <header>
+      <div class="inner">
+        <nav class="menu-area">
+          <h1 class="logo"></h1>
+          <ul class="menu-list">
+            <li>
+              <a href="javascript:void(0)">Stories</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Listen</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Team</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Tools</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <ul class="menu">
-        <li>
-          <a href="javascript:void(0)">회사 소개</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">고객센터</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">자주 묻는 질문</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">공동인증서 관리</a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">채용</a>
-        </li>
-      </ul>
-    </div>
+    </header>
+    <main>
+      <div class="content-wrap inner"> 
+        <section class="main-banner box">
+          <div class="slide-wrap">
 
-  </header>
-
- <!-- 1PAGE -->
-  <div class="top__container">
-    <div class="top__inner">
-      <div class="top__title">
-        금융, 그 이상의<br />
-        역사를 만들고 있습니다.
+            <div class="slide-card-ctrl">
+              <div class="btn btn--black">
+                <span class="btn__ctrl material-icons">skip_next</span>
+                <span class="btn__label">Next Story</span>
+              </div>
+              <div class="btn btn--black">
+                <span class="btn__ctrl material-icons">skip_previous</span>
+                <span class="btn__label">Previous Story</span>
+              </div>
+              <div class="btn btn--black">
+                <span class="btn__ctrl material-icons">shuffle</span>
+                <span class="btn__label">Shuffle Stories</span>
+              </div>  
+            </div>
+            <div class="slide-description">
+              <p class="category">
+                <a class="category__link" href="javascirpt:void(0)">
+                  UX WRITING
+                </a>
+              </p>
+              <h3 class="depict-title">
+                <a class="depict-title__link" href="javascirpt:void(0)">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </a>
+              </h3>
+            </div>
+            <div class="slide-card">
+              <div class="slide-card__stack">
+                <img src="./img/slide-img1.png" alt="slide-img1">
+              </div>
+              <div class="slide-card__stack">
+                <img src="./img/slide-img2.png" alt="slide-img2">
+              </div>
+              <div class="slide-card__stack">
+                <img src="./img/slide-img3.png" alt="slide-img3">
+              </div>
+              <div class="slide-card__stack">
+                <img src="./img/slide-img4.jpg" alt="slide-img4">
+              </div>
+            </div>            
+            <div class="slide-bar">
+              <div class="slide-pagination">
+                <span>01</span>
+                <div class="loading-bar"></div>
+                <span>11</span>
+              </div>
+              <a class="btn--scroll" href="javascript:void(0)">
+                <p class="btn--text">Scroll down</p>
+                <div class="btn--arrow">
+                  <span class="material-icons">south</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="new-releases box">
+          <div class="inner">
+            <h2 class="sub-title">New Releases</h2>
+            <div class="view-more">
+              <a class="btn--view-more" href="javascript:void(0)">
+                <p class="btn--text">View All Stories</p>
+                <div class="btn--arrow">
+                  <span class="material-icons">east</span>
+                </div>
+              </a>
+            </div>
+            <div class="content-box">
+              <ul class="releases-list">
+                <li>
+                  <a href="javascript:void(0)">
+                    <div class="card-img">
+                      <img src="./img/3x3_Mar.png" alt="3x3_march">  
+                    </div>
+                    <div class="card-script">
+                      <span>3X3</span>
+                      <h3>Design Mentors</h3>
+                      <p>Find out what qualities designer at Spotify believe make for a great mentor.</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <div class="card-img">
+                      <img src="./img/slide-img1.png" alt="slide-img">  
+                    </div>
+                    <div class="card-script">
+                      <span>UX WRITING</span>
+                      <h3>We're Silling the Tea: Spotify UX Writing Questions Answered</h3>
+                      <p>In this post, Spotify UX Writers answer some of the most asked questions to land in their DMs. Dive in!</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <div class="card-img">
+                      <img src="./img/3x3_Feb.png" alt="3x3_february">  
+                    </div>
+                    <div class="card-script">
+                      <span>3X3</span>
+                      <h3>Jam Sessions</h3>
+                      <p>Find out Spotify Design Ops folks' top tips for a successful jam session. </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <div class="card-img">
+                      <img src="./img/3x3_October.png" alt="3x3_October">  
+                    </div>
+                    <div class="card-script">
+                      <span>3X3</span>
+                      <h3>Mastering Skills</h3>
+                      <p>This 3x3, designers share the skills they'd like to master this year. </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="spotligth box">
+          <div class="inner">
+            <h2 class="sub-title">In the Spotlight</h2>
+            <div class="view-more">
+              <a class="btn--view-more" href="javascript:void(0)">
+                <p class="btn--text">View All Stories</p>
+                <div class="btn--arrow">
+                  <span class="material-icons">east</span>
+                </div>
+              </a>
+            </div>
+            <h3>Meet the humans who design Spotify</h3>
+            <div class="swiper-container portrait-slide">
+              <div class="portrait">
+                <div class="portrait-card">
+                  <div class="portrait-img">
+                    <img src="./img/Elias.png" alt="portrait">
+                  </div>
+                  <div class="portrait-dial">
+                    <span>
+                      "That experience taught me that the 'why' of a design is just as important than the design itself."
+                      <a href="javascript:void(0)">READ MORE</a>
+                    </span>
+                  </div>
+                  <div class="portrait-profile">
+                    <h4>Kevita Chepovetsky</h4>
+                    <span>Senior Product Designer</span>
+                  </div>
+                </div>
+                <span class="area">
+                  New York
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="box"></section>
       </div>
-      <div class="btn">
-        <img src="./images/down-arrow.png" alt="down-arrow">
-        
-      </div>
-    </div>
+    </main>
+    <footer></footer>
   </div>
-
-
-  <!-- 2PAGE -->
-  <div class="chart__container">
-    <div class="inner">
-      <div class="chart"></div>
-      <div class="chart__text">
-        <div class="text__title">
-          변화를 열망하는 사람들이 모여,<br>
-          역사에 남을만한 변화를 만듭니다.
-        </div>
-        <div class="text__description">
-          <div class="description__1">
-            누적 가입자 수
-          </div>
-          <div class="description__2">
-            2,200만 +
-          </div>
-        </div>
-        <div class="text__description">
-          <div class="description__1">
-            누적 투자금액
-          </div>
-          <div class="description__2">
-            1조 원 +
-          </div>
-        </div>
-        <div class="text__description">
-          <div class="description__1">
-            전체 팀원 수
-          </div>
-          <div class="description__2">
-            1,500명 +
-          </div>
-        </div>
-        <div class="text__description">
-          <div class="description__1">
-            출시 서비스 수
-          </div>
-          <div class="description__2">
-            50개 +
-          </div>
-        </div>
-        <div class="text_description__2">
-          2022년 4월 기준
-        </div>
-    </div>
-  </div>
-
-  <!-- 3PAGE -->
-
-  <div class="mission__container">
-    <div class="mission__text">
-      <div class="text__title">
-        Team Mission
-      </div>
-      <div class="text__description">
-        토스팀은 바꾸고 싶은 세상의 모습이 있고 생각만 <br>
-        해도 가슴 뛰는 목표가 있는 조직입니다. <br>
-        어렵고,불편하고,멀게 느껴지는 금융이 아닌 <br>
-        누구에게나 쉽고 상식적인 금융을 만드는 것이 <br>
-        토스팀의 존재 이유입니다.
-      </div>
-    </div>
-  </div>
-
-  <!-- 4PAGE -->
-  <div class="history__container">
-    <div class="inner">
-      <div class="title">
-        토스팀은 오늘도<br>
-        위대한 역사를 만들고 있습니다
-      </div>
-      <div class="timeline">
-        <ul class="years">
-          <li class="year active" data-year="2021" ></li>
-          <li class="year" data-year="2020" ></li>
-          <li class="year" data-year="2019" ></li>
-          <li class="year" data-year="2018" ></li>
-          <li class="year" data-year="2017" ></li>
-          <li class="year" data-year="2016" ></li>
-          <li class="year" data-year="2015" ></li>
-          <li class="year" data-year="2014" ></li>
-          <li class="year" data-year="2013" ></li>
-        </ul>
-        <ul class="year__contents">
-          <div class="contents" data-year="2021">
-            <li>
-              <h3>2021.02</h3>
-              <h4>(주)토스증권 출범</h4>
-            </li>
-            <li>
-              <h3>2021.04</h3>
-              <h4>(주)토스씨엑스 설립</h4>
-            </li>
-            <li>
-              <h3>2021.06</h3>
-              <h4>토스뱅크 컨소시엄 제3 인터넷전문은행 본인가 획득<br>4,600억 원 투자 유치 (기업가치 한화 약 8조원 돌파)</h4>
-            </li>
-            <li>
-              <h3>2021.08</h3>
-              <h4>평생 무료 송금 정책 전격 도입<br>본인확인기관 선정</h4>
-            </li>
-            <li>
-              <h3>2021.10</h3>
-              <h4>(주)토스뱅크 출범<br>(주)VCNC(타다) 인수</h4>
-            </li>
-            <li>
-              <h3>2021.11</h3>
-              <h4>전자서명인증사업자 선정</h4>
-            </li>
-            <li>
-              <h3>2021.12</h3>
-              <h4>행정안전부 주관 '2021 정보화발전 ' 장관 표창 수상</h4>
-            </li>
-          </div>
-          <div class="contents" data-year="2020">
-            <li>
-              <h3>2020.04</h3>
-              <h4>첫 월간 흑자 기록<br>토스신용카드(PLCC) 출시</h4>
-            </li>
-            <li>
-              <h3>2020.05</h3>
-              <h4>토스인증서 발급 1,100만 돌파</h4>
-            </li>
-            <li>
-              <h3>2020.07</h3>
-              <h4>고객 피해 전액 책임제 시행</h4>
-            </li>
-            <li>
-              <h3>2020.08</h3>
-              <h4>2,070억 원 투자 유치 (기업가치 한화 약 3조 원 돌파)<br>㈜토스페이먼츠 출범<br>토스보험파트너 앱 출시</h4>
-            </li>
-            <li>
-              <h3>2020.11</h3>
-              <h4>토스준비법인(토스증권) 금융투자업 본인가 획득</h4>
-            </li>
-          </div>
-          <div class="contents" data-year="2019">
-            <li>
-              <h3>2019.02</h3>
-              <h4>토스 3.0 출시 및 브랜드 로고 리뉴얼</h4>
-            </li>
-            <li>
-              <h3>2019.03</h3>
-              <h4>토스준비법인(토스증권) 예비인가 획득</h4>
-            </li>
-            <li>
-              <h3>2019.04</h3>
-              <h4>토스머니카드 출시</h4>
-            </li>
-            <li>
-              <h3>2019.08</h3>
-              <h4>770억 원 투자 유치</h4>
-            </li>
-            <li>
-              <h3>2019.10</h3>
-              <h4>월간 활성 사용자 1,000만 명 돌파</h4>
-            </li>
-            <li>
-              <h3>2019.11</h3>
-              <h4>토스카드 2.0 출시</h4>
-            </li>
-            <li>
-              <h3>2019.12</h3>
-              <h4>토스뱅크 컨소시엄 제3 인터넷전문은행 예비인가 획득<br>무료 신용등급 조회 누적 사용자 1,000만 명 돌파</h4>
-            </li>
-          </div>
-          <div class="contents" data-year="2018">
-            <li>
-              <h3>2018.04</h3>
-              <h4>이승건 대표 정보통신의 날 기념 대통령 표창 수상</h4>
-            </li>
-            <li>
-              <h3>2018.06</h3>
-              <h4>440억 원 투자 유치</h4>
-            </li>
-            <li>
-              <h3>2018.10</h3>
-              <h4>세계 100대 핀테크 기업 중 28위 선정</h4>
-            </li>
-            <li>
-              <h3>2018.11</h3>
-              <h4>과학기술정보통신부 주최 2018 정보보호대상 수상<br>㈜토스인슈어런스 설립</h4>
-            </li>
-            <li>
-              <h3>2018.12</h3>
-              <h4>900억 원 투자 유치 (기업가치 한화 약 1조 원 돌파)</h4>
-            </li>
-          </div>
-          <div class="contents" data-year="2017">
-            <li>
-              <h3>2017.02</h3>
-              <h4>무료 신용등급 조회 서비스 출시</h4>
-            </li>
-            <li>
-              <h3>2017.03</h3>
-              <h4>550억 원 투자 유치</h4>
-            </li>
-            <li>
-              <h3>2017.11</h3>
-              <h4>세계 100대 핀테크 기업 중 35위 선정</h4>
-            </li>
-            <li>
-              <h3>2017.12</h3>
-              <h4>월 송금액 1조, 누적 송금액 10조 돌파</h4>
-            </li>
-          </div>
-          <div class="contents" data-year="2016">
-            <li>
-              <h3>2016.04</h3>
-              <h4>265억 원 투자 유치<br>
-                이승건 대표 한국핀테크산업협회 초대 회장 부임</h4>
-            </li>
-            <li>
-              <h3>2016.08</h3>
-              <h4>누적 송금액 1조 원 돌파</h4>
-            </li>
-            <li>
-              <h3>2016.12</h3>
-              <h4>구글 플레이 ‘2016 올해의 베스트앱' 대상 수상</h4>
-            </li>
-          </div>
-          <div class="contents" data-year="2015">
-            <li>
-              <h3>2015.02</h3>
-              <h4>간편 송금 서비스 출시</h4>
-            </li>
-            <li>
-              <h3>2015.07</h3>
-              <h4>50억 원 투자 유치</h4>
-            </li>
-            <li>
-              <h3>2015.10</h3>
-              <h4>토스(Toss) 상표권 등록</h4>
-            </li>
-          </div>
-          <div class="contents" data-year="2014">
-            <li>
-              <h3>2014.08</h3>
-              <h4>10억 원 투자 유치</h4>
-            </li>
-          </div>
-          <div class="contents" data-year="2013">
-            <li>
-              <h3>2013.04</h3>
-              <h4>㈜비바리퍼블리카 설립</h4>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- 아직 실력이 미숙해서 공부에 시간을 투자해야겠다고 판단하고
-  뒷부분은 후에 정리할 생각 -->
-
 </body>
 </html>
