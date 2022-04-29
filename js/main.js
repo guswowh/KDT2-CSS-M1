@@ -28,6 +28,7 @@ promotionToggleBtn2.addEventListener('click', function () {
 
 new Swiper('.promotion .swiper-container', {
   slidesPerView: 1, // 한번에 보여줄 슬라이드 개수
+  centeredSlides: true,
   loop: true,
   autoplay: {
     delay: 5000,
@@ -94,6 +95,7 @@ fontEls.forEach(function (fontEl) {
 new Swiper('.footer_slide .swiper-container', {
   slidesPerView: 7.5,
   slidesPerGroup : 4,
+  spaceBetween : 0,
   loop: true,
   autoplay: {
     delay: 3000,

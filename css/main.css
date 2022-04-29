@@ -300,18 +300,28 @@ header .content_2 ul.service .item .item__contents ul.event > li:nth-child(3) {
 
 /* VISUAL */
 section .promotion {
+  height: 659px;
   position: relative;
   padding-top: 174px;
+  overflow: hidden;
+}
+section .promotion .swiper-container {
   width: 2000px;
   min-width: 1200px;
   height: 659px;
   overflow: hidden;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -1000px;
+  
 }
 section .promotion .swiper-pagination {
   height: 10px;
   width: 100px;
-  position: absolute;
-  margin-left: 55rem;
+  left: 0;
+  right: 0;
+  margin: auto;
   bottom: 3rem;
 }
 section .promotion .swiper-pagination .swiper-pagination-bullet {
@@ -330,25 +340,24 @@ section .promotion .swiper-pagination .swiper-pagination-bullet-active {
   width: 10px;
   height: 10px;
 }
-section .promotion .swiper-prev {
-  background-image: url("../images/btn_prev.png");
+section .promotion .swiper-prev,
+section .promotion .swiper-next {
+  position: absolute;
   width: 81px;
   height: 20px;
-  position: absolute;
   top: 30rem;
-  margin-left: 20rem;
   z-index: 1;
   cursor: pointer;
 }
+section .promotion .swiper-prev {
+  background-image: url("../images/btn_prev.png");
+  left: 50%;
+  margin-left: -700px;
+}
 section .promotion .swiper-next {
   background-image: url("../images/btn_next.png");
-  width: 81px;
-  height: 20px;
-  position: absolute;
-  top: 30rem;
-  margin-left: 100rem;
-  z-index: 1;
-  cursor: pointer;
+  right: 50%;
+  margin-right: -700px;
 }
 
 
