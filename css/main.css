@@ -236,20 +236,24 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 72px;
 }
 
 .header__wrap .main-nav {
   display: flex;
+  width: 100%;
 }
 
 .header__wrap .main-nav .item {
   position: relative;
+  width: 25%;
+  text-align: center;
 }
 .header__wrap .main-nav .item .item__name > a {
   font-size: 20px;
   font-weight: 800;
   color: #44465c;
-  padding:0px 40px 30px 40px;
+  padding-bottom: 40px;
 }
 
 .header__wrap .main-nav .item a:hover  {
@@ -259,7 +263,7 @@ a {
 .header__wrap .main-nav .item .this {
   position: absolute;
   top: 50px;
-  width: 5000px;
+  width: 100%;
   height: 320px;
   padding-top: 13px;
   border-top: 1px solid #f6f6f6;
@@ -268,22 +272,27 @@ a {
   z-index: 100;
   display: none;
 }
+.header__wrap .main-nav .item .this {
+  width: 100%;
+}
 
 .header__wrap .main-nav:hover .item .this {
   display: block;
+
 } 
-.header__wrap .main-nav .item .this ul li {
-  width: 130px;
+.header__wrap .main-nav .item .this > ul > li {
+  width: 100%;
 }
-.header__wrap .main-nav .item .this ul li a{
+
+.header__wrap .main-nav .item .this > ul > li >a {
   line-height: 2em;
-  font-size: 12px;
-  
+  font-size: .9rem;
+  display: block;
 }
 .header__wrap .main-nav .item:hover .this {
   background-color: #f6f6f6;
   height: 320px;
-  width: 170px;
+  /* width: 170px; */
 }
 .header__wrap .main-nav .item .this > img {
   position: absolute;
@@ -291,13 +300,12 @@ a {
   left: -200px;
   z-index: 5;
 }
-.header__wrap .main-nav .item .this ul {
-  padding: 0px 25px 0px;
-}
+
 .header__wrap .main-nav .item .this ul li img{
   display: inline;
 }
-.header__wrap .main-nav .item:first-child .this ul li::after{
+
+.header__wrap .main-nav .item:first-child .this > ul > li::after{
   content: '';
   display: block;
   position: absolute;
@@ -310,14 +318,30 @@ a {
   background-color: #fff; 
 }
 
+.header__wrap .main-nav .item:nth-child(5) .this > ul > li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 170px;
+  width: 5000px;
+  height: 390px;
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
+  background-color: #fff; 
+  top: -1px;
+}
+
+.main-btn {
+  display: flex;
+}
+
 .main-btn span {
   padding: 0px 10px;
 }
 
 .main-nav-texture {
   position: absolute;
-  top: 390px;
-  left: 200px;
+  top: 400px;
   width: 100%; 
   z-index: 6;
   display: none;
@@ -870,7 +894,7 @@ main {
   padding-top: 140px;
 }
 .template__alarm .graph .alarm__list li {
-  width: 15%;
+  width: 17%;
 }
 .template__alarm .graph .alarm__list li button:hover {
   background-color: #44465c;
@@ -890,7 +914,7 @@ main {
   text-align: center;
   background-color: #fff;
   border: 1px solid #ccc;
-  font-size: 0.8rem;
+  font-size: .7rem;
   color: #44465c;
   cursor: pointer;
   display: block;
