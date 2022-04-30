@@ -1,4 +1,7 @@
-let NavSwiper = new Swiper('.promotion .swiper-container', {
+import { renderItem } from './best.js';
+renderItem()
+
+new Swiper('.promotion .swiper-container', {
   autoplay: { // 자동 재생 여부
     delay: 4000
   },
@@ -37,11 +40,10 @@ let NavSwiper = new Swiper('.promotion .swiper-container', {
   }
 });
 
-let bestSwiper = new Swiper('.best .swiper-container', {
+new Swiper('.best .swiper-container', {
   autoplay: true.valueOf,
   loop: true,
   slidesPerView: 5,
-  slidesPerGroupSkip: 1,
   slidesPerGroup: 5,
   loopFillGroupWithBlank: true,
 
@@ -52,7 +54,7 @@ let bestSwiper = new Swiper('.best .swiper-container', {
   
 })
 
-let delSwiper = new Swiper('.delevery__banner .swiper-container', {
+new Swiper('.delevery__banner .swiper-container', {
   loop: true,
   navigation : { 
     nextEl: '.swiper-button-next',
@@ -60,7 +62,7 @@ let delSwiper = new Swiper('.delevery__banner .swiper-container', {
 	},
 })
 
-let serSwiper = new Swiper('.video .swiper-container', {
+new Swiper('.video .swiper-container', {
   autoplay: { 
     delay: 4000
   },
@@ -73,7 +75,7 @@ let serSwiper = new Swiper('.video .swiper-container', {
   },
 })
 
-let chaSwiper = new Swiper('.chance .swiper-container', {
+new Swiper('.chance .swiper-container', {
   autoplay: { 
     delay: 1000
   },
@@ -87,6 +89,3 @@ let chaSwiper = new Swiper('.chance .swiper-container', {
   },
 })
 
-
-
-export { NavSwiper, bestSwiper, delSwiper, serSwiper, chaSwiper}
